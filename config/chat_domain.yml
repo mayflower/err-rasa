@@ -1,0 +1,27 @@
+intents:
+    - order_pizza
+    - greet
+
+entities:
+    - size
+    - toppings
+
+slots:
+    size:
+         type: text
+    toppings:
+        type: text
+
+templates:
+    utter_greet:
+        - 'Hello, how can I help you?'
+        - 'Hi, I am here to help.'
+    utter_get_pizza_size:
+        - 'What pizza size?'
+    utter_get_pizza_toppings:
+        - 'What toppings would you like on your pizza?'
+actions:
+    - utter_greet
+    - utter_get_pizza_size
+    - utter_get_pizza_toppings
+    - actions.ActionOrderPizza
