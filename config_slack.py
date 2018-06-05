@@ -8,7 +8,7 @@ import logging
 BACKEND = 'Slack'  # Errbot will start in text mode (console only mode) and will answer commands from there.
 
 BOT_DATA_DIR = './data'
-BOT_EXTRA_PLUGIN_DIR = '.'
+BOT_EXTRA_PLUGIN_DIR = './plugin'
 
 BOT_LOG_LEVEL = logging.DEBUG
 BOT_LOG_FILE = False

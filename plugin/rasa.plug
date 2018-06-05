@@ -6,4 +6,4 @@ Module = rasa
 Description = Errbot <3 Rasa
 
 [Python]
-Version = 3+
+Version = 3
