@@ -1,0 +1,9 @@
+[Core]
+Name = Rasa
+Module = rasa
+
+[Documentation]
+Description = Errbot <3 Rasa
+
+[Python]
+Version = 3+
