@@ -19,6 +19,10 @@ class Rasa(BotPlugin):
         model_directory = './models/nlu/default/chat';
         interpreter = Interpreter.load(model_directory, builder)
         result = interpreter.parse(message.body)
-
         self.log.debug(result)
+        self.send(getattr(message.frm, 'room', message.frm), 'RESULT:')
+        intent = getattr(result, 'intent')
+        self.send(getattr(message.frm, 'room', message.frm), 'Name: '+getattr(intent, 'name', 'No Name'))
+        self.send(getattr(message.frm, 'room', message.frm), 'Confidence: '+getattr(intent, 'confidence', 'No Confidence'))
+
         
