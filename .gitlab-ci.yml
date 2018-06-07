@@ -1,4 +1,3 @@
-
 image: docker:stable
 
 # When using dind, it's wise to use the overlayfs driver for
@@ -12,18 +11,10 @@ services:
 before_script:
 - docker info
 
-stages:
-  - deploy
-
-to-production:
-  only:
-    - master
-  stage: deploy
-  services:
-    - docker:dind
-  before_script:
-    - docker info
-    - docker build -terrbot
+build:
+  stage: build
+  script:
+    - docker build -t errbot 
     - pip install awscli
   script:
     - aws s3 cp ./ s3://yourbucket/ --recursive --exclude "*" --include ""
