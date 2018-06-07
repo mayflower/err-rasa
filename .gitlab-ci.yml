@@ -3,7 +3,7 @@ services:
 before_script:
   - docker info
 
-build_i
+build_image:
   services:
     - docker:stable
   stage: deploy
