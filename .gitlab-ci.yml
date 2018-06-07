@@ -1,6 +1,5 @@
 
-image: python:3
-
+image: docker:stable
 
 stages:
   - deploy
