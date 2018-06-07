@@ -1,6 +1,7 @@
 image: docker:stable
 
 before_script:
+  - sleep $[($RANDOM % 2) + 5]
   - docker info
 
 build_image:
