@@ -24,6 +24,24 @@
         ]
       },
       {
+        "text": "I want to order large pizza with cheese",
+        "intent": "order_pizza",
+        "entities": [
+          {
+            "start": 16,
+            "end": 21,
+            "value": "large",
+            "entity": "size"
+          },
+          {
+            "start": 33,
+            "end": 38,
+            "value": "cheese",
+            "entity": "toppings"
+          }
+        ]
+      },
+      {
         "text": "I want to order pizza with olives",
         "intent": "order_pizza",
         "entities": [
@@ -53,6 +71,42 @@
         ]
       },
       {
+        "text": "big",
+        "intent": "order_pizza",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "big",
+            "entity": "size"
+          }
+        ]
+      },
+      {
+        "text": "explode",
+        "intent": "order_pizza",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "explode",
+            "entity": "size"
+          }
+        ]
+      },
+      {
+        "text": "tiny",
+        "intent": "order_pizza",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "tiny",
+            "entity": "size"
+          }
+        ]
+      },
+      {
         "text": "small",
         "intent": "order_pizza",
         "entities": [
@@ -61,6 +115,18 @@
             "end": 5,
             "value": "small",
             "entity": "size"
+          }
+        ]
+      },
+      {
+        "text": "onions",
+        "intent": "order_pizza",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "onions",
+            "entity": "toppings"
           }
         ]
       },
@@ -94,7 +160,7 @@
         "entities": [
           {
             "start": 0,
-            "end": 6,
+            "end": 9,
             "value": "One is enough.",
             "entity": "correction"
           }
@@ -106,7 +172,7 @@
         "entities": [
           {
             "start": 0,
-            "end": 6,
+            "end": 8,
             "value": "You think here are guys only?",
             "entity": "correction"
           }

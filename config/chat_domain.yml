@@ -2,7 +2,7 @@ intents:
     - order_pizza
     - greet
     - pedant
-
+    - goodby
 entities:
     - size
     - toppings
@@ -10,9 +10,9 @@ entities:
 
 slots:
     size:
-         type: text
-    toppings:
         type: text
+    toppings:
+        type: list
     correction:
         type: text
 
