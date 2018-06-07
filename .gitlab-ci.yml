@@ -7,7 +7,7 @@ build_image:
   services:
     - docker:stable
   stage: deploy
-  befor_script:
+  before_script:
     - docker build -t errbot 
     - pip install awscli
   script:
