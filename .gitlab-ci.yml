@@ -1,6 +1,7 @@
 
 image: python:3
 
+
 stages:
   - deploy
 
@@ -9,11 +10,9 @@ to-production:
     - master
   stage: deploy
   before_script:
-    - pip install awscli sklearn_crfsuite spacy
-    - pip install -r requirements.txt
-    - python -m spacy download en_core_web_sm
-    - python -m spacy link en_core_web_sm
-    - ./mnt/bot/create_models.sh
+    - docker info
+    - docker build -terrbot
+    - pip install awscli
   script:
     - aws s3 cp ./ s3://yourbucket/ --recursive --exclude "*" --include ""
   
