@@ -9,7 +9,7 @@ to-production:
     - master
   stage: deploy
   before_script:
-    - pip install awscli
+    - pip install awscli sklearn_crfsuite spacy
     - pip install -r requirements.txt
     - python -m spacy download en_core_web_sm
     - python -m spacy link en_core_web_sm
