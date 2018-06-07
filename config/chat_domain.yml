@@ -3,6 +3,7 @@ intents:
     - greet
     - pedant
     - goodby
+
 entities:
     - size
     - toppings
@@ -12,7 +13,7 @@ slots:
     size:
         type: text
     toppings:
-        type: list
+        type: text
     correction:
         type: text
 
@@ -24,7 +25,12 @@ templates:
         - 'What pizza size?'
     utter_get_pizza_toppings:
         - 'What toppings would you like on your pizza?'
+    utter_goodby:
+        - 'See you later'
+        - 'Bye'
+
 actions:
+    - utter_goodby
     - utter_greet
     - utter_get_pizza_size
     - utter_get_pizza_toppings
