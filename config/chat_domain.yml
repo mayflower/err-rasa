@@ -1,15 +1,19 @@
 intents:
     - order_pizza
     - greet
+    - pedant
 
 entities:
     - size
     - toppings
+    - correction
 
 slots:
     size:
          type: text
     toppings:
+        type: text
+    correction:
         type: text
 
 templates:

@@ -3,3 +3,5 @@
 config.py
 actions.pyc
 .errbot-ve/
+.pytest_cache/
+.cache/

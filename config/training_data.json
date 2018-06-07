@@ -2,6 +2,11 @@
   "rasa_nlu_data": {
     "common_examples": [
       {
+        "text": "moin",
+        "intent": "greet",
+        "entities": []
+      },
+      {
         "text": "hello",
         "intent": "greet",
         "entities": []
@@ -80,6 +85,30 @@
             "end": 6,
             "value": "cheese",
             "entity": "toppings"
+          }
+        ]
+      },
+      {
+        "text": "moin moin",
+        "intent": "pedant",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "One is enough.",
+            "entity": "correction"
+          }
+        ]
+      },
+      {
+        "text": "hey guys",
+        "intent": "pedant",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "You think here are guys only?",
+            "entity": "correction"
           }
         ]
       }
