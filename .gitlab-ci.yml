@@ -1,9 +1,9 @@
 image: docker:stable
 
 build_image:
+  timeout: 30
   stage: deploy
   before_script:
-    - sleep $[($RANDOM % 2) + 5]
     - docker info
     - docker build -terrbot ./
     - pip install awscli
