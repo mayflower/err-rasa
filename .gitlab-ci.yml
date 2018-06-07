@@ -1,7 +1,6 @@
 image: docker:stable
 
 build_image:
-  timeout: 30
   stage: deploy
   before_script:
     - docker info
