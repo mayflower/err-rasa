@@ -16,3 +16,10 @@ class ActionPedant(Action):
         logging.info("Domain: {}".format(domain));
         dispatcher.utter_message('You are not concrete enough')
         return []
+class ActionIllness(Action):
+    def name(self):
+        return 'action_report_illness'
+    def run(self, dispatcher, tracker, domain):
+        logging.info("Domain: {}".format(domain));
+        dispatcher.utter_message('Get will soon')
+        return []

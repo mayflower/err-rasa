@@ -3,11 +3,14 @@ intents:
     - greet
     - pedant
     - goodby
+    - illness
 
 entities:
     - size
     - toppings
     - correction
+    - first
+    - last
 
 slots:
     size:
@@ -15,6 +18,10 @@ slots:
     toppings:
         type: text
     correction:
+        type: text
+    first:
+        type: text
+    last:
         type: text
 
 templates:
@@ -28,6 +35,10 @@ templates:
     utter_goodby:
         - 'See you later'
         - 'Bye'
+    utter_get_illnes_first:
+        - What is the first day of your illness
+    utter_get_illnes_last:
+        - What is the last day of your illness
 
 actions:
     - utter_goodby
@@ -35,4 +46,7 @@ actions:
     - utter_get_pizza_size
     - utter_get_pizza_toppings
     - actions.ActionOrderPizza
+    - utter_get_illnes_first
+    - utter_get_illnes_last
     - actions.ActionPedant
+    - actions.ActionIllness

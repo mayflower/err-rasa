@@ -201,7 +201,63 @@
       {"text": "bye", "intent": "goodby", "entities": []},
       {"text": "thx", "intent": "goodby", "entities": []},
       {"text": "fuck of", "intent": "goodby", "entities": []},
-      {"text": "hf", "intent": "goodby", "entities": []}
+      {"text": "hf", "intent": "goodby", "entities": []},
+      {
+        "text": "Hi, i can not come from days",
+        "intent": "report_illness",
+        "entities": [
+          {"start": 19, "end": 23, "value": "from", "entity": "first"}
+        ]
+      },
+      {
+        "text": "Hi, i can not come start days",
+        "intent": "report_illness",
+        "entities": [
+          {"start": 19, "end": 24, "value": "start", "entity": "first"}
+        ]
+      },
+      {
+        "text": "I have to stay home until next two days",
+        "intent": "report_illness",
+        "entities": [
+          {"start": 26, "end": 39, "value": "next two days", "entity": "last"}
+        ]
+      },
+      {
+        "text": "I have to stay home until end of week",
+        "intent": "report_illness",
+        "entities": [
+          {"start": 26, "end": 37, "value": "end of week", "entity": "last"}
+        ]
+      },
+      {
+        "text": "I have to stay home until 4 days",
+        "intent": "report_illness",
+        "entities": [
+          {"start": 26, "end": 32, "value": "4 days", "entity": "last"}
+        ]
+      },
+      {
+        "text": "My doctor advised to stay home next two days",
+        "intent": "report_illness",
+        "entities": [
+          {"start": 31, "end": 44, "value": "next two days", "entity": "last"}
+        ]
+      },
+      {
+        "text": "My doctor advised to stay home end of week",
+        "intent": "report_illness",
+        "entities": [
+          {"start": 31, "end": 42, "value": "end of week", "entity": "last"}
+        ]
+      },
+      {
+        "text": "My doctor advised to stay home 4 days",
+        "intent": "report_illness",
+        "entities": [
+          {"start": 31, "end": 37, "value": "4 days", "entity": "last"}
+        ]
+      }
     ]
   }
 }

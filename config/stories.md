@@ -17,3 +17,11 @@
    - utter_get_pizza_toppings
 * order_pizza
    - action_order_pizza
+
+## Story Illness
+* report_illness
+    - utter_get_illnes_first
+* report_illness
+    - utter_get_illnes_last
+* report_illness
+    - action_report_illness

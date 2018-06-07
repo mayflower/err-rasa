@@ -15,6 +15,19 @@
     thx
     fuck of
     hf
+%[report_illness]
+    Hi, i can not come @[first] days
+    I have to stay home until @[last]
+    My doctor advised to stay home @[last]
+
+@[last]
+    next two days
+    end of week
+    4 days
+
+@[first]
+    from
+    start
 
 @[toppings]
     cheese
