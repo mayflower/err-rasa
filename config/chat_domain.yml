@@ -2,6 +2,7 @@ intents:
     - order_pizza
     - greet
     - pedant
+    - goodby
 
 entities:
     - size
@@ -10,7 +11,7 @@ entities:
 
 slots:
     size:
-         type: text
+        type: text
     toppings:
         type: text
     correction:
@@ -24,8 +25,14 @@ templates:
         - 'What pizza size?'
     utter_get_pizza_toppings:
         - 'What toppings would you like on your pizza?'
+    utter_goodby:
+        - 'See you later'
+        - 'Bye'
+
 actions:
+    - utter_goodby
     - utter_greet
     - utter_get_pizza_size
     - utter_get_pizza_toppings
     - actions.ActionOrderPizza
+    - actions.ActionPedant

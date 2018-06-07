@@ -1,0 +1,34 @@
+%[greet]
+    hi
+    moin
+    cheers
+    hey
+    Hola
+
+%[order_pizza]
+    I want @[toppings] on my Pizza
+    I want a @[size] pizza with @[toppings]
+    I am hungry
+    Pizza
+%[goodby]
+    bye
+    thx
+    fuck of
+    hf
+
+@[toppings]
+    cheese
+    sausage
+    onions
+    olives
+
+@[size]
+    large
+    small
+    tyni
+    big
+    awesome
+
+@[pedent#snps/correction]
+    Hey guys
+    moin moin

@@ -1,117 +1,207 @@
 {
   "rasa_nlu_data": {
+    "regex_features": [],
+    "entity_synonyms": [],
     "common_examples": [
+      {"text": "hi", "intent": "greet", "entities": []},
+      {"text": "moin", "intent": "greet", "entities": []},
+      {"text": "cheers", "intent": "greet", "entities": []},
+      {"text": "hey", "intent": "greet", "entities": []},
+      {"text": "Hola", "intent": "greet", "entities": []},
       {
-        "text": "moin",
-        "intent": "greet",
-        "entities": []
-      },
-      {
-        "text": "hello",
-        "intent": "greet",
-        "entities": []
-      },
-      {
-        "text": "I want to order large pizza",
+        "text": "I want cheese on my Pizza",
         "intent": "order_pizza",
         "entities": [
-          {
-            "start": 16,
-            "end": 21,
-            "value": "large",
-            "entity": "size"
-          }
+          {"start": 7, "end": 13, "value": "cheese", "entity": "toppings"}
         ]
       },
       {
-        "text": "I want to order pizza with olives",
+        "text": "I want sausage on my Pizza",
         "intent": "order_pizza",
         "entities": [
-          {
-            "start": 27,
-            "end": 33,
-            "value": "olives",
-            "entity": "toppings"
-          }
+          {"start": 7, "end": 14, "value": "sausage", "entity": "toppings"}
         ]
       },
       {
-        "text": "hey",
-        "intent": "greet",
-        "entities": []
-      },
-      {
-        "text": "large",
+        "text": "I want onions on my Pizza",
         "intent": "order_pizza",
         "entities": [
-          {
-            "start": 0,
-            "end": 5,
-            "value": "large",
-            "entity": "size"
-          }
+          {"start": 7, "end": 13, "value": "onions", "entity": "toppings"}
         ]
       },
       {
-        "text": "small",
+        "text": "I want olives on my Pizza",
         "intent": "order_pizza",
         "entities": [
-          {
-            "start": 0,
-            "end": 5,
-            "value": "small",
-            "entity": "size"
-          }
+          {"start": 7, "end": 13, "value": "olives", "entity": "toppings"}
         ]
       },
       {
-        "text": "olives",
+        "text": "I want a large pizza with cheese",
         "intent": "order_pizza",
         "entities": [
-          {
-            "start": 0,
-            "end": 6,
-            "value": "olives",
-            "entity": "toppings"
-          }
+          {"start": 9, "end": 14, "value": "large", "entity": "size"},
+          {"start": 26, "end": 32, "value": "cheese", "entity": "toppings"}
         ]
       },
       {
-        "text": "cheese",
+        "text": "I want a large pizza with sausage",
         "intent": "order_pizza",
         "entities": [
-          {
-            "start": 0,
-            "end": 6,
-            "value": "cheese",
-            "entity": "toppings"
-          }
+          {"start": 9, "end": 14, "value": "large", "entity": "size"},
+          {"start": 26, "end": 33, "value": "sausage", "entity": "toppings"}
         ]
       },
       {
-        "text": "moin moin",
-        "intent": "pedant",
+        "text": "I want a large pizza with onions",
+        "intent": "order_pizza",
         "entities": [
-          {
-            "start": 0,
-            "end": 6,
-            "value": "One is enough.",
-            "entity": "correction"
-          }
+          {"start": 9, "end": 14, "value": "large", "entity": "size"},
+          {"start": 26, "end": 32, "value": "onions", "entity": "toppings"}
         ]
       },
       {
-        "text": "hey guys",
-        "intent": "pedant",
+        "text": "I want a large pizza with olives",
+        "intent": "order_pizza",
         "entities": [
-          {
-            "start": 0,
-            "end": 6,
-            "value": "You think here are guys only?",
-            "entity": "correction"
-          }
+          {"start": 9, "end": 14, "value": "large", "entity": "size"},
+          {"start": 26, "end": 32, "value": "olives", "entity": "toppings"}
         ]
-      }
+      },
+      {
+        "text": "I want a small pizza with cheese",
+        "intent": "order_pizza",
+        "entities": [
+          {"start": 9, "end": 14, "value": "small", "entity": "size"},
+          {"start": 26, "end": 32, "value": "cheese", "entity": "toppings"}
+        ]
+      },
+      {
+        "text": "I want a small pizza with sausage",
+        "intent": "order_pizza",
+        "entities": [
+          {"start": 9, "end": 14, "value": "small", "entity": "size"},
+          {"start": 26, "end": 33, "value": "sausage", "entity": "toppings"}
+        ]
+      },
+      {
+        "text": "I want a small pizza with onions",
+        "intent": "order_pizza",
+        "entities": [
+          {"start": 9, "end": 14, "value": "small", "entity": "size"},
+          {"start": 26, "end": 32, "value": "onions", "entity": "toppings"}
+        ]
+      },
+      {
+        "text": "I want a small pizza with olives",
+        "intent": "order_pizza",
+        "entities": [
+          {"start": 9, "end": 14, "value": "small", "entity": "size"},
+          {"start": 26, "end": 32, "value": "olives", "entity": "toppings"}
+        ]
+      },
+      {
+        "text": "I want a tyni pizza with cheese",
+        "intent": "order_pizza",
+        "entities": [
+          {"start": 9, "end": 13, "value": "tyni", "entity": "size"},
+          {"start": 25, "end": 31, "value": "cheese", "entity": "toppings"}
+        ]
+      },
+      {
+        "text": "I want a tyni pizza with sausage",
+        "intent": "order_pizza",
+        "entities": [
+          {"start": 9, "end": 13, "value": "tyni", "entity": "size"},
+          {"start": 25, "end": 32, "value": "sausage", "entity": "toppings"}
+        ]
+      },
+      {
+        "text": "I want a tyni pizza with onions",
+        "intent": "order_pizza",
+        "entities": [
+          {"start": 9, "end": 13, "value": "tyni", "entity": "size"},
+          {"start": 25, "end": 31, "value": "onions", "entity": "toppings"}
+        ]
+      },
+      {
+        "text": "I want a tyni pizza with olives",
+        "intent": "order_pizza",
+        "entities": [
+          {"start": 9, "end": 13, "value": "tyni", "entity": "size"},
+          {"start": 25, "end": 31, "value": "olives", "entity": "toppings"}
+        ]
+      },
+      {
+        "text": "I want a big pizza with cheese",
+        "intent": "order_pizza",
+        "entities": [
+          {"start": 9, "end": 12, "value": "big", "entity": "size"},
+          {"start": 24, "end": 30, "value": "cheese", "entity": "toppings"}
+        ]
+      },
+      {
+        "text": "I want a big pizza with sausage",
+        "intent": "order_pizza",
+        "entities": [
+          {"start": 9, "end": 12, "value": "big", "entity": "size"},
+          {"start": 24, "end": 31, "value": "sausage", "entity": "toppings"}
+        ]
+      },
+      {
+        "text": "I want a big pizza with onions",
+        "intent": "order_pizza",
+        "entities": [
+          {"start": 9, "end": 12, "value": "big", "entity": "size"},
+          {"start": 24, "end": 30, "value": "onions", "entity": "toppings"}
+        ]
+      },
+      {
+        "text": "I want a big pizza with olives",
+        "intent": "order_pizza",
+        "entities": [
+          {"start": 9, "end": 12, "value": "big", "entity": "size"},
+          {"start": 24, "end": 30, "value": "olives", "entity": "toppings"}
+        ]
+      },
+      {
+        "text": "I want a awesome pizza with cheese",
+        "intent": "order_pizza",
+        "entities": [
+          {"start": 9, "end": 16, "value": "awesome", "entity": "size"},
+          {"start": 28, "end": 34, "value": "cheese", "entity": "toppings"}
+        ]
+      },
+      {
+        "text": "I want a awesome pizza with sausage",
+        "intent": "order_pizza",
+        "entities": [
+          {"start": 9, "end": 16, "value": "awesome", "entity": "size"},
+          {"start": 28, "end": 35, "value": "sausage", "entity": "toppings"}
+        ]
+      },
+      {
+        "text": "I want a awesome pizza with onions",
+        "intent": "order_pizza",
+        "entities": [
+          {"start": 9, "end": 16, "value": "awesome", "entity": "size"},
+          {"start": 28, "end": 34, "value": "onions", "entity": "toppings"}
+        ]
+      },
+      {
+        "text": "I want a awesome pizza with olives",
+        "intent": "order_pizza",
+        "entities": [
+          {"start": 9, "end": 16, "value": "awesome", "entity": "size"},
+          {"start": 28, "end": 34, "value": "olives", "entity": "toppings"}
+        ]
+      },
+      {"text": "I am hungry", "intent": "order_pizza", "entities": []},
+      {"text": "Pizza", "intent": "order_pizza", "entities": []},
+      {"text": "bye", "intent": "goodby", "entities": []},
+      {"text": "thx", "intent": "goodby", "entities": []},
+      {"text": "fuck of", "intent": "goodby", "entities": []},
+      {"text": "hf", "intent": "goodby", "entities": []}
     ]
   }
 }
