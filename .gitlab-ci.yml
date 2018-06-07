@@ -1,13 +1,9 @@
 image: docker:stable
 
-services:
-  - docker:dind
 before_script:
   - docker info
 
 build_image:
-  services:
-    - docker:dind
   stage: deploy
   before_script:
     - docker build -t errbot 
