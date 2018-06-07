@@ -29,3 +29,4 @@ actions:
     - utter_get_pizza_size
     - utter_get_pizza_toppings
     - actions.ActionOrderPizza
+    - actions.ActionPedant

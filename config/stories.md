@@ -1,6 +1,8 @@
 ## Story start 
 * greet
    - utter_greet
+* pedant
+   - action_pedant
 * order_pizza
    - utter_get_pizza_size
 * order_pizza

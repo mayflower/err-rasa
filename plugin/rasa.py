@@ -2,6 +2,8 @@ import random
 from errbot import BotPlugin
 from rasa_nlu.model import Trainer, Metadata, Interpreter
 from rasa_nlu.components import ComponentBuilder
+from rasa_core.interpreter import RasaNLUInterpreter
+from rasa_core.agent import Agent
 
 class Rasa(BotPlugin):
     COULD_NOT_PARSE_MSGS = [
@@ -21,25 +23,28 @@ class Rasa(BotPlugin):
     def activate(self):
         super().activate()
         model_dir = './models/nlu/default/chat'
-        builder = ComponentBuilder(use_cache=True)
-        self.interpreter = Interpreter.load(model_dir, builder)
+
+        self.agent = Agent.load('./models/dialogue', interpreter=RasaNLUInterpreter('./models/nlu/default/chat'))
+        #builder = ComponentBuilder(use_cache=True)
+        #self.interpreter = Interpreter.load(model_dir, builder)
         # store unparsed messages, so later we can train bot
         self.unparsed_messages = []
 
     def callback_message(self, message):
         sendTo = getattr(message.frm, 'room', message.frm)
-        if self.interpreter is None:
-            self.log.debug('No interpreter found')
-            return
+        # if self.interpreter is None:
+        #     self.log.debug('No interpreter found')
+        #     return
         text = message.body
         self.log.debug(text)
         # self.send(sendTo, 'Understand: '+text)
-        reply = self.find_reply(text)
-
-        self.log.debug(reply)
-        self.send(sendTo, reply)
-        
-        return reply
+        #reply = self.find_reply(text)
+        reply = self.agent.handle_message(message.body)
+        for e in reply:
+            if e['text'] is not None:
+                self.send(sendTo, e['text'])
+                return e['text']        
+        return 'No answer'
 
     def find_reply(self, message):
         res = self.interpreter.parse(message)
