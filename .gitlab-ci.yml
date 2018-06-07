@@ -19,6 +19,8 @@ to-production:
   only:
     - master
   stage: deploy
+  services:
+    - docker:dind
   before_script:
     - docker info
     - docker build -terrbot
