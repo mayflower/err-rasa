@@ -3,18 +3,12 @@ services:
 before_script:
   - docker info
 
-build_image:
-  script:
-    - docker build -t my-docker-image .
-    - docker run my-docker-image /script/to/run/tests
-
-build:
+build_i
   services:
     - docker:stable
   stage: deploy
-  script:
+  befor_script:
     - docker build -t errbot 
     - pip install awscli
   script:
     - aws s3 cp ./ s3://yourbucket/ --recursive --exclude "*" --include ""
-  
