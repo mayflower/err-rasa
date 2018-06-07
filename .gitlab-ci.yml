@@ -6,7 +6,7 @@ before_script:
 build_image:
   stage: deploy
   before_script:
-    - docker build -t errbot 
+    - docker build -terrbot ./
     - pip install awscli
   script:
     - aws s3 cp ./ s3://yourbucket/ --recursive --exclude "*" --include ""
