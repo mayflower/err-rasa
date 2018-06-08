@@ -17,6 +17,8 @@ class Rasa(BotPlugin):
         text = message.body
         self.log.debug(text)
         reply = self.agent.handle_message(message.body)
+        frm = getattr(message.frm, 'real_jid', message.frm.person)
+        self.agent.tracker_store.create_tracker().topics.append({'user', frm})
         for e in reply:
             if e['text'] is not None:
                 self.send(sendTo, e['text'])

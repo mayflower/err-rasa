@@ -1,4 +1,6 @@
 import logging
+import "./../utils"
+
 from rasa_core.actions import Action
 
 class ActionOrderPizza(Action):
@@ -18,21 +20,40 @@ class ActionPedant(Action):
         logging.info("Domain: {}".format(domain))
         dispatcher.utter_message('You are not concrete enough - '+correction)
         return []
-class ActionIllnessFromTo(Action):
+class ActionIllnessFromTo(JiraAwareAction):
+    @staticmethod
+    def required_fields():
+        return [
+            EntityFormField("last"),
+            EntityFormField("first", "today"),
+            BooleanFormField("user")
+        ]
     def name(self):
         return 'action_report_illness_from_to'
     def run(self, dispatcher, tracker, domain):
-        first = tracker.get_slot('first') if tracker.get_slot('first') is not None else 'today'
-        last = tracker.get_slot('last') if tracker.get_slot('last') is not None else 'Not set'
+        first = tracker.get_slot('first')
+        last = tracker.get_slot('last')
+        user = tracker.get_slot('user')
+
+        message = _createReportIllnessMessage(first, last)
+        client = self._jira_client(self, user)
 
         dispatcher.utter_message('Get will soon. Will insert illness from "'+first+'" to "'+last+'"')
         return []
 
-class ActionIllnessDuration(Action):
+class ActionIllnessDuration(JiraAwareAction):
+    @staticmethod
+    def required_fields():
+        return [
+            EntityFormField("duration"),
+            EntityFormField("first", "today"),
+            BooleanFormField("user")
+        ]
     def name(self):
         return 'action_report_illness_duration'
     def run(self, dispatcher, tracker, domain):
         duration = tracker.get_slot('duration')
         first = tracker.get_slot('first') if tracker.get_slot('first') is not None else 'today'
+        
         dispatcher.utter_message('Get will soon. Will insert illness from "'+first+'" for "'+duration+'"')
         return []
