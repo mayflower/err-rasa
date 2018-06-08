@@ -12,7 +12,8 @@ from bottle import abort, response
 
 from jira import JIRA, JIRAError
 
-import config from '../config'
+import config
+
 from jira_oauth import JiraOauth
 
 log = logging.getLogger(name='errbot.plugins.atlassian')

@@ -1,7 +1,9 @@
-import config from '../config'
+import config
+
 import base64
 from urllib.parse import parse_qsl
 from tlslite.utils import keyfactory
+
 import oauth2 as oauth
 
 class SignatureMethod_RSA_SHA1(oauth.SignatureMethod):
