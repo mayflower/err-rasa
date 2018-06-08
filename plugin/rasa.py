@@ -5,6 +5,8 @@ from rasa_nlu.components import ComponentBuilder
 from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.agent import Agent
 
+import attlassian
+
 class Rasa(BotPlugin):
     def activate(self):
         super().activate()
