@@ -5,6 +5,11 @@ from rasa_nlu.components import ComponentBuilder
 from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.agent import Agent
 
+from jira import JIRA, JIRAError
+
+import config from '../config'
+from jira_oauth import JiraOauth
+
 class Rasa(BotPlugin):
     COULD_NOT_PARSE_MSGS = [
         "Sorry, I don't know it",
@@ -49,7 +54,7 @@ class Rasa(BotPlugin):
     def find_reply(self, message):
         res = self.interpreter.parse(message)
         self.log.debug('rasa parse res: {}'.format(res))
-        reply = '';
+        reply = ''
         if not 'intent' in res or res['intent'] is None:
             # later we can do something with unparsed messages, probably train bot
             self.unparsed_messages.append(message)
@@ -64,7 +69,8 @@ class Rasa(BotPlugin):
         if name == self.INTENT_PEDANT:
             if len(res["entities"]) > 0:
                 for e in res["entities"]:
-                    if e["entity"] == self.ENTITY_CORRECTION:
+                    entity = res["entities"][e]
+                    if entity['text'] == self.ENTITY_CORRECTION:
                         return e["value"]
                     else:
                         self.unparsed_messages.append(message)

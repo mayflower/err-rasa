@@ -18,10 +18,12 @@
 * order_pizza
    - action_order_pizza
 
-## Story Illness
-* report_illness
-    - utter_get_illnes_first
-* report_illness
-    - utter_get_illnes_last
-* report_illness
-    - action_report_illness
+## Story Report Illness from-to
+* report_illness_from_to
+    - action_report_illness_from_to
+
+## Story Report Illness duration
+* report_illness_duration{"duration": "None"}
+    - utter_get_report_illness_duration_duration
+* report_illness_duration
+    - action_report_illness_duration

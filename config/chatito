@@ -4,6 +4,7 @@
     cheers
     hey
     Hola
+    What's up
 
 %[order_pizza]
     I want @[toppings] on my Pizza
@@ -15,19 +16,48 @@
     thx
     fuck of
     hf
-%[report_illness]
-    Hi, i can not come @[first] days
+%[report_illness_duration]
+    Hi, i can not come @[duration] days
+    I will be ill for @[duration] days
+    I have to stay home for @[duration] days
+
+%[report_illness_from_to]
     I have to stay home until @[last]
     My doctor advised to stay home @[last]
+    I am ill from @[first] to @[last]
+    I am ill from @[first] until @[last]
+    I am ill until @[last]
+    I will be back on @[last]
 
 @[last]
     next two days
     end of week
-    4 days
+    monday
+    tuesday
+    wednesday
+    thursday
+    friday
+    saturday
+    sunday
 
 @[first]
     from
     start
+    today
+    monday
+    tuesday
+    wednesday
+    thursday
+    friday
+    saturday
+    sunday
+
+@[duration]
+    1
+    2
+    3
+    4
+    5
 
 @[toppings]
     cheese
