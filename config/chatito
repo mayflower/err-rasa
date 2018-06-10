@@ -5,7 +5,7 @@
     hey
     Hola
     What's up
-
+    Hallo
 %[order_pizza]
     I want @[toppings] on my Pizza
     I want a @[size] pizza with @[toppings]
@@ -17,17 +17,16 @@
     fuck of
     hf
 %[report_illness_duration]
-    Hi, i can not come @[duration] days
-    I will be ill for @[duration] days
-    I have to stay home for @[duration] days
+    Hi, ich werde für @[duration] Tage ausfallen.
+    I werde für @[duration] Tage krank sein.
+    I muss für @[duration] Tage das Bett hüten
 
 %[report_illness_from_to]
-    I have to stay home until @[last]
-    My doctor advised to stay home @[last]
-    I am ill from @[first] to @[last]
-    I am ill from @[first] until @[last]
-    I am ill until @[last]
-    I will be back on @[last]
+    Ich bleibe daheim bis @[last]
+    Mein Arzt rät mir bis @[last] daheim zu bleiben
+    Ich bin krank von @[first] bis zum  @[last]
+    Ich bin krank bis zum  @[last]
+    Ich bin am @[last] wieder zurück
 
 @[last]
     next two days
@@ -41,23 +40,23 @@
     sunday
 
 @[first]
-    from
-    start
-    today
-    monday
-    tuesday
-    wednesday
-    thursday
-    friday
-    saturday
-    sunday
+    Heute
+    Montag
+    Dienstag
+    Mittwoch
+    Donnerstag
+    Freitag
+    Samstag
+    Sonntag
 
 @[duration]
-    1
-    2
-    3
-    4
-    5
+    1 Woche
+    1 Tag
+    2 Tage
+    2 Wochen
+    3 Tage
+    4 Tage
+    5 Tage
 
 @[toppings]
     cheese

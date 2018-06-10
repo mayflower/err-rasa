@@ -1,24 +1,33 @@
-import random
-from errbot import BotPlugin
-from rasa_nlu.model import Trainer, Metadata, Interpreter
-from rasa_nlu.components import ComponentBuilder
+import config
+
 from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.agent import Agent
-
-import attlassian
-
+from rasa_core.events import SlotSet
+from rasa_core.trackers import DialogueStateTracker
+from errbot import BotPlugin
+from rasa_core.slots import TextSlot
+from rasa_core.domain import TemplateDomain
 class Rasa(BotPlugin):
     def activate(self):
-        super().activate()
-        self.agent = Agent.load('./models/dialogue', interpreter=RasaNLUInterpreter('./models/nlu/default/chat'))
+        """To enable our classes we need like the agent and its tracker"""
+        super(Rasa, self).activate()
+        self.agent = Agent.load('./models/dialogue',
+                            interpreter=RasaNLUInterpreter('./models/nlu/default/chat'))
 
     def callback_message(self, message):
+        """Override to hook into the messaging and calling rase """
+        super(Rasa, self).callback_message(message)
         sendTo = getattr(message.frm, 'room', message.frm)
         text = message.body
         self.log.debug(text)
-        reply = self.agent.handle_message(message.body)
         frm = getattr(message.frm, 'real_jid', message.frm.person)
-        self.agent.tracker_store.create_tracker().topics.append({'user', frm})
+        reply = self.agent.handle_message(message.body, sender_id=config.BOT_RASA_SENDER_ID)
+        self.log.debug("Reply: {}".format(reply))
+        self.agent.tracker_store.create_tracker(sender_id=config.BOT_RASA_SENDER_ID).update(SlotSet('user', frm))
+        responseText = ''
         for e in reply:
             if e['text'] is not None:
-                self.send(sendTo, e['text'])
+                responseText += e['text']+"\n"
+        self.send_card(body=responseText,
+                        title="Message From: {}".format(config.BOT_RASA_SENDER_ID),
+                        in_reply_to=message)

@@ -48,7 +48,7 @@ class JiraOauth:
 
         self.consumer = oauth.Consumer(consumer_key, consumer_secret)
 
-    def request_token(self):
+    def get_request_token(self):
         client = oauth.Client(self.consumer)
         client.set_signature_method(SignatureMethod_RSA_SHA1())
         resp, content = client.request(self.request_token_url, "POST")

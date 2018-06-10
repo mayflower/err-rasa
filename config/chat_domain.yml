@@ -29,6 +29,14 @@ slots:
         type: text
     duration:
         type: text
+    to_confirm:
+        type: bool
+    confirmed:
+        type: bool
+    body:
+        type: text
+    subject:
+        type: text
 
 templates:
     utter_greet:
@@ -47,6 +55,8 @@ templates:
         - What is the last day of your illness
     utter_get_report_illness_duration_duration:
         - How long will you be away?
+    utter_get_report_illness_confirmed:
+        - Passt das so?
 
 actions:
     - utter_goodby
@@ -57,6 +67,8 @@ actions:
     - utter_get_report_illness_from_to_first
     - utter_get_report_illness_from_to_last
     - utter_get_report_illness_duration_duration
+    - utter_get_report_illness_confirmed
     - actions.ActionPedant
+    - actions.ActionPreReportIllnessFromTo
     - actions.ActionIllnessFromTo
     - actions.ActionIllnessDuration

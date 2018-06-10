@@ -1,8 +1,9 @@
-import rasa
+
 import os
 import unittest
+from plugin.rasa import Rasa
 from errbot.backends.test import testbot
-from errbot import plugin_manager
+from errbot.plugin_manager import PluginManager
 
 class TestRasa(object):
     extra_plugin_dir = '../plugin'
