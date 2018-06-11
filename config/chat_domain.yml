@@ -7,9 +7,6 @@ intents:
     - report_illness_from_to
 
 entities:
-    - size
-    - toppings
-    - correction
     - first
     - last
     - duration
@@ -17,10 +14,6 @@ entities:
 slots:
     user:
         type: unfeaturized
-    size:
-        type: text
-    toppings:
-        type: text
     correction:
         type: text
     first:
@@ -29,8 +22,6 @@ slots:
         type: text
     duration:
         type: text
-    to_confirm:
-        type: bool
     confirmed:
         type: bool
     body:
@@ -42,18 +33,12 @@ templates:
     utter_greet:
         - 'Hello, how can I help you?'
         - 'Hi, I am here to help.'
-    utter_get_pizza_size:
-        - 'What pizza size?'
-    utter_get_pizza_toppings:
-        - 'What toppings would you like on your pizza?'
     utter_goodby:
         - 'See you later'
         - 'Bye'
-    utter_get_report_illness_from_to_first:
-        - What is the first day of your illness
-    utter_get_report_illness_from_to_last:
+    utter_get_report_illness_last:
         - What is the last day of your illness
-    utter_get_report_illness_duration_duration:
+    utter_get_report_illness_duration:
         - How long will you be away?
     utter_get_report_illness_confirmed:
         - Passt das so?
@@ -61,14 +46,9 @@ templates:
 actions:
     - utter_goodby
     - utter_greet
-    - utter_get_pizza_size
-    - utter_get_pizza_toppings
-    - actions.ActionOrderPizza
-    - utter_get_report_illness_from_to_first
-    - utter_get_report_illness_from_to_last
-    - utter_get_report_illness_duration_duration
+    - utter_get_report_illness_last
+    - utter_get_report_illness_duration
     - utter_get_report_illness_confirmed
     - actions.ActionPedant
-    - actions.ActionPreReportIllnessFromTo
-    - actions.ActionIllnessFromTo
-    - actions.ActionIllnessDuration
+    - actions.ActionPreReportIllness
+    - actions.ActionReportIllness

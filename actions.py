@@ -97,9 +97,9 @@ class ActionPedant(Action):
         dispatcher.utter_message('Das reicht so nith - {}'.format(correction))
         return []
 
-class ActionPreReportIllnessFromTo(JiraAwareAction):
+class ActionPreReportIllness(JiraAwareAction):
     def name(self):
-        return 'action_pre_report_illness_from_to'
+        return 'action_pre_report_illness'
     def run(self, dispatcher, tracker, domain):
         """
             Called in dialog, when from and to are select and we can create and send a jira ticket
@@ -113,7 +113,7 @@ class ActionPreReportIllnessFromTo(JiraAwareAction):
 
         if user is None:
             # Todo Replace self assignment
-            user = '@electricmaxxx'
+            user = 'Maximilian Berghoff'
         handle_authorization = ''
         try:
             self._handle_jira_auth(user)
@@ -121,32 +121,30 @@ class ActionPreReportIllnessFromTo(JiraAwareAction):
             handle_authorization = str(e)
         subject, body = self._createReportIllnessMessage(user, first, last)
         message  = """
-                Ich würde dir dieses Ticket anlegen:
-                Subject: {}
-                {}
+Ich würde dir dieses Ticket anlegen:
+Subject: {}
+{}
 
-                {}
+{}
             """.format(subject, body, "Und: \n"+ handle_authorization if handle_authorization is not None else "")
         dispatcher.utter_message(message)
         return [
-            SlotSet('to_confirm', True),
-            SlotSet('confirmed', None),
+            SlotSet('confirmed', False),
             SlotSet('subject', subject),
             SlotSet('body', body),
             SlotSet('user', user)
             ]
 
-class ActionIllnessFromTo(JiraAwareAction):
+class ActionReportIllness(JiraAwareAction):
     def name(self):
-        return 'action_report_illness_from_to'
+        return 'action_report_illness'
     def run(self, dispatcher, tracker, domain):
         """
             Called in dialog, when from and to are select and we can create and send a jira ticket
         """
-
         if tracker.get_slot('confirmed') is not True:
             dispatcher.utter_message('Eigentlich hätt ich alles inkl. der Bestätigung')
-            return [SlotSet('to_confirm', True), SlotSet('confirmed', None)]
+            return [SlotSet('confirmed', None)]
         try:
             jira = self._jira_client(tracker.get_slot('user'))
             jira.create_issue(project=config.JIRA_PROJECT_HR,
@@ -156,15 +154,4 @@ class ActionIllnessFromTo(JiraAwareAction):
         except JiraNeedsAuthorization as e:
             dispatcher.utter_message(str(e))
 
-        return [SlotSet('to_confirm', None), SlotSet('confirmed', None)]
-            
-
-class ActionIllnessDuration(JiraAwareAction):
-    def name(self):
-        return 'action_report_illness_duration'
-    def run(self, dispatcher, tracker, domain):
-        duration = tracker.get_slot('duration')
-        first = tracker.get_slot('first') if tracker.get_slot('first') is not None else 'today'
-        
-        dispatcher.utter_message('Get will soon. Will insert illness from "'+first+'" for "'+duration+'"')
-        return []
+        return [SlotSet('confirmed', None)]

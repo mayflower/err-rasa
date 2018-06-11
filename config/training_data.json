@@ -10,200 +10,48 @@
       {"text": "Hola", "intent": "greet", "entities": []},
       {"text": "What's up", "intent": "greet", "entities": []},
       {"text": "Hallo", "intent": "greet", "entities": []},
-      {
-        "text": "I want cheese on my Pizza",
-        "intent": "order_pizza",
-        "entities": [
-          {"start": 7, "end": 13, "value": "cheese", "entity": "toppings"}
-        ]
-      },
-      {
-        "text": "I want sausage on my Pizza",
-        "intent": "order_pizza",
-        "entities": [
-          {"start": 7, "end": 14, "value": "sausage", "entity": "toppings"}
-        ]
-      },
-      {
-        "text": "I want onions on my Pizza",
-        "intent": "order_pizza",
-        "entities": [
-          {"start": 7, "end": 13, "value": "onions", "entity": "toppings"}
-        ]
-      },
-      {
-        "text": "I want olives on my Pizza",
-        "intent": "order_pizza",
-        "entities": [
-          {"start": 7, "end": 13, "value": "olives", "entity": "toppings"}
-        ]
-      },
-      {
-        "text": "I want a large pizza with cheese",
-        "intent": "order_pizza",
-        "entities": [
-          {"start": 9, "end": 14, "value": "large", "entity": "size"},
-          {"start": 26, "end": 32, "value": "cheese", "entity": "toppings"}
-        ]
-      },
-      {
-        "text": "I want a large pizza with sausage",
-        "intent": "order_pizza",
-        "entities": [
-          {"start": 9, "end": 14, "value": "large", "entity": "size"},
-          {"start": 26, "end": 33, "value": "sausage", "entity": "toppings"}
-        ]
-      },
-      {
-        "text": "I want a large pizza with onions",
-        "intent": "order_pizza",
-        "entities": [
-          {"start": 9, "end": 14, "value": "large", "entity": "size"},
-          {"start": 26, "end": 32, "value": "onions", "entity": "toppings"}
-        ]
-      },
-      {
-        "text": "I want a large pizza with olives",
-        "intent": "order_pizza",
-        "entities": [
-          {"start": 9, "end": 14, "value": "large", "entity": "size"},
-          {"start": 26, "end": 32, "value": "olives", "entity": "toppings"}
-        ]
-      },
-      {
-        "text": "I want a small pizza with cheese",
-        "intent": "order_pizza",
-        "entities": [
-          {"start": 9, "end": 14, "value": "small", "entity": "size"},
-          {"start": 26, "end": 32, "value": "cheese", "entity": "toppings"}
-        ]
-      },
-      {
-        "text": "I want a small pizza with sausage",
-        "intent": "order_pizza",
-        "entities": [
-          {"start": 9, "end": 14, "value": "small", "entity": "size"},
-          {"start": 26, "end": 33, "value": "sausage", "entity": "toppings"}
-        ]
-      },
-      {
-        "text": "I want a small pizza with onions",
-        "intent": "order_pizza",
-        "entities": [
-          {"start": 9, "end": 14, "value": "small", "entity": "size"},
-          {"start": 26, "end": 32, "value": "onions", "entity": "toppings"}
-        ]
-      },
-      {
-        "text": "I want a small pizza with olives",
-        "intent": "order_pizza",
-        "entities": [
-          {"start": 9, "end": 14, "value": "small", "entity": "size"},
-          {"start": 26, "end": 32, "value": "olives", "entity": "toppings"}
-        ]
-      },
-      {
-        "text": "I want a tyni pizza with cheese",
-        "intent": "order_pizza",
-        "entities": [
-          {"start": 9, "end": 13, "value": "tyni", "entity": "size"},
-          {"start": 25, "end": 31, "value": "cheese", "entity": "toppings"}
-        ]
-      },
-      {
-        "text": "I want a tyni pizza with sausage",
-        "intent": "order_pizza",
-        "entities": [
-          {"start": 9, "end": 13, "value": "tyni", "entity": "size"},
-          {"start": 25, "end": 32, "value": "sausage", "entity": "toppings"}
-        ]
-      },
-      {
-        "text": "I want a tyni pizza with onions",
-        "intent": "order_pizza",
-        "entities": [
-          {"start": 9, "end": 13, "value": "tyni", "entity": "size"},
-          {"start": 25, "end": 31, "value": "onions", "entity": "toppings"}
-        ]
-      },
-      {
-        "text": "I want a tyni pizza with olives",
-        "intent": "order_pizza",
-        "entities": [
-          {"start": 9, "end": 13, "value": "tyni", "entity": "size"},
-          {"start": 25, "end": 31, "value": "olives", "entity": "toppings"}
-        ]
-      },
-      {
-        "text": "I want a big pizza with cheese",
-        "intent": "order_pizza",
-        "entities": [
-          {"start": 9, "end": 12, "value": "big", "entity": "size"},
-          {"start": 24, "end": 30, "value": "cheese", "entity": "toppings"}
-        ]
-      },
-      {
-        "text": "I want a big pizza with sausage",
-        "intent": "order_pizza",
-        "entities": [
-          {"start": 9, "end": 12, "value": "big", "entity": "size"},
-          {"start": 24, "end": 31, "value": "sausage", "entity": "toppings"}
-        ]
-      },
-      {
-        "text": "I want a big pizza with onions",
-        "intent": "order_pizza",
-        "entities": [
-          {"start": 9, "end": 12, "value": "big", "entity": "size"},
-          {"start": 24, "end": 30, "value": "onions", "entity": "toppings"}
-        ]
-      },
-      {
-        "text": "I want a big pizza with olives",
-        "intent": "order_pizza",
-        "entities": [
-          {"start": 9, "end": 12, "value": "big", "entity": "size"},
-          {"start": 24, "end": 30, "value": "olives", "entity": "toppings"}
-        ]
-      },
-      {
-        "text": "I want a awesome pizza with cheese",
-        "intent": "order_pizza",
-        "entities": [
-          {"start": 9, "end": 16, "value": "awesome", "entity": "size"},
-          {"start": 28, "end": 34, "value": "cheese", "entity": "toppings"}
-        ]
-      },
-      {
-        "text": "I want a awesome pizza with sausage",
-        "intent": "order_pizza",
-        "entities": [
-          {"start": 9, "end": 16, "value": "awesome", "entity": "size"},
-          {"start": 28, "end": 35, "value": "sausage", "entity": "toppings"}
-        ]
-      },
-      {
-        "text": "I want a awesome pizza with onions",
-        "intent": "order_pizza",
-        "entities": [
-          {"start": 9, "end": 16, "value": "awesome", "entity": "size"},
-          {"start": 28, "end": 34, "value": "onions", "entity": "toppings"}
-        ]
-      },
-      {
-        "text": "I want a awesome pizza with olives",
-        "intent": "order_pizza",
-        "entities": [
-          {"start": 9, "end": 16, "value": "awesome", "entity": "size"},
-          {"start": 28, "end": 34, "value": "olives", "entity": "toppings"}
-        ]
-      },
-      {"text": "I am hungry", "intent": "order_pizza", "entities": []},
-      {"text": "Pizza", "intent": "order_pizza", "entities": []},
       {"text": "bye", "intent": "goodby", "entities": []},
       {"text": "thx", "intent": "goodby", "entities": []},
       {"text": "fuck of", "intent": "goodby", "entities": []},
       {"text": "hf", "intent": "goodby", "entities": []},
+      {"text": "Tschüssi", "intent": "goodby", "entities": []},
+      {"text": "Auf Wiedersehen", "intent": "goodby", "entities": []},
+      {
+        "text": "Hi, ich werde für in zwei Tagen Tage ausfallen.",
+        "intent": "report_illness_duration",
+        "entities": [
+          {
+            "start": 18,
+            "end": 31,
+            "value": "in zwei Tagen",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "Hi, ich werde für in drei Tagen Tage ausfallen.",
+        "intent": "report_illness_duration",
+        "entities": [
+          {
+            "start": 18,
+            "end": 31,
+            "value": "in drei Tagen",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "Hi, ich werde für in einer Woche Tage ausfallen.",
+        "intent": "report_illness_duration",
+        "entities": [
+          {
+            "start": 18,
+            "end": 32,
+            "value": "in einer Woche",
+            "entity": "duration"
+          }
+        ]
+      },
       {
         "text": "Hi, ich werde für 1 Woche Tage ausfallen.",
         "intent": "report_illness_duration",
@@ -251,6 +99,42 @@
         "intent": "report_illness_duration",
         "entities": [
           {"start": 18, "end": 24, "value": "5 Tage", "entity": "duration"}
+        ]
+      },
+      {
+        "text": "I werde für in zwei Tagen Tage krank sein.",
+        "intent": "report_illness_duration",
+        "entities": [
+          {
+            "start": 12,
+            "end": 25,
+            "value": "in zwei Tagen",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I werde für in drei Tagen Tage krank sein.",
+        "intent": "report_illness_duration",
+        "entities": [
+          {
+            "start": 12,
+            "end": 25,
+            "value": "in drei Tagen",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I werde für in einer Woche Tage krank sein.",
+        "intent": "report_illness_duration",
+        "entities": [
+          {
+            "start": 12,
+            "end": 26,
+            "value": "in einer Woche",
+            "entity": "duration"
+          }
         ]
       },
       {
@@ -303,6 +187,42 @@
         ]
       },
       {
+        "text": "I muss für in zwei Tagen Tage das Bett hüten",
+        "intent": "report_illness_duration",
+        "entities": [
+          {
+            "start": 11,
+            "end": 24,
+            "value": "in zwei Tagen",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I muss für in drei Tagen Tage das Bett hüten",
+        "intent": "report_illness_duration",
+        "entities": [
+          {
+            "start": 11,
+            "end": 24,
+            "value": "in drei Tagen",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I muss für in einer Woche Tage das Bett hüten",
+        "intent": "report_illness_duration",
+        "entities": [
+          {
+            "start": 11,
+            "end": 25,
+            "value": "in einer Woche",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
         "text": "I muss für 1 Woche Tage das Bett hüten",
         "intent": "report_illness_duration",
         "entities": [
@@ -352,831 +272,647 @@
         ]
       },
       {
-        "text": "Ich bleibe daheim bis next two days",
+        "text": "Ich bleibe daheim bis Montag",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 22, "end": 35, "value": "next two days", "entity": "last"}
+          {"start": 22, "end": 28, "value": "Montag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bleibe daheim bis end of week",
+        "text": "Ich bleibe daheim bis Dienstag",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 22, "end": 33, "value": "end of week", "entity": "last"}
+          {"start": 22, "end": 30, "value": "Dienstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bleibe daheim bis monday",
+        "text": "Ich bleibe daheim bis Mittwoch",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 22, "end": 28, "value": "monday", "entity": "last"}
+          {"start": 22, "end": 30, "value": "Mittwoch", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bleibe daheim bis tuesday",
+        "text": "Ich bleibe daheim bis Donnerstag",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 22, "end": 29, "value": "tuesday", "entity": "last"}
+          {"start": 22, "end": 32, "value": "Donnerstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bleibe daheim bis wednesday",
+        "text": "Ich bleibe daheim bis Freitag",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 22, "end": 31, "value": "wednesday", "entity": "last"}
+          {"start": 22, "end": 29, "value": "Freitag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bleibe daheim bis thursday",
+        "text": "Ich bleibe daheim bis Samstag",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 22, "end": 30, "value": "thursday", "entity": "last"}
+          {"start": 22, "end": 29, "value": "Samstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bleibe daheim bis friday",
+        "text": "Ich bleibe daheim bis Sonntag",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 22, "end": 28, "value": "friday", "entity": "last"}
+          {"start": 22, "end": 29, "value": "Sonntag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bleibe daheim bis saturday",
+        "text": "Mein Arzt rät mir bis Montag daheim zu bleiben",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 22, "end": 30, "value": "saturday", "entity": "last"}
+          {"start": 22, "end": 28, "value": "Montag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bleibe daheim bis sunday",
+        "text": "Mein Arzt rät mir bis Dienstag daheim zu bleiben",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 22, "end": 28, "value": "sunday", "entity": "last"}
+          {"start": 22, "end": 30, "value": "Dienstag", "entity": "last"}
         ]
       },
       {
-        "text": "Mein Arzt rät mir bis next two days daheim zu bleiben",
+        "text": "Mein Arzt rät mir bis Mittwoch daheim zu bleiben",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 22, "end": 35, "value": "next two days", "entity": "last"}
+          {"start": 22, "end": 30, "value": "Mittwoch", "entity": "last"}
         ]
       },
       {
-        "text": "Mein Arzt rät mir bis end of week daheim zu bleiben",
+        "text": "Mein Arzt rät mir bis Donnerstag daheim zu bleiben",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 22, "end": 33, "value": "end of week", "entity": "last"}
+          {"start": 22, "end": 32, "value": "Donnerstag", "entity": "last"}
         ]
       },
       {
-        "text": "Mein Arzt rät mir bis monday daheim zu bleiben",
+        "text": "Mein Arzt rät mir bis Freitag daheim zu bleiben",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 22, "end": 28, "value": "monday", "entity": "last"}
+          {"start": 22, "end": 29, "value": "Freitag", "entity": "last"}
         ]
       },
       {
-        "text": "Mein Arzt rät mir bis tuesday daheim zu bleiben",
+        "text": "Mein Arzt rät mir bis Samstag daheim zu bleiben",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 22, "end": 29, "value": "tuesday", "entity": "last"}
+          {"start": 22, "end": 29, "value": "Samstag", "entity": "last"}
         ]
       },
       {
-        "text": "Mein Arzt rät mir bis wednesday daheim zu bleiben",
+        "text": "Mein Arzt rät mir bis Sonntag daheim zu bleiben",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 22, "end": 31, "value": "wednesday", "entity": "last"}
+          {"start": 22, "end": 29, "value": "Sonntag", "entity": "last"}
         ]
       },
       {
-        "text": "Mein Arzt rät mir bis thursday daheim zu bleiben",
-        "intent": "report_illness_from_to",
-        "entities": [
-          {"start": 22, "end": 30, "value": "thursday", "entity": "last"}
-        ]
-      },
-      {
-        "text": "Mein Arzt rät mir bis friday daheim zu bleiben",
-        "intent": "report_illness_from_to",
-        "entities": [
-          {"start": 22, "end": 28, "value": "friday", "entity": "last"}
-        ]
-      },
-      {
-        "text": "Mein Arzt rät mir bis saturday daheim zu bleiben",
-        "intent": "report_illness_from_to",
-        "entities": [
-          {"start": 22, "end": 30, "value": "saturday", "entity": "last"}
-        ]
-      },
-      {
-        "text": "Mein Arzt rät mir bis sunday daheim zu bleiben",
-        "intent": "report_illness_from_to",
-        "entities": [
-          {"start": 22, "end": 28, "value": "sunday", "entity": "last"}
-        ]
-      },
-      {
-        "text": "Ich bin krank von Heute bis zum next two days",
+        "text": "Ich bin krank von Heute bis zum Montag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 23, "value": "Heute", "entity": "first"},
-          {"start": 32, "end": 45, "value": "next two days", "entity": "last"}
+          {"start": 32, "end": 38, "value": "Montag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Heute bis zum end of week",
+        "text": "Ich bin krank von Heute bis zum Dienstag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 23, "value": "Heute", "entity": "first"},
-          {"start": 32, "end": 43, "value": "end of week", "entity": "last"}
+          {"start": 32, "end": 40, "value": "Dienstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Heute bis zum monday",
+        "text": "Ich bin krank von Heute bis zum Mittwoch",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 23, "value": "Heute", "entity": "first"},
-          {"start": 32, "end": 38, "value": "monday", "entity": "last"}
+          {"start": 32, "end": 40, "value": "Mittwoch", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Heute bis zum tuesday",
+        "text": "Ich bin krank von Heute bis zum Donnerstag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 23, "value": "Heute", "entity": "first"},
-          {"start": 32, "end": 39, "value": "tuesday", "entity": "last"}
+          {"start": 32, "end": 42, "value": "Donnerstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Heute bis zum wednesday",
+        "text": "Ich bin krank von Heute bis zum Freitag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 23, "value": "Heute", "entity": "first"},
-          {"start": 32, "end": 41, "value": "wednesday", "entity": "last"}
+          {"start": 32, "end": 39, "value": "Freitag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Heute bis zum thursday",
+        "text": "Ich bin krank von Heute bis zum Samstag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 23, "value": "Heute", "entity": "first"},
-          {"start": 32, "end": 40, "value": "thursday", "entity": "last"}
+          {"start": 32, "end": 39, "value": "Samstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Heute bis zum friday",
+        "text": "Ich bin krank von Heute bis zum Sonntag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 23, "value": "Heute", "entity": "first"},
-          {"start": 32, "end": 38, "value": "friday", "entity": "last"}
+          {"start": 32, "end": 39, "value": "Sonntag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Heute bis zum saturday",
-        "intent": "report_illness_from_to",
-        "entities": [
-          {"start": 18, "end": 23, "value": "Heute", "entity": "first"},
-          {"start": 32, "end": 40, "value": "saturday", "entity": "last"}
-        ]
-      },
-      {
-        "text": "Ich bin krank von Heute bis zum sunday",
-        "intent": "report_illness_from_to",
-        "entities": [
-          {"start": 18, "end": 23, "value": "Heute", "entity": "first"},
-          {"start": 32, "end": 38, "value": "sunday", "entity": "last"}
-        ]
-      },
-      {
-        "text": "Ich bin krank von Montag bis zum next two days",
+        "text": "Ich bin krank von Montag bis zum Montag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 24, "value": "Montag", "entity": "first"},
-          {"start": 33, "end": 46, "value": "next two days", "entity": "last"}
+          {"start": 33, "end": 39, "value": "Montag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Montag bis zum end of week",
+        "text": "Ich bin krank von Montag bis zum Dienstag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 24, "value": "Montag", "entity": "first"},
-          {"start": 33, "end": 44, "value": "end of week", "entity": "last"}
+          {"start": 33, "end": 41, "value": "Dienstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Montag bis zum monday",
+        "text": "Ich bin krank von Montag bis zum Mittwoch",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 24, "value": "Montag", "entity": "first"},
-          {"start": 33, "end": 39, "value": "monday", "entity": "last"}
+          {"start": 33, "end": 41, "value": "Mittwoch", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Montag bis zum tuesday",
+        "text": "Ich bin krank von Montag bis zum Donnerstag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 24, "value": "Montag", "entity": "first"},
-          {"start": 33, "end": 40, "value": "tuesday", "entity": "last"}
+          {"start": 33, "end": 43, "value": "Donnerstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Montag bis zum wednesday",
+        "text": "Ich bin krank von Montag bis zum Freitag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 24, "value": "Montag", "entity": "first"},
-          {"start": 33, "end": 42, "value": "wednesday", "entity": "last"}
+          {"start": 33, "end": 40, "value": "Freitag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Montag bis zum thursday",
+        "text": "Ich bin krank von Montag bis zum Samstag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 24, "value": "Montag", "entity": "first"},
-          {"start": 33, "end": 41, "value": "thursday", "entity": "last"}
+          {"start": 33, "end": 40, "value": "Samstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Montag bis zum friday",
+        "text": "Ich bin krank von Montag bis zum Sonntag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 24, "value": "Montag", "entity": "first"},
-          {"start": 33, "end": 39, "value": "friday", "entity": "last"}
+          {"start": 33, "end": 40, "value": "Sonntag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Montag bis zum saturday",
-        "intent": "report_illness_from_to",
-        "entities": [
-          {"start": 18, "end": 24, "value": "Montag", "entity": "first"},
-          {"start": 33, "end": 41, "value": "saturday", "entity": "last"}
-        ]
-      },
-      {
-        "text": "Ich bin krank von Montag bis zum sunday",
-        "intent": "report_illness_from_to",
-        "entities": [
-          {"start": 18, "end": 24, "value": "Montag", "entity": "first"},
-          {"start": 33, "end": 39, "value": "sunday", "entity": "last"}
-        ]
-      },
-      {
-        "text": "Ich bin krank von Dienstag bis zum next two days",
+        "text": "Ich bin krank von Dienstag bis zum Montag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 26, "value": "Dienstag", "entity": "first"},
-          {"start": 35, "end": 48, "value": "next two days", "entity": "last"}
+          {"start": 35, "end": 41, "value": "Montag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Dienstag bis zum end of week",
+        "text": "Ich bin krank von Dienstag bis zum Dienstag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 26, "value": "Dienstag", "entity": "first"},
-          {"start": 35, "end": 46, "value": "end of week", "entity": "last"}
+          {"start": 35, "end": 43, "value": "Dienstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Dienstag bis zum monday",
+        "text": "Ich bin krank von Dienstag bis zum Mittwoch",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 26, "value": "Dienstag", "entity": "first"},
-          {"start": 35, "end": 41, "value": "monday", "entity": "last"}
+          {"start": 35, "end": 43, "value": "Mittwoch", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Dienstag bis zum tuesday",
+        "text": "Ich bin krank von Dienstag bis zum Donnerstag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 26, "value": "Dienstag", "entity": "first"},
-          {"start": 35, "end": 42, "value": "tuesday", "entity": "last"}
+          {"start": 35, "end": 45, "value": "Donnerstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Dienstag bis zum wednesday",
+        "text": "Ich bin krank von Dienstag bis zum Freitag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 26, "value": "Dienstag", "entity": "first"},
-          {"start": 35, "end": 44, "value": "wednesday", "entity": "last"}
+          {"start": 35, "end": 42, "value": "Freitag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Dienstag bis zum thursday",
+        "text": "Ich bin krank von Dienstag bis zum Samstag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 26, "value": "Dienstag", "entity": "first"},
-          {"start": 35, "end": 43, "value": "thursday", "entity": "last"}
+          {"start": 35, "end": 42, "value": "Samstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Dienstag bis zum friday",
+        "text": "Ich bin krank von Dienstag bis zum Sonntag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 26, "value": "Dienstag", "entity": "first"},
-          {"start": 35, "end": 41, "value": "friday", "entity": "last"}
+          {"start": 35, "end": 42, "value": "Sonntag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Dienstag bis zum saturday",
-        "intent": "report_illness_from_to",
-        "entities": [
-          {"start": 18, "end": 26, "value": "Dienstag", "entity": "first"},
-          {"start": 35, "end": 43, "value": "saturday", "entity": "last"}
-        ]
-      },
-      {
-        "text": "Ich bin krank von Dienstag bis zum sunday",
-        "intent": "report_illness_from_to",
-        "entities": [
-          {"start": 18, "end": 26, "value": "Dienstag", "entity": "first"},
-          {"start": 35, "end": 41, "value": "sunday", "entity": "last"}
-        ]
-      },
-      {
-        "text": "Ich bin krank von Mittwoch bis zum next two days",
+        "text": "Ich bin krank von Mittwoch bis zum Montag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 26, "value": "Mittwoch", "entity": "first"},
-          {"start": 35, "end": 48, "value": "next two days", "entity": "last"}
+          {"start": 35, "end": 41, "value": "Montag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Mittwoch bis zum end of week",
+        "text": "Ich bin krank von Mittwoch bis zum Dienstag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 26, "value": "Mittwoch", "entity": "first"},
-          {"start": 35, "end": 46, "value": "end of week", "entity": "last"}
+          {"start": 35, "end": 43, "value": "Dienstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Mittwoch bis zum monday",
+        "text": "Ich bin krank von Mittwoch bis zum Mittwoch",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 26, "value": "Mittwoch", "entity": "first"},
-          {"start": 35, "end": 41, "value": "monday", "entity": "last"}
+          {"start": 35, "end": 43, "value": "Mittwoch", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Mittwoch bis zum tuesday",
+        "text": "Ich bin krank von Mittwoch bis zum Donnerstag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 26, "value": "Mittwoch", "entity": "first"},
-          {"start": 35, "end": 42, "value": "tuesday", "entity": "last"}
+          {"start": 35, "end": 45, "value": "Donnerstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Mittwoch bis zum wednesday",
+        "text": "Ich bin krank von Mittwoch bis zum Freitag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 26, "value": "Mittwoch", "entity": "first"},
-          {"start": 35, "end": 44, "value": "wednesday", "entity": "last"}
+          {"start": 35, "end": 42, "value": "Freitag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Mittwoch bis zum thursday",
+        "text": "Ich bin krank von Mittwoch bis zum Samstag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 26, "value": "Mittwoch", "entity": "first"},
-          {"start": 35, "end": 43, "value": "thursday", "entity": "last"}
+          {"start": 35, "end": 42, "value": "Samstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Mittwoch bis zum friday",
+        "text": "Ich bin krank von Mittwoch bis zum Sonntag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 26, "value": "Mittwoch", "entity": "first"},
-          {"start": 35, "end": 41, "value": "friday", "entity": "last"}
+          {"start": 35, "end": 42, "value": "Sonntag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Mittwoch bis zum saturday",
-        "intent": "report_illness_from_to",
-        "entities": [
-          {"start": 18, "end": 26, "value": "Mittwoch", "entity": "first"},
-          {"start": 35, "end": 43, "value": "saturday", "entity": "last"}
-        ]
-      },
-      {
-        "text": "Ich bin krank von Mittwoch bis zum sunday",
-        "intent": "report_illness_from_to",
-        "entities": [
-          {"start": 18, "end": 26, "value": "Mittwoch", "entity": "first"},
-          {"start": 35, "end": 41, "value": "sunday", "entity": "last"}
-        ]
-      },
-      {
-        "text": "Ich bin krank von Donnerstag bis zum next two days",
+        "text": "Ich bin krank von Donnerstag bis zum Montag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 28, "value": "Donnerstag", "entity": "first"},
-          {"start": 37, "end": 50, "value": "next two days", "entity": "last"}
+          {"start": 37, "end": 43, "value": "Montag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Donnerstag bis zum end of week",
+        "text": "Ich bin krank von Donnerstag bis zum Dienstag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 28, "value": "Donnerstag", "entity": "first"},
-          {"start": 37, "end": 48, "value": "end of week", "entity": "last"}
+          {"start": 37, "end": 45, "value": "Dienstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Donnerstag bis zum monday",
+        "text": "Ich bin krank von Donnerstag bis zum Mittwoch",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 28, "value": "Donnerstag", "entity": "first"},
-          {"start": 37, "end": 43, "value": "monday", "entity": "last"}
+          {"start": 37, "end": 45, "value": "Mittwoch", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Donnerstag bis zum tuesday",
+        "text": "Ich bin krank von Donnerstag bis zum Donnerstag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 28, "value": "Donnerstag", "entity": "first"},
-          {"start": 37, "end": 44, "value": "tuesday", "entity": "last"}
+          {"start": 37, "end": 47, "value": "Donnerstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Donnerstag bis zum wednesday",
+        "text": "Ich bin krank von Donnerstag bis zum Freitag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 28, "value": "Donnerstag", "entity": "first"},
-          {"start": 37, "end": 46, "value": "wednesday", "entity": "last"}
+          {"start": 37, "end": 44, "value": "Freitag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Donnerstag bis zum thursday",
+        "text": "Ich bin krank von Donnerstag bis zum Samstag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 28, "value": "Donnerstag", "entity": "first"},
-          {"start": 37, "end": 45, "value": "thursday", "entity": "last"}
+          {"start": 37, "end": 44, "value": "Samstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Donnerstag bis zum friday",
+        "text": "Ich bin krank von Donnerstag bis zum Sonntag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 28, "value": "Donnerstag", "entity": "first"},
-          {"start": 37, "end": 43, "value": "friday", "entity": "last"}
+          {"start": 37, "end": 44, "value": "Sonntag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Donnerstag bis zum saturday",
-        "intent": "report_illness_from_to",
-        "entities": [
-          {"start": 18, "end": 28, "value": "Donnerstag", "entity": "first"},
-          {"start": 37, "end": 45, "value": "saturday", "entity": "last"}
-        ]
-      },
-      {
-        "text": "Ich bin krank von Donnerstag bis zum sunday",
-        "intent": "report_illness_from_to",
-        "entities": [
-          {"start": 18, "end": 28, "value": "Donnerstag", "entity": "first"},
-          {"start": 37, "end": 43, "value": "sunday", "entity": "last"}
-        ]
-      },
-      {
-        "text": "Ich bin krank von Freitag bis zum next two days",
+        "text": "Ich bin krank von Freitag bis zum Montag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 25, "value": "Freitag", "entity": "first"},
-          {"start": 34, "end": 47, "value": "next two days", "entity": "last"}
+          {"start": 34, "end": 40, "value": "Montag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Freitag bis zum end of week",
+        "text": "Ich bin krank von Freitag bis zum Dienstag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 25, "value": "Freitag", "entity": "first"},
-          {"start": 34, "end": 45, "value": "end of week", "entity": "last"}
+          {"start": 34, "end": 42, "value": "Dienstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Freitag bis zum monday",
+        "text": "Ich bin krank von Freitag bis zum Mittwoch",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 25, "value": "Freitag", "entity": "first"},
-          {"start": 34, "end": 40, "value": "monday", "entity": "last"}
+          {"start": 34, "end": 42, "value": "Mittwoch", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Freitag bis zum tuesday",
+        "text": "Ich bin krank von Freitag bis zum Donnerstag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 25, "value": "Freitag", "entity": "first"},
-          {"start": 34, "end": 41, "value": "tuesday", "entity": "last"}
+          {"start": 34, "end": 44, "value": "Donnerstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Freitag bis zum wednesday",
+        "text": "Ich bin krank von Freitag bis zum Freitag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 25, "value": "Freitag", "entity": "first"},
-          {"start": 34, "end": 43, "value": "wednesday", "entity": "last"}
+          {"start": 34, "end": 41, "value": "Freitag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Freitag bis zum thursday",
+        "text": "Ich bin krank von Freitag bis zum Samstag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 25, "value": "Freitag", "entity": "first"},
-          {"start": 34, "end": 42, "value": "thursday", "entity": "last"}
+          {"start": 34, "end": 41, "value": "Samstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Freitag bis zum friday",
+        "text": "Ich bin krank von Freitag bis zum Sonntag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 25, "value": "Freitag", "entity": "first"},
-          {"start": 34, "end": 40, "value": "friday", "entity": "last"}
+          {"start": 34, "end": 41, "value": "Sonntag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Freitag bis zum saturday",
-        "intent": "report_illness_from_to",
-        "entities": [
-          {"start": 18, "end": 25, "value": "Freitag", "entity": "first"},
-          {"start": 34, "end": 42, "value": "saturday", "entity": "last"}
-        ]
-      },
-      {
-        "text": "Ich bin krank von Freitag bis zum sunday",
-        "intent": "report_illness_from_to",
-        "entities": [
-          {"start": 18, "end": 25, "value": "Freitag", "entity": "first"},
-          {"start": 34, "end": 40, "value": "sunday", "entity": "last"}
-        ]
-      },
-      {
-        "text": "Ich bin krank von Samstag bis zum next two days",
+        "text": "Ich bin krank von Samstag bis zum Montag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 25, "value": "Samstag", "entity": "first"},
-          {"start": 34, "end": 47, "value": "next two days", "entity": "last"}
+          {"start": 34, "end": 40, "value": "Montag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Samstag bis zum end of week",
+        "text": "Ich bin krank von Samstag bis zum Dienstag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 25, "value": "Samstag", "entity": "first"},
-          {"start": 34, "end": 45, "value": "end of week", "entity": "last"}
+          {"start": 34, "end": 42, "value": "Dienstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Samstag bis zum monday",
+        "text": "Ich bin krank von Samstag bis zum Mittwoch",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 25, "value": "Samstag", "entity": "first"},
-          {"start": 34, "end": 40, "value": "monday", "entity": "last"}
+          {"start": 34, "end": 42, "value": "Mittwoch", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Samstag bis zum tuesday",
+        "text": "Ich bin krank von Samstag bis zum Donnerstag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 25, "value": "Samstag", "entity": "first"},
-          {"start": 34, "end": 41, "value": "tuesday", "entity": "last"}
+          {"start": 34, "end": 44, "value": "Donnerstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Samstag bis zum wednesday",
+        "text": "Ich bin krank von Samstag bis zum Freitag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 25, "value": "Samstag", "entity": "first"},
-          {"start": 34, "end": 43, "value": "wednesday", "entity": "last"}
+          {"start": 34, "end": 41, "value": "Freitag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Samstag bis zum thursday",
+        "text": "Ich bin krank von Samstag bis zum Samstag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 25, "value": "Samstag", "entity": "first"},
-          {"start": 34, "end": 42, "value": "thursday", "entity": "last"}
+          {"start": 34, "end": 41, "value": "Samstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Samstag bis zum friday",
+        "text": "Ich bin krank von Samstag bis zum Sonntag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 25, "value": "Samstag", "entity": "first"},
-          {"start": 34, "end": 40, "value": "friday", "entity": "last"}
+          {"start": 34, "end": 41, "value": "Sonntag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Samstag bis zum saturday",
-        "intent": "report_illness_from_to",
-        "entities": [
-          {"start": 18, "end": 25, "value": "Samstag", "entity": "first"},
-          {"start": 34, "end": 42, "value": "saturday", "entity": "last"}
-        ]
-      },
-      {
-        "text": "Ich bin krank von Samstag bis zum sunday",
-        "intent": "report_illness_from_to",
-        "entities": [
-          {"start": 18, "end": 25, "value": "Samstag", "entity": "first"},
-          {"start": 34, "end": 40, "value": "sunday", "entity": "last"}
-        ]
-      },
-      {
-        "text": "Ich bin krank von Sonntag bis zum next two days",
+        "text": "Ich bin krank von Sonntag bis zum Montag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 25, "value": "Sonntag", "entity": "first"},
-          {"start": 34, "end": 47, "value": "next two days", "entity": "last"}
+          {"start": 34, "end": 40, "value": "Montag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Sonntag bis zum end of week",
+        "text": "Ich bin krank von Sonntag bis zum Dienstag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 25, "value": "Sonntag", "entity": "first"},
-          {"start": 34, "end": 45, "value": "end of week", "entity": "last"}
+          {"start": 34, "end": 42, "value": "Dienstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Sonntag bis zum monday",
+        "text": "Ich bin krank von Sonntag bis zum Mittwoch",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 25, "value": "Sonntag", "entity": "first"},
-          {"start": 34, "end": 40, "value": "monday", "entity": "last"}
+          {"start": 34, "end": 42, "value": "Mittwoch", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Sonntag bis zum tuesday",
+        "text": "Ich bin krank von Sonntag bis zum Donnerstag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 25, "value": "Sonntag", "entity": "first"},
-          {"start": 34, "end": 41, "value": "tuesday", "entity": "last"}
+          {"start": 34, "end": 44, "value": "Donnerstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Sonntag bis zum wednesday",
+        "text": "Ich bin krank von Sonntag bis zum Freitag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 25, "value": "Sonntag", "entity": "first"},
-          {"start": 34, "end": 43, "value": "wednesday", "entity": "last"}
+          {"start": 34, "end": 41, "value": "Freitag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Sonntag bis zum thursday",
+        "text": "Ich bin krank von Sonntag bis zum Samstag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 25, "value": "Sonntag", "entity": "first"},
-          {"start": 34, "end": 42, "value": "thursday", "entity": "last"}
+          {"start": 34, "end": 41, "value": "Samstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Sonntag bis zum friday",
+        "text": "Ich bin krank von Sonntag bis zum Sonntag",
         "intent": "report_illness_from_to",
         "entities": [
           {"start": 18, "end": 25, "value": "Sonntag", "entity": "first"},
-          {"start": 34, "end": 40, "value": "friday", "entity": "last"}
+          {"start": 34, "end": 41, "value": "Sonntag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Sonntag bis zum saturday",
+        "text": "Ich bin krank bis zum Montag",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 18, "end": 25, "value": "Sonntag", "entity": "first"},
-          {"start": 34, "end": 42, "value": "saturday", "entity": "last"}
+          {"start": 22, "end": 28, "value": "Montag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank von Sonntag bis zum sunday",
+        "text": "Ich bin krank bis zum Dienstag",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 18, "end": 25, "value": "Sonntag", "entity": "first"},
-          {"start": 34, "end": 40, "value": "sunday", "entity": "last"}
+          {"start": 22, "end": 30, "value": "Dienstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank bis zum next two days",
+        "text": "Ich bin krank bis zum Mittwoch",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 22, "end": 35, "value": "next two days", "entity": "last"}
+          {"start": 22, "end": 30, "value": "Mittwoch", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank bis zum end of week",
+        "text": "Ich bin krank bis zum Donnerstag",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 22, "end": 33, "value": "end of week", "entity": "last"}
+          {"start": 22, "end": 32, "value": "Donnerstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank bis zum monday",
+        "text": "Ich bin krank bis zum Freitag",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 22, "end": 28, "value": "monday", "entity": "last"}
+          {"start": 22, "end": 29, "value": "Freitag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank bis zum tuesday",
+        "text": "Ich bin krank bis zum Samstag",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 22, "end": 29, "value": "tuesday", "entity": "last"}
+          {"start": 22, "end": 29, "value": "Samstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank bis zum wednesday",
+        "text": "Ich bin krank bis zum Sonntag",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 22, "end": 31, "value": "wednesday", "entity": "last"}
+          {"start": 22, "end": 29, "value": "Sonntag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank bis zum thursday",
+        "text": "Ich bin am Montag wieder zurück",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 22, "end": 30, "value": "thursday", "entity": "last"}
+          {"start": 11, "end": 17, "value": "Montag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank bis zum friday",
+        "text": "Ich bin am Dienstag wieder zurück",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 22, "end": 28, "value": "friday", "entity": "last"}
+          {"start": 11, "end": 19, "value": "Dienstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank bis zum saturday",
+        "text": "Ich bin am Mittwoch wieder zurück",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 22, "end": 30, "value": "saturday", "entity": "last"}
+          {"start": 11, "end": 19, "value": "Mittwoch", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin krank bis zum sunday",
+        "text": "Ich bin am Donnerstag wieder zurück",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 22, "end": 28, "value": "sunday", "entity": "last"}
+          {"start": 11, "end": 21, "value": "Donnerstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin am next two days wieder zurück",
+        "text": "Ich bin am Freitag wieder zurück",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 11, "end": 24, "value": "next two days", "entity": "last"}
+          {"start": 11, "end": 18, "value": "Freitag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin am end of week wieder zurück",
+        "text": "Ich bin am Samstag wieder zurück",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 11, "end": 22, "value": "end of week", "entity": "last"}
+          {"start": 11, "end": 18, "value": "Samstag", "entity": "last"}
         ]
       },
       {
-        "text": "Ich bin am monday wieder zurück",
+        "text": "Ich bin am Sonntag wieder zurück",
         "intent": "report_illness_from_to",
         "entities": [
-          {"start": 11, "end": 17, "value": "monday", "entity": "last"}
-        ]
-      },
-      {
-        "text": "Ich bin am tuesday wieder zurück",
-        "intent": "report_illness_from_to",
-        "entities": [
-          {"start": 11, "end": 18, "value": "tuesday", "entity": "last"}
-        ]
-      },
-      {
-        "text": "Ich bin am wednesday wieder zurück",
-        "intent": "report_illness_from_to",
-        "entities": [
-          {"start": 11, "end": 20, "value": "wednesday", "entity": "last"}
-        ]
-      },
-      {
-        "text": "Ich bin am thursday wieder zurück",
-        "intent": "report_illness_from_to",
-        "entities": [
-          {"start": 11, "end": 19, "value": "thursday", "entity": "last"}
-        ]
-      },
-      {
-        "text": "Ich bin am friday wieder zurück",
-        "intent": "report_illness_from_to",
-        "entities": [
-          {"start": 11, "end": 17, "value": "friday", "entity": "last"}
-        ]
-      },
-      {
-        "text": "Ich bin am saturday wieder zurück",
-        "intent": "report_illness_from_to",
-        "entities": [
-          {"start": 11, "end": 19, "value": "saturday", "entity": "last"}
-        ]
-      },
-      {
-        "text": "Ich bin am sunday wieder zurück",
-        "intent": "report_illness_from_to",
-        "entities": [
-          {"start": 11, "end": 17, "value": "sunday", "entity": "last"}
+          {"start": 11, "end": 18, "value": "Sonntag", "entity": "last"}
         ]
       }
     ]
