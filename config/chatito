@@ -12,8 +12,6 @@
     thx
     fuck of
     hf
-%[confirmation]
-    @[confirmation]
 
 %[report_illness_duration]
     Hi, ich werde für @[duration] Tage ausfallen.
@@ -56,13 +54,6 @@
     3 Tage
     4 Tage
     5 Tage
-
-@[confirmation]
-    OK
-    YES
-    NO
-    Y
-    N
 
 @[pedent#snps/correction]
     Hey guys

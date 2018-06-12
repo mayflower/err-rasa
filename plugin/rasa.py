@@ -33,7 +33,7 @@ class Rasa(BotPlugin):
         
         #frm = getattr(message.frm, 'real_jid', message.frm.person)
         room = getattr(message.frm, 'room', message.frm)
-
+        self.log.debug("User: {}".format(message.frm))
         token = config.BOT_IDENTITY['token']
         if token is Null:
             raise Exception('No slack token')

@@ -29,8 +29,18 @@ slots:
         type: text
     duration:
         type: text
-    confirmed:
-        type: bool
+    confirmation:
+        type: categorical
+        values:
+            - confirmation_accepted
+            - confirmation_declined
+    auth_confirmation:
+        type: categorical
+        values:
+            - auth_confirmed
+            - auth_declined
+    auth_required:
+        type: bool    
     body:
         type: text
     subject:
@@ -47,20 +57,35 @@ templates:
         - What is the last day of your illness
     utter_get_report_illness_duration:
         - How long will you be away?
-    utter_get_report_illness_confirmed:
+    utter_get_report_illness_confirmation:
         - text: Passt das so?
           buttons:
             - title: "OK"
               payload: "True"
+              style: "background-color: green"
+              value: "confirmation_accepted"
             - title: "Nee"
               payload: "False"
-
+              style: "background-color: red"
+              value: "confirmation_declined"
+    utter_get_report_illness_auth_confirmation:
+        - text: Du solltest einen OAuth Link bekommen haben, bestätigt?
+          buttons:
+            - title: "OK"
+              payload: "True"
+              style: "background-color: green"
+              value: "auth_confirmed"
+            - title: "Nee"
+              payload: "False"
+              style: "background-color: red"
+              value: "auth_declined"
 actions:
     - utter_goodby
     - utter_greet
     - utter_get_report_illness_last
     - utter_get_report_illness_duration
-    - utter_get_report_illness_confirmed
+    - utter_get_report_illness_confirmation
+    - utter_get_report_illness_auth_confirmation
     - actions.ActionPedant
     - actions.ActionPreReportIllness
     - actions.ActionReportIllness

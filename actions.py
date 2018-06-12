@@ -18,6 +18,27 @@ class JiraNeedsAuthorization(Exception):
 class JiraAwareAction(Action):
     def __init__(self):
         self.metadata = {}
+    def _evaluateFromToByTracker(self, tracker):
+        """By the help of ducking we got a a good answer of duratio, or from - to information"""
+        time = tracker.get_slot('time')
+        number = tracker.get_slot('number')
+        first = None
+        last = None
+        if number is not None and isinstance(time, str):
+            first = arrow.get(time).format(config.DATE_FORMAT)
+            last = arrow.get(time).shift(days=+number).format(config.DATE_FORMAT)
+        elif isinstance(time,dict):
+            if time['to'] is not None:
+                last = arrow.get(time['to']).format(config.DATE_FORMAT)
+            if time['from'] is not None:
+                first = arrow.get(time['from']).format(config.DATE_FORMAT)
+        
+        if first is None:
+            first = arrow.utcnow().format(config.DATE_FORMAT)
+        if last is None:
+            logging.debug('Ducking does not work.')
+            first = tracker.get_slot('last')
+        return first, last
 
     def _evaluateUserBy(self, tracker):
         """Having the slack handle only can never be enoght. Swe we try to evaluate the real name"""
@@ -109,51 +130,30 @@ class ActionPreReportIllness(JiraAwareAction):
 
             Called in dialog, when from and to are select and we can create and send a jira ticket
         """
-        time = tracker.get_slot('time')
-        number = tracker.get_slot('number')
-        first = None
-        last = None
-        if number is not None and isinstance(time, str):
-            first = arrow.get(time).format(config.DATE_FORMAT)
-            last = arrow.get(time).shift(days=+number).format(config.DATE_FORMAT)
-        elif isinstance(time,dict):
-            if time['to'] is not None:
-                last = arrow.get(time['to']).format(config.DATE_FORMAT)
-            if time['from'] is not None:
-                first = arrow.get(time['from']).format(config.DATE_FORMAT)
-        
-        if first is None:
-            first = arrow.utcnow().format(config.DATE_FORMAT)
-        if last is None:
-            logging.debug('Ducking does not work.')
-            first = tracker.get_slot('last')
 
+        first, last = self._evaluateFromToByTracker(tracker)
         user = tracker.get_slot('user')
-
+        
         if user is None:
             # Todo Replace self assignment
             user = '@electricmaxxx'
-        handle_authorization = ''
-        try:
-            self._handle_jira_auth(user)
-        except JiraNeedsAuthorization as e:
-            handle_authorization = str(e)
         subject, body = self._createReportIllnessMessage(user, first, last)
-        message  = """
+        responseMessage = """
 Ich würde dir dieses Ticket anlegen:
 Subject: {}
 {}
             """.format(subject, body)
-        if handle_authorization != '':
-            message += "Und: \n"+ handle_authorization
-        dispatcher.utter_message(message)
-        tracker.update()
+        dispatcher.utter_message(responseMessage)
+        try:
+            self._handle_jira_auth(user)
+        except JiraNeedsAuthorization as e:
+            dispatcher.utter_message("Authorisation Needed {}".format(e))
         return [
-            SlotSet('confirmed', False),
+            SlotSet('confirmation', False),
             SlotSet('subject', subject),
             SlotSet('body', body),
             SlotSet('user', user)
-            ]
+        ]
 
 class ActionReportIllness(JiraAwareAction):
     def name(self):
@@ -162,16 +162,23 @@ class ActionReportIllness(JiraAwareAction):
         """
             Called in dialog, when from and to are select and we can create and send a jira ticket
         """
-        if tracker.get_slot('confirmed') is not True:
-            dispatcher.utter_message('Eigentlich hätt ich alles inkl. der Bestätigung')
-            return [SlotSet('confirmed', None)]
+        confirmation = tracker.get_slot('confirmation')
+        if confirmation == 'confirmation_declined':
+            dispatcher.utter_message('Ich hoffe ich konnte trotzdem helfen.')
+            return []
+        elif confirmation != 'confirmation_accept':
+            dispatcher.utter_message('Hier ist uns ein falscher Wert gekommen: '+confirmation)
+            return []
+        
         try:
             jira = self._jira_client(tracker.get_slot('user'))
-            jira.create_issue(project=config.JIRA_PROJECT_HR,
+            issue = jira.create_issue(project=config.JIRA_PROJECT_HR,
                                 summary=tracker.get_slot('subject'),
                                 description=tracker.get_slot('body'),
                                 issuetype={'name': 'Story'})
         except JiraNeedsAuthorization as e:
             dispatcher.utter_message(str(e))
+            return [SlotSet('auth_required', True)]
+        dispatcher.utter_message('Ich habe dir Ticket {} angelegt. Gute Besserung'.format(issue))
 
-        return [SlotSet('confirmed', None)]
+        return []
