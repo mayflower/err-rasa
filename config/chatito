@@ -6,16 +6,15 @@
     Hola
     What's up
     Hallo
-%[order_pizza]
-    I want @[toppings] on my Pizza
-    I want a @[size] pizza with @[toppings]
-    I am hungry
-    Pizza
+
 %[goodby]
     bye
     thx
     fuck of
     hf
+%[confirmation]
+    @[confirmation]
+
 %[report_illness_duration]
     Hi, ich werde für @[duration] Tage ausfallen.
     I werde für @[duration] Tage krank sein.
@@ -29,15 +28,15 @@
     Ich bin am @[last] wieder zurück
 
 @[last]
-    next two days
-    end of week
-    monday
-    tuesday
-    wednesday
-    thursday
-    friday
-    saturday
-    sunday
+    Ender der Woche
+    Nächste Woche
+    Montag
+    Dienstag
+    Mittwoch
+    Donnerstag
+    Freitag
+    Samstag
+    Sonntag
 
 @[first]
     Heute
@@ -58,18 +57,12 @@
     4 Tage
     5 Tage
 
-@[toppings]
-    cheese
-    sausage
-    onions
-    olives
-
-@[size]
-    large
-    small
-    tyni
-    big
-    awesome
+@[confirmation]
+    OK
+    YES
+    NO
+    Y
+    N
 
 @[pedent#snps/correction]
     Hey guys

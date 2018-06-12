@@ -10,8 +10,15 @@ entities:
     - first
     - last
     - duration
+    - time
+    - number
+    - confirmation
 
 slots:
+    time:
+        type: unfeaturized
+    number:
+        type: unfeaturized
     user:
         type: unfeaturized
     correction:
@@ -41,7 +48,12 @@ templates:
     utter_get_report_illness_duration:
         - How long will you be away?
     utter_get_report_illness_confirmed:
-        - Passt das so?
+        - text: Passt das so?
+          buttons:
+            - title: "OK"
+              payload: "True"
+            - title: "Nee"
+              payload: "False"
 
 actions:
     - utter_goodby

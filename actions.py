@@ -6,11 +6,11 @@ from jira import JIRA
 import logging
 import arrow
 
-from lib.date_converter import DateConverter
 from lib.jira_oauth import JiraOauth
 
 import config
 from rasa_core import domain
+from numpy.ma.core import empty
 
 class JiraNeedsAuthorization(Exception):
     pass
@@ -18,7 +18,6 @@ class JiraNeedsAuthorization(Exception):
 class JiraAwareAction(Action):
     def __init__(self):
         self.metadata = {}
-        self.date_converter = DateConverter()
 
     def _evaluateUserBy(self, tracker):
         """Having the slack handle only can never be enoght. Swe we try to evaluate the real name"""
@@ -43,14 +42,19 @@ class JiraAwareAction(Action):
     def _handle_jira_auth(self, user):
         """Handles jira auth"""
         oauth = JiraOauth()
-        link, state = oauth.get_request_token()
-        self.metadata['oauth_request_{}'.format(user)] = state
-
-        return link
+        try:
+            link, state = oauth.get_request_token()
+            self.metadata['oauth_request_{}'.format(user)] = state
+            return link
+        except Exception as e:
+            logging.warn("Problem to connect to jira: {}".format(e))
 
     def _jira_req_auth(self, frm):
         link = self._handle_jira_auth(frm)
-        text = 'To use the errbot JIRA integration please give permission at: {}'.format(link)
+        if link is not None:
+            text = 'To use the errbot JIRA integration please give permission at: {}'.format(link)
+        else:
+            text = 'To use the errbot JIRA integration please give permission, but we are not able to connect to jira at the moment'
         raise JiraNeedsAuthorization(text)
 
     def _jira_client(self, frm):
@@ -102,18 +106,33 @@ class ActionPreReportIllness(JiraAwareAction):
         return 'action_pre_report_illness'
     def run(self, dispatcher, tracker, domain):
         """
+
             Called in dialog, when from and to are select and we can create and send a jira ticket
         """
-        first, last = self.date_converter.fromFirstAndDuration(
-            tracker.get_slot('first'),
-            tracker.get_slot('last'),
-            tracker.get_slot('duration')
-        )
+        time = tracker.get_slot('time')
+        number = tracker.get_slot('number')
+        first = None
+        last = None
+        if number is not None and isinstance(time, str):
+            first = arrow.get(time).format(config.DATE_FORMAT)
+            last = arrow.get(time).shift(days=+number).format(config.DATE_FORMAT)
+        elif isinstance(time,dict):
+            if time['to'] is not None:
+                last = arrow.get(time['to']).format(config.DATE_FORMAT)
+            if time['from'] is not None:
+                first = arrow.get(time['from']).format(config.DATE_FORMAT)
+        
+        if first is None:
+            first = arrow.utcnow().format(config.DATE_FORMAT)
+        if last is None:
+            logging.debug('Ducking does not work.')
+            first = tracker.get_slot('last')
+
         user = tracker.get_slot('user')
 
         if user is None:
             # Todo Replace self assignment
-            user = 'Maximilian Berghoff'
+            user = '@electricmaxxx'
         handle_authorization = ''
         try:
             self._handle_jira_auth(user)
@@ -124,10 +143,11 @@ class ActionPreReportIllness(JiraAwareAction):
 Ich würde dir dieses Ticket anlegen:
 Subject: {}
 {}
-
-{}
-            """.format(subject, body, "Und: \n"+ handle_authorization if handle_authorization is not None else "")
+            """.format(subject, body)
+        if handle_authorization != '':
+            message += "Und: \n"+ handle_authorization
         dispatcher.utter_message(message)
+        tracker.update()
         return [
             SlotSet('confirmed', False),
             SlotSet('subject', subject),
