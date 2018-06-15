@@ -1,0 +1,15 @@
+image: docker:stable
+
+services:
+  - docker:dind
+
+variables:
+  DOCKER_DRIVER: overlay
+build_image:
+  stage: deploy
+  before_script:
+    - docker info
+    - docker build -terrbot ./
+    - pip install awscli
+  script:
+    - aws s3 cp ./ s3://yourbucket/ --recursive --exclude "*" --include ""

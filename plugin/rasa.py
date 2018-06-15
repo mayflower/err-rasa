@@ -1,100 +1,68 @@
-import random
-from errbot import BotPlugin
-from rasa_nlu.model import Trainer, Metadata, Interpreter
-from rasa_nlu.components import ComponentBuilder
 from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.agent import Agent
+from rasa_core.interpreter import RegexInterpreter
+from rasa_core.policies.keras_policy import KerasPolicy
+from rasa_core.policies.memoization import MemoizationPolicy
+
+import json
+import config
+
+
+
+from errbot import BotPlugin, botcmd
+from plugin.rasa_slack import RasaSlack
 
 class Rasa(BotPlugin):
-    COULD_NOT_PARSE_MSGS = [
-        "Sorry, I don't know it",
-        "Next time I will know, but not now",
-        "Sorry, can't get what do you mean",
-        "Try something else"
-    ]
-    GREET_MSGS = ["Hola!", "Privet!", "Xin chao!"]
-    INTENT_GREET = "greet"
-    INTENT_ORDER_PIZZA = 'order_pizza'
-    INTENT_PEDANT = 'pedant'
-    ENTITY_SIZE = 'size'
-    ENTITY_TOPPINGS = "toppings"
-    ENTITY_CORRECTION = "correction"
-
+    """Plugin to enable rasa converstions in an errbot"""
+    OWN_COMMANDS = ['!learnonline']
+    dialog_model_dir = './models/dialogue'
+    chat_model_dir = './models/nlu/default/chat'
+    domain_file = './config/chat_domain.yml'
+    training_data_file= 'config/stories.md'
+    agent = None
+    backend_adapter = None
     def activate(self):
-        super().activate()
-        model_dir = './models/nlu/default/chat'
-
-        self.agent = Agent.load('./models/dialogue', interpreter=RasaNLUInterpreter('./models/nlu/default/chat'))
-        #builder = ComponentBuilder(use_cache=True)
-        #self.interpreter = Interpreter.load(model_dir, builder)
-        # store unparsed messages, so later we can train bot
-        self.unparsed_messages = []
+        """To enable our classes we need like the agent and its tracker"""
+        super(Rasa, self).activate()
+        self.dialog_model_dir = './models/dialogue'
+        self.chat_model_dir = './models/nlu/default/chat'
+        self.domain_file = './config/chat_domain.yml'
+        self.training_data_file= 'config/stories.md'
+        self.agent = Agent.load(self.dialog_model_dir,
+                            interpreter=RasaNLUInterpreter(self.chat_model_dir))
+        self.backend_adapter = RasaSlack(self._bot)
 
     def callback_message(self, message):
-        sendTo = getattr(message.frm, 'room', message.frm)
-        # if self.interpreter is None:
-        #     self.log.debug('No interpreter found')
-        #     return
+        """Override to hook into the messaging and calling rase """
+        super(Rasa, self).callback_message(message)
         text = message.body
-        self.log.debug(text)
-        # self.send(sendTo, 'Understand: '+text)
-        #reply = self.find_reply(text)
-        reply = self.agent.handle_message(message.body)
-        for e in reply:
-            if e['text'] is not None:
-                self.send(sendTo, e['text'])
-                return e['text']        
-        return 'No answer'
-
-    def find_reply(self, message):
-        res = self.interpreter.parse(message)
-        self.log.debug('rasa parse res: {}'.format(res))
-        reply = '';
-        if not 'intent' in res or res['intent'] is None:
-            # later we can do something with unparsed messages, probably train bot
-            self.unparsed_messages.append(message)
-            return random.choice(self.COULD_NOT_PARSE_MSGS)
-        intent = res['intent']
-        if not 'name' in intent or intent['name'] is None:
-            # later we can do something with unparsed messages, probably train bot
-            self.unparsed_messages.append(message)
-            return random.choice(self.COULD_NOT_PARSE_MSGS)
-        name = intent['name']
-    
-        if name == self.INTENT_PEDANT:
-            if len(res["entities"]) > 0:
-                for e in res["entities"]:
-                    if e["entity"] == self.ENTITY_CORRECTION:
-                        return e["value"]
-                    else:
-                        self.unparsed_messages.append(message)
-                        return "I will get you some day"
-
-        if name == self.INTENT_GREET:
-            return random.choice(self.GREET_MSGS)
+        if text in self.OWN_COMMANDS:
+            self.log.debug("Do not send something as it is an own commmand: "+text)
+            return ''
         
-        if name == self.INTENT_ORDER_PIZZA:
-            if len(res["entities"]) > 0:
-                for e in res["entities"]:
-                    if e["entity"] == self.ENTITY_TOPPINGS:
-                        return 'Toppings: '+self.get_short_answer(e["value"])
-                    elif e["entity"] == self.ENTITY_SIZE:
-                        return 'Size: '+self.get_short_answer(e["value"])
-                    else:
-                        return 'Unknown entity: '+e["entity"]
-            else:
-                self.unparsed_messages.append(message)      
-                return 'No entities found'
-    
-        # later we can do something with unparsed messages, probably train bot
-        self.unparsed_messages.append(message)
-        return random.choice(self.COULD_NOT_PARSE_MSGS)
+        token = config.BOT_IDENTITY['token']
+        if token is None:
+          raise Exception('No slack token')
+        frm = getattr(message.frm, 'aclattr', message.frm.person)
+        userid = getattr(message.frm, 'userid', frm)
+        self.backend_adapter.set_person_by_id(userid, message.frm)
+        self.log.debug("From: {}".format(frm))
+        self.agent.handle_message(message.body,
+                                    sender_id=userid,
+                                    output_channel=self.backend_adapter)
 
-        def get_short_answer(query):
-            return query
-
-        # saves unparsed messages into a file
-        def snapshot_unparsed_messages(self, filename):
-            with open(filename, "a") as f:
-                for msg in self.unparsed_messages:
-                    f.write("{}\n".format(msg))
+    @botcmd()
+    def learnonline(self):
+        """Command to trigger learn_online on rasa agent"""
+        token = config.BOT_IDENTITY['token']
+        if token is None:
+            raise Exception('No slack token')
+        train_agent= Agent(self.domain_file,
+                  policies=[MemoizationPolicy(max_history=2), KerasPolicy()],
+                  interpreter=RegexInterpreter())
+        training_data = train_agent.load_data(self.training_data_file)
+        train_agent.train_online(training_data,
+                                 input_channel=self.backend_adapter,
+                                 batch_size=50,
+                                 epochs=200,
+                                 max_training_samples=300)

@@ -1,34 +1,191 @@
-%[greet]
+%[topics_in_category]
+    Was gehört denn alles zu @[category]
+    Welche Themen liegen in @[category]
+    Was ist alles in @[category]
+    Was versteckt sich hinter @[category]
+
+%[who_knows_topic]
+    Wer kennt sich mit @[topic] aus?
+    Wer weiß etwas über @[topic] gemacht?
+    Welche Skills haben wir in @[category]?
+    Warum sagst du nicht, dass du @[topic] kannst?
+    Kannst mir jemand bei @[topic] helfen?
+    Hilfe @[topic]
+    Wer weiß was zu @[topic]
+    Wer weiß etwas zum thema @[topic]
+    Was zur Hölle ist @[topic]
+    Wer kennt @[topic]
+    Wer hat schon einmal etwas zu @[topic] gehört?
+    Wie geht @[topic]
+
+%[claim_to_know_topic_in_category]
+    Ich kenn @[topic] im Bereich @[category]
+    @[topic] gehört zu @[category]
+    @[topic] gehört zu @[category]
+    Eine Sache in @[category] ist @[topic]
+
+%[claim_to_know_topic]
+    @[user] sollte etwas wissen
+    @[user] kennt sich mit @[topic] aus
+    Ich habe mich mit @[topic] beschäftigt
+    Ich weiß etwas in @[topic]
+    Mein Mayday-Projekt beschäftigt sich mit @[topic]
+    Ich lese aktuell über @[topic]
+    Wer macht auch gerade @[topic]
+
+%[forgott_topic]
+    Mir ist entfallen, worum es bei @[topic] gemacht
+    Warum muss ich bei @[topic] ... tun?
+    Wie bediene ich @[topic]
+    Wie geht nochmal @[topic]
+
+@[topic]
+    Symfony
+    Django
+    Spring
+    .net Core
+    Golang
+    Scala
+    Ansible
+    React
+    PHP
+    React Native
+    Ionic2
+    Angular
+    ELK
+    Greylog
+    AWS
+    Azure
+    Profitbricks
+    GCE
+    ExtJS
+    AngularJS
+    Zend Framework
+    Symfony
+    Docker
+    Swift
+    Android
+    Java
+    Puppet
+    .net
+    Python
+    elm
+    Kafka
+    Redux
+    GraphQL
+    NixOS
+    yarn
+    Amazon Lambda
+    Aka
+    R
+    Tensorflow
+    Torch
+    Kotlin
+    play
+    Spring Boot
+    Kubernets
+    Elixir
+    Rust
+    Consul
+    etcd
+    Hasicorp
+    Vault
+    treafik
+    Postgr
+
+@[category]
+    Sprachen
+    Sprachen & Frameworks
+    Frameworks
+    Sprachen & Frameworks
+    Tools
+    Technologien
+    Plattformen
+    Sprachen
+    Frameworks
+    Agile
+
+%[report_illness_duration]
+    Hi, ich werde für @[duration] Tage ausfallen.
+    I werde für @[duration] Tage krank sein.
+    I muss für @[duration] Tage das Bett hüten
+
+%[report_illness_from_to]
+    Ich bleibe daheim bis @[last]
+    Mein Arzt rät mir bis @[last] daheim zu bleiben
+    Ich bin krank von @[first] bis zum  @[last]
+    Ich bin krank bis zum  @[last]
+    Ich bin am @[last] wieder zurück
+
+@[last]
+    Ender der Woche
+    Nächste Woche
+    Montag
+    Dienstag
+    Mittwoch
+    Donnerstag
+    Freitag
+    Samstag
+    Sonntag
+
+@[first]
+    Heute
+    Montag
+    Dienstag
+    Mittwoch
+    Donnerstag
+    Freitag
+    Samstag
+    Sonntag
+
+@[duration]
+    1 Woche
+    1 Tag
+    2 Tage
+    2 Wochen
+    3 Tage
+    4 Tage
+    5 Tage
+
+@[greet]
     hi
     moin
     cheers
     hey
     Hola
+    What's up
+    Hallo
 
-%[order_pizza]
-    I want @[toppings] on my Pizza
-    I want a @[size] pizza with @[toppings]
-    I am hungry
-    Pizza
-%[goodby]
+@[goodby]
     bye
     thx
     fuck of
     hf
 
-@[toppings]
-    cheese
-    sausage
-    onions
-    olives
+@[user]
+    @electricmaxxx
 
-@[size]
-    large
-    small
-    tyni
-    big
-    awesome
-
-@[pedent#snps/correction]
-    Hey guys
-    moin moin
+~[sprachen]
+    Sprachen
+    Sprachen & Frameworks
+    Frameworks
+~[tools]
+    Tools
+    Werkzeuge
+~[technologien]
+    Technologien
+    Main Streamtopics_in_category
+~[agile]
+    Agile
+~[plattfomrs]
+    Plattformen
+~[confirmation_accepted]
+    Yes
+    Y
+    YEA
+    Ja
+    OK
+~[confirmation_declined]
+    Nee
+    NO
+    noe
