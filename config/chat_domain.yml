@@ -1,12 +1,17 @@
 intents:
-    - order_pizza
     - greet
-    - pedant
     - goodby
+    - who_knows_topic
+    - claim_to_know_topic
+    - claim_to_know_topic_in_category
+    - forgott_topic
+    - topics_in_category
     - report_illness_duration
     - report_illness_from_to
 
 entities:
+    - category
+    - topic
     - first
     - last
     - duration
@@ -15,6 +20,16 @@ entities:
     - confirmation
 
 slots:
+    topic:
+      type: text
+    category:
+        type: categorical
+        values:
+            - sprachen
+            - tools
+            - technologien
+            - agile
+            - plattformen
     time:
         type: unfeaturized
     number:
@@ -40,19 +55,23 @@ slots:
             - auth_confirmed
             - auth_declined
     auth_required:
-        type: bool    
+        type: bool
+    confirmation_required:
+        type: bool
     body:
         type: text
     subject:
         type: text
 
 templates:
-    utter_greet:
-        - 'Hello, how can I help you?'
-        - 'Hi, I am here to help.'
-    utter_goodby:
-        - 'See you later'
-        - 'Bye'
+    utter_get_who_knows_topic:
+        - Um welches Thema geht es?
+    utter_get_who_knows_category:
+        -  "In welche Kategorie würdest du es einsortieren?"
+    utter_get_claim_to_know_topic:
+        - Um welches Thema geht es?
+    utter_get_claim_to_know_category:
+        -  "In welche Kategorie würdest du es einsortieren?"
     utter_get_report_illness_last:
         - What is the last day of your illness
     utter_get_report_illness_duration:
@@ -79,13 +98,27 @@ templates:
               payload: "False"
               style: "background-color: red"
               value: "auth_declined"
+    utter_greet:
+        - 'Hello, how can I help you?'
+        - 'Hi, I am here to help.'
+    utter_goodby:
+        - 'See you later'
+        - 'Bye'
+
 actions:
     - utter_goodby
     - utter_greet
+    - utter_get_who_knows_category
+    - utter_get_who_knows_topic
+    - utter_get_claim_to_know_category
+    - utter_get_claim_to_know_topic
+    - actions.ActionWhoKnowsTopic
+    - actions.ActionClaimToKnowTopic
+    - actions.ActionIForgot
+    - actions.ActionTopicsInCategory
     - utter_get_report_illness_last
     - utter_get_report_illness_duration
     - utter_get_report_illness_confirmation
     - utter_get_report_illness_auth_confirmation
-    - actions.ActionPedant
     - actions.ActionPreReportIllness
     - actions.ActionReportIllness

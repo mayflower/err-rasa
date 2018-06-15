@@ -8,4 +8,4 @@
  - name: "intent_featurizer_spacy"
  - name: "intent_classifier_sklearn"
  - name: "ner_duckling"
-   dimension: ["first", "last", "duration", "time", "number"]
+   dimension: ["duration", "time", "number"]

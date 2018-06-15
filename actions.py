@@ -1,16 +1,17 @@
 
 from rasa_core.actions import Action
-from rasa_core.events import SlotSet
+from rasa_core.events import AllSlotsReset, SlotSet
 from jira import JIRA
+import errbot.backends.base
+from errbot.templating import tenv
 
 import logging
 import arrow
+import json
 
 from lib.jira_oauth import JiraOauth
 
 import config
-from rasa_core import domain
-from numpy.ma.core import empty
 
 class JiraNeedsAuthorization(Exception):
     pass
@@ -18,7 +19,7 @@ class JiraNeedsAuthorization(Exception):
 class JiraAwareAction(Action):
     def __init__(self):
         self.metadata = {}
-    def _evaluateFromToByTracker(self, tracker):
+    def evaluate_from_to_by_tracker(self, tracker):
         """By the help of ducking we got a a good answer of duratio, or from - to information"""
         time = tracker.get_slot('time')
         number = tracker.get_slot('number')
@@ -32,7 +33,7 @@ class JiraAwareAction(Action):
                 last = arrow.get(time['to']).format(config.DATE_FORMAT)
             if time['from'] is not None:
                 first = arrow.get(time['from']).format(config.DATE_FORMAT)
-        
+
         if first is None:
             first = arrow.utcnow().format(config.DATE_FORMAT)
         if last is None:
@@ -40,16 +41,18 @@ class JiraAwareAction(Action):
             first = tracker.get_slot('last')
         return first, last
 
-    def _evaluateUserBy(self, tracker):
-        """Having the slack handle only can never be enoght. Swe we try to evaluate the real name"""
+    def _evaluate_user_id(self, dispatcher, tracker):
+        """ we use the userr given thorugth slot with a higher
+            priority. If thr is no one we ask the dispatcher to hand out a
+        """
+        person = dispatcher.output_channel.get_person_by_id(dispatcher.sender_id)
         user = tracker.get_slot('user')
         if user is None:
-            # todo a way to get it from tracker after setting it in bot plugin
-            user = '@elctricmaxxx'
-        # Todo: find a way to get the clear names of the user from slack
-        return user
+            # Todo Replace self assignment
+            user = person.aclattr
 
-    def _createReportIllnessMessage(self, user, first, last):
+        return user;
+    def _create_report_illness_message(self, user, first, last):
         subject = "krankmeldung [{}]".format(user)
         body = """
             Wer ist krank: [{}]
@@ -104,52 +107,148 @@ class JiraAwareAction(Action):
 
         return JIRA(config.JIRA_BASE_URL, oauth=oauth_config)
 
-class ActionOrderPizza(Action):
+class ActionWhoKnowsTopic(Action):
     def name(self):
-        return 'action_order_pizza'
+        return 'action_who_knows_topic'
     def run(self, dispatcher, tracker, domain):
-        size = tracker.get_slot('size')
-        size = size if size is not None else 'No size set'
-        toppings = tracker.get_slot('toppings')
-        toppings = toppings if toppings is not None else 'No toppings set'
-        dispatcher.utter_message("Lets order some pizza with size '%s' and with toppings: '%s'", size, toppings)
-        return []
-class ActionPedant(Action):
+        topic = tracker.get_slot('topic') if tracker.get_slot('topic') else None
+        if topic is None:
+            dispatcher.utter_message('Ich habe kein Topic bekommen')
+            return []
+
+        topic = str(topic) 
+        bests = []
+        with open('./data/skills.json') as f:
+            skillData = json.load(f)
+        if 'skills' not in skillData:
+            return []
+
+        for persistedTopic in skillData['skills']:
+            if topic.lower() != persistedTopic.lower() or len(skillData['skills'][persistedTopic]) == 0: continue
+            for user in skillData['skills'][persistedTopic]: bests.append(user)
+        if len(bests) == 0:
+            dispatcher.utter_message('Kein Kollege weiß etwas zun Thema {}'.format(topic))
+        else:
+            bestsString = ''
+            for user in bests:
+                bestsString += user['name']+' (Score: '+str(user['score'])+'), '
+            if bestsString.endswith(", "): bestsString = bestsString[:-2]
+            dispatcher.utter_message('Die folgenden Kollegen meinen Ahnung zu haben: '+bestsString)
+        return [AllSlotsReset()]
+
+class ActionIForgot(Action):
     def name(self):
-        return 'action_pedant'
+        return 'action_forgotten'
     def run(self, dispatcher, tracker, domain):
-        correction = tracker.get_slot('correction')
-        dispatcher.utter_message('Das reicht so nith - {}'.format(correction))
+        dispatcher.utter_message('Action forgotten')
         return []
 
+class ActionClaimToKnowTopic(JiraAwareAction):
+    def name(self):
+        return 'action_claim_to_know_topic'
+    def run(self, dispatcher, tracker, domain):
+        topic = tracker.get_slot('topic')
+        user = self._evaluate_user_id(dispatcher, tracker)
+        if topic is None:
+            dispatcher.utter_message('No topic given')
+            return []
+        if user is None:
+            dispatcher.utter_message('No user given')
+            return []
+        topic = str(topic) 
+        with open('./data/skills.json') as f:
+            skillData = json.load(f)
+        if 'skills' not in skillData:
+            dispatcher.utter_message('Keine Skills sinds vorhanden')
+            return []
+        if topic not in skillData['skills']:
+            skillData['skills'][topic] = []
+            dispatcher.utter_message('Das Topic '+topic+' ist noch nicht bekannt, wird angelegt')
+        persistedTopic = skillData['skills'][topic]
+
+        foundUser = False
+        for key in persistedTopic:
+            if persistedTopic[key].name == user:
+                persistedTopic[key].score = persistedTopic[key].score + 1 
+                dispatcher.utter_message('User '+user+'` Score um eins erhöht für Topic: '+topic)
+                foundUser = True
+                break
+        if foundUser is True:
+            skillData[topic].append({"name": user, "score": 1})
+            dispatcher.utter_message('User '+user+'` wurde für das Topic vermerkt: '+topic)
+        
+        return [AllSlotsReset()]
+    
+    def dump(self, obj):
+        for attr in dir(obj):
+            print("obj.%s = %r" % (attr, getattr(obj, attr)))
+            
+class ActionTopicsInCategory(Action):
+    def name(self):
+        return 'action_topics_in_category'
+    def run(self, dispatcher, tracker, domain):
+        category = tracker.get_slot('category') if tracker.get_slot('category') else 'None'
+        category = str(category) 
+        with open('./data/skills.json') as f:
+            skillData = json.load(f)
+        if 'categories' not in skillData:
+            dispatcher.utter_message('Keine Skills sinds vorhanden')
+            return []
+        for persistedCategory in skillData['categories']:
+            if persistedCategory.lower() != category.lower():
+                continue
+            topics = skillData['categories'][persistedCategory]
+            if len(topics) == 0:
+                dispatcher.utter_message('Kein Topic gefunden in Kategroie: '+category)
+                return []
+            topicsString = ''
+            for topic in topics:
+                topicsString += ', '+topic
+            dispatcher.utter_message('Folgen Topics habe ich in Kategoie '+category+' gefunden: '+topicsString)
+            return [AllSlotsReset()]
+        
+        categories = ''
+        for category in skillData['categories']:
+            categories += ', '+category
+        dispatcher.utter_message('Keine Kategorie mit dem name '+category+' gefunden, wähle doch eine von '+categories)
+   
 class ActionPreReportIllness(JiraAwareAction):
     def name(self):
         return 'action_pre_report_illness'
     def run(self, dispatcher, tracker, domain):
         """
-
-            Called in dialog, when from and to are select and we can create and send a jira ticket
+            Called in dialog, when from and to are select
+            and we can create and send a jira ticket
         """
 
-        first, last = self._evaluateFromToByTracker(tracker)
+        first, last = self.evaluate_from_to_by_tracker(tracker)
         user = tracker.get_slot('user')
+
         
         if user is None:
             # Todo Replace self assignment
-            user = '@electricmaxxx'
-        subject, body = self._createReportIllnessMessage(user, first, last)
-        responseMessage = """
-Ich würde dir dieses Ticket anlegen:
-Subject: {}
-{}
-            """.format(subject, body)
-        dispatcher.utter_message(responseMessage)
+            user = dispatcher.sender_id
+        person = dispatcher.output_channel.get_person_by_id(user)
+        subject = "Krankmeldung [{}]".format(person.fullname)
+        body = """"
+        Wer ist krank: [{}]
+            
+Erster Krankheitstag: {}
+
+Voraussichtlicher letzter Krankheitstag: {}
+        """.format(person.fullname, first, last)
+        response_message = """
+        Ich würde dir dieses Ticket anlegen:
+Subject: {subject}
+{body}
+        """.format(subject,body)
+        dispatcher.utter_message(response_message)
         try:
             self._handle_jira_auth(user)
         except JiraNeedsAuthorization as e:
             dispatcher.utter_message("Authorisation Needed {}".format(e))
         return [
-            SlotSet('confirmation', False),
+            SlotSet('confirmation_required', True),
             SlotSet('subject', subject),
             SlotSet('body', body),
             SlotSet('user', user)
@@ -170,8 +269,9 @@ class ActionReportIllness(JiraAwareAction):
             dispatcher.utter_message('Hier ist uns ein falscher Wert gekommen: '+confirmation)
             return []
         
+        user = self._evauate_user(tracker, dispatcher)
         try:
-            jira = self._jira_client(tracker.get_slot('user'))
+            jira = self._jira_client(user)
             issue = jira.create_issue(project=config.JIRA_PROJECT_HR,
                                 summary=tracker.get_slot('subject'),
                                 description=tracker.get_slot('body'),
