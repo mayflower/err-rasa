@@ -1,0 +1,33 @@
+{
+  "name": "slack-plugin",
+  "version": "1.0.0",
+  "description": "rasa_nlu errbot integration",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "chatito": "chatito config/chatito --format=rasa && cp config/_rasa.json config/training_data.json",
+    "build:dialog-model": ".errbot-ve/bin/python dialogue_model.py",
+    "build:nlu-model": ".errbot-ve/bin/python nlu_model.py",
+    "train:dialog": ".errbot-ve/bin/python train_online.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayflower/err-rasa.git"
+  },
+  "keywords": [
+    "rasa",
+    "errbot",
+    "nlu"
+  ],
+  "author": "Maximlian Berghoff <maximilian.berghoff@gmx.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mayflower/err-rasa/issues"
+  },
+  "homepage": "https://github.com/mayflower/err-rasa#readme",
+  "dependencies": {
+    "chatito": "^2.0.0"
+  }
+}

@@ -7,45 +7,67 @@
 - [virtualenv](https://virtualenv.pypa.io)
 
 
-# Install
+## Usage for contribution
+
+You will have to install [virtualenv](https://virtualenv.pypa.io) on to have a nice python environment to work in. Having that you can clone the repository where ever you whant to:
 
 ```bash
-mkdir my-errbot
-cd my-errbot
-errbot --init
-
-# clon the repo
 git clone git@github.com:mayflower/err-rasa.git plugins/rase-plugin
 cd plugins/rasa-plugin
+```
+
+I would create a python environment there:
+
+```bash
+virtualenv --python `which python3` .errbot-ve
+.errbot-ve/bin/pip install errbot
 # install required python packages
-pip install -r requirements.txt
-cd -
+.errbot-ve/bin/pip install -r requirements.txt
+```
+The folder lives inside the .gitignore and doing so we have a nice errbot installed inside our environment.
 
-# use the predefined configuration
+Now you have to prepare your working folder:
+
+```bash
+# create an empty folder for later data
+mkdir data/
+# create a demo config files with most needed parameters
 cp config_slack.py config.py
+# set `BOT_EXTRA_PLUGIN_DIR` value to `./plugin` - inside your working errbot instance you have to adopt this one
+```
 
-#create data directory
-mkdir data
+To have the german language available through `spacy` we have to download it:
 
+```bash
 # install and link german language pack for spacy (the analyzer)
 python -m spacy download de
 ```
 
-Edit config:
+### Training data
 
-- add your slack token
-- set `BOT_EXTRA_PLUGIN_DIR` value to `./plugins/rasa-plugin`
+We prepared a tool with name `chatitot` to create training data from a markdown file. So to use those data you have to run
+a `npm install` and then run
 
-# Training
-to add more training data copy the content of `config/chatito` and to to [Chatito](https://rodrigopivi.github.io/Chatito/) and copy it into the left field of the edtor.
-there you can adjust the left side, generate the json and copy that into the training_data.json
+```bash
+# creates config/training_data.json from config/chatito
+npm run chatito
 
+# builds nlu model from config/training_data.json
+npm run build:nlu-model
 
-# Run
+# builds dialoque model form config/stories.md and config/training_data.json
+npm run build:dialog-model
+
+# run trainer to get a better conversation
+npm run train:dialog
+```
+
+Now grab your Slack-API-Key and pass it to th configuration as the last task and you can start your bot
+
 
 ```bash
 # run errbot
+.errbot-ve/bin/errbot
+```
 
-errbot # should use config.py
-
-``` 
+Using the `-T` or `--text` command will open a text based version inside your console. This command will open a connection to your slack.

@@ -40,55 +40,7 @@
     Symfony
     Django
     Spring
-    .net Core
-    Golang
-    Scala
-    Ansible
-    React
-    PHP
-    React Native
-    Ionic2
     Angular
-    ELK
-    Greylog
-    AWS
-    Azure
-    Profitbricks
-    GCE
-    ExtJS
-    AngularJS
-    Zend Framework
-    Symfony
-    Docker
-    Swift
-    Android
-    Java
-    Puppet
-    .net
-    Python
-    elm
-    Kafka
-    Redux
-    GraphQL
-    NixOS
-    yarn
-    Amazon Lambda
-    Aka
-    R
-    Tensorflow
-    Torch
-    Kotlin
-    play
-    Spring Boot
-    Kubernets
-    Elixir
-    Rust
-    Consul
-    etcd
-    Hasicorp
-    Vault
-    treafik
-    Postgr
 
 @[category]
     Sprachen
@@ -162,26 +114,37 @@
 @[user]
     @electricmaxxx
 
+@[confirmation]
+    confirmation_accepted
+    confirmation_declined
+
 ~[sprachen]
     Sprachen
     Sprachen & Frameworks
     Frameworks
+
 ~[tools]
     Tools
     Werkzeuge
+
 ~[technologien]
     Technologien
     Main Streamtopics_in_category
+
 ~[agile]
     Agile
+
 ~[plattfomrs]
     Plattformen
+
 ~[confirmation_accepted]
     Yes
     Y
     YEA
     Ja
     OK
+
+
 ~[confirmation_declined]
     Nee
     NO

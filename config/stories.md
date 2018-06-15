@@ -11,7 +11,6 @@
 ## Story User asks for something
 * who_knows_topic
     - action_who_knows_topic
-> who_knows_some_topic
 
 ## Story User claims to know something in a specific category
 * claim_to_know_topic_in_category
@@ -82,15 +81,12 @@
 * report_illness_duration{"confirmation": "confirmation_declined"}
     - utter_goodby
 
-# Story accecepted auth request
+## Story accecepted auth request
 > check_auth_confirmation_for_issue_creation_duration
 * report_illness_duration{"auth_confirmation": "auth_confirmed"}
     - action_report_illness
 
-# Story declined auth request
+## Story declined auth request
 > check_auth_confirmation_for_issue_creation_duration
 * report_illness_duration{"auth_confirmation": "auth_declined"}
     - utter_goodby
-## Generated Story 5458272337054281363
-* who_knows_topic
-    - action_who_knows_topic
