@@ -10,23 +10,20 @@
     Welche Skills haben wir in @[category]?
     Warum sagst du nicht, dass du @[topic] kannst?
     Kannst mir jemand bei @[topic] helfen?
-    Hilfe @[topic]
-    Wer weiß was zu @[topic]
-    Wer weiß etwas zum thema @[topic]
-    Was zur Hölle ist @[topic]
-    Wer kennt @[topic]
+    Hilfe @[topic]?
+    Wer weiß was zu @[topic]?
+    Wer weiß etwas zum thema @[topic]?
+    Was zur Hölle ist @[topic]?
+    Wer kennt @[topic]?
     Wer hat schon einmal etwas zu @[topic] gehört?
-    Wie geht @[topic]
+    Wie geht @[topic]?
 
 %[claim_to_know_topic_in_category]
     Ich kenn @[topic] im Bereich @[category]
     @[topic] gehört zu @[category]
     @[topic] gehört zu @[category]
-    Eine Sache in @[category] ist @[topic]
 
 %[claim_to_know_topic]
-    @[user] sollte etwas wissen
-    @[user] kennt sich mit @[topic] aus
     Ich habe mich mit @[topic] beschäftigt
     Ich weiß etwas in @[topic]
     Mein Mayday-Projekt beschäftigt sich mit @[topic]

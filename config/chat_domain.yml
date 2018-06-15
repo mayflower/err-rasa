@@ -76,28 +76,6 @@ templates:
         - What is the last day of your illness
     utter_get_report_illness_duration:
         - How long will you be away?
-    utter_get_report_illness_confirmation:
-        - text: Passt das so?
-          buttons:
-            - title: "OK"
-              payload: "True"
-              style: "background-color: green"
-              value: "confirmation_accepted"
-            - title: "Nee"
-              payload: "False"
-              style: "background-color: red"
-              value: "confirmation_declined"
-    utter_get_report_illness_auth_confirmation:
-        - text: Du solltest einen OAuth Link bekommen haben, bestätigt?
-          buttons:
-            - title: "OK"
-              payload: "True"
-              style: "background-color: green"
-              value: "auth_confirmed"
-            - title: "Nee"
-              payload: "False"
-              style: "background-color: red"
-              value: "auth_declined"
     utter_greet:
         - 'Hello, how can I help you?'
         - 'Hi, I am here to help.'
@@ -115,10 +93,9 @@ actions:
     - actions.ActionWhoKnowsTopic
     - actions.ActionClaimToKnowTopic
     - actions.ActionIForgot
+    - actions.ActionConfirmation
     - actions.ActionTopicsInCategory
     - utter_get_report_illness_last
     - utter_get_report_illness_duration
-    - utter_get_report_illness_confirmation
-    - utter_get_report_illness_auth_confirmation
     - actions.ActionPreReportIllness
     - actions.ActionReportIllness

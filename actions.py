@@ -2,8 +2,6 @@
 from rasa_core.actions import Action
 from rasa_core.events import AllSlotsReset, SlotSet
 from jira import JIRA
-import errbot.backends.base
-from errbot.templating import tenv
 
 import logging
 import arrow
@@ -12,6 +10,8 @@ import json
 from lib.jira_oauth import JiraOauth
 
 import config
+from multiprocessing.managers import dispatch
+from rasa_core import tracker_store
 
 class JiraNeedsAuthorization(Exception):
     pass
@@ -51,17 +51,7 @@ class JiraAwareAction(Action):
             # Todo Replace self assignment
             user = person.aclattr
 
-        return user;
-    def _create_report_illness_message(self, user, first, last):
-        subject = "krankmeldung [{}]".format(user)
-        body = """
-            Wer ist krank: [{}]
-            
-            Erster Krankheitstag: {}
-            
-            Voraussichtlicher letzter Krankheitstag: {}
-            """.format(user, first, last)
-        return subject, body
+        return user
 
     def _handle_jira_auth(self, user):
         """Handles jira auth"""
@@ -116,7 +106,7 @@ class ActionWhoKnowsTopic(Action):
             dispatcher.utter_message('Ich habe kein Topic bekommen')
             return []
 
-        topic = str(topic) 
+        topic = str(topic)
         bests = []
         with open('./data/skills.json') as f:
             skillData = json.load(f)
@@ -143,6 +133,19 @@ class ActionIForgot(Action):
         dispatcher.utter_message('Action forgotten')
         return []
 
+class ActionConfirmation(Action):
+    def name(self):
+        return 'action_confirmation'
+    def run(self, dispatcher, tracker, domain):
+        confirmed = tracker.get_slot('confirmed')
+        if confirmed is True:
+            dispatcher.utter_message('Cool, dann gehts weiter')
+            return [SlotSet({'confirmation': 'confirmation_accepted'})]
+        else:
+            dispatcher.utter_message('Schisser')
+            return [SlotSet({'confirmation': 'confirmation_declined'})]
+        return []
+
 class ActionClaimToKnowTopic(JiraAwareAction):
     def name(self):
         return 'action_claim_to_know_topic'
@@ -155,7 +158,7 @@ class ActionClaimToKnowTopic(JiraAwareAction):
         if user is None:
             dispatcher.utter_message('No user given')
             return []
-        topic = str(topic) 
+        topic = str(topic)
         with open('./data/skills.json') as f:
             skillData = json.load(f)
         if 'skills' not in skillData:
@@ -169,26 +172,26 @@ class ActionClaimToKnowTopic(JiraAwareAction):
         foundUser = False
         for key in persistedTopic:
             if persistedTopic[key].name == user:
-                persistedTopic[key].score = persistedTopic[key].score + 1 
+                persistedTopic[key].score = persistedTopic[key].score + 1
                 dispatcher.utter_message('User '+user+'` Score um eins erhöht für Topic: '+topic)
                 foundUser = True
                 break
         if foundUser is True:
             skillData[topic].append({"name": user, "score": 1})
             dispatcher.utter_message('User '+user+'` wurde für das Topic vermerkt: '+topic)
-        
+
         return [AllSlotsReset()]
-    
+
     def dump(self, obj):
         for attr in dir(obj):
             print("obj.%s = %r" % (attr, getattr(obj, attr)))
-            
+
 class ActionTopicsInCategory(Action):
     def name(self):
         return 'action_topics_in_category'
     def run(self, dispatcher, tracker, domain):
         category = tracker.get_slot('category') if tracker.get_slot('category') else 'None'
-        category = str(category) 
+        category = str(category)
         with open('./data/skills.json') as f:
             skillData = json.load(f)
         if 'categories' not in skillData:
@@ -206,12 +209,12 @@ class ActionTopicsInCategory(Action):
                 topicsString += ', '+topic
             dispatcher.utter_message('Folgen Topics habe ich in Kategoie '+category+' gefunden: '+topicsString)
             return [AllSlotsReset()]
-        
+
         categories = ''
         for category in skillData['categories']:
             categories += ', '+category
         dispatcher.utter_message('Keine Kategorie mit dem name '+category+' gefunden, wähle doch eine von '+categories)
-   
+
 class ActionPreReportIllness(JiraAwareAction):
     def name(self):
         return 'action_pre_report_illness'
@@ -224,29 +227,31 @@ class ActionPreReportIllness(JiraAwareAction):
         first, last = self.evaluate_from_to_by_tracker(tracker)
         user = tracker.get_slot('user')
 
-        
+
         if user is None:
             # Todo Replace self assignment
             user = dispatcher.sender_id
         person = dispatcher.output_channel.get_person_by_id(user)
         subject = "Krankmeldung [{}]".format(person.fullname)
-        body = """"
-        Wer ist krank: [{}]
-            
+        body = """
+Wer ist krank: [{}]
+
 Erster Krankheitstag: {}
 
 Voraussichtlicher letzter Krankheitstag: {}
         """.format(person.fullname, first, last)
         response_message = """
-        Ich würde dir dieses Ticket anlegen:
-Subject: {subject}
-{body}
+Ich würde dir dieses Ticket anlegen:
+Subject: {}
+{}
+Passt das so?
         """.format(subject,body)
         dispatcher.utter_message(response_message)
         try:
             self._handle_jira_auth(user)
         except JiraNeedsAuthorization as e:
             dispatcher.utter_message("Authorisation Needed {}".format(e))
+            tracker.trigger_follow_up_action(ActionConfirmation)
         return [
             SlotSet('confirmation_required', True),
             SlotSet('subject', subject),
@@ -268,7 +273,7 @@ class ActionReportIllness(JiraAwareAction):
         elif confirmation != 'confirmation_accept':
             dispatcher.utter_message('Hier ist uns ein falscher Wert gekommen: '+confirmation)
             return []
-        
+
         user = self._evauate_user(tracker, dispatcher)
         try:
             jira = self._jira_client(user)
@@ -278,6 +283,8 @@ class ActionReportIllness(JiraAwareAction):
                                 issuetype={'name': 'Story'})
         except JiraNeedsAuthorization as e:
             dispatcher.utter_message(str(e))
+            tracker.trigger_follow_up_action(ActionConfirmation)
+
             return [SlotSet('auth_required', True)]
         dispatcher.utter_message('Ich habe dir Ticket {} angelegt. Gute Besserung'.format(issue))
 
