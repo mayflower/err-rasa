@@ -33,7 +33,7 @@
 * report_illness_from_to
     - action_pre_report_illness
 * report_illness_from_to{"confirmation_required": "True"}
-    - utter_get_report_illness_confirmation
+    - action_confirmation
 > check_confirmation_for_issue_creation_from_to
 
 ## Story accept issue creation for from-to situation
@@ -52,7 +52,7 @@
 * report_illness_from_to{"auth_confirmation": "auth_confirmed"}
     - action_report_illness
 * report_illness_from_to{"auth_required": "True"}
-    - utter_get_report_illness_auth_confirmation
+    - action_confirmation
 
 ## Story declined auth request
 > check_auth_confirmation_for_issue_creation_from_to
@@ -64,7 +64,7 @@
 * report_illness_duration
     - action_pre_report_illness
 * report_illness_duration{"confirmation_required": "True"}
-    - utter_get_report_illness_confirmation
+    - action_confirmation
 > check_confirmation_for_issue_creation_duration
 
 ## Story accept issue creation for duration
@@ -72,7 +72,7 @@
 * report_illness_duration{"confirmation": "confirmation_accepted"}
     - action_report_illness
 * report_illness_duration{"auth_required": "True"}
-    - utter_get_report_illness_auth_confirmation
+    - action_confirmation
 > check_auth_confirmation_for_issue_creation_duration
 
 ## Story decline issue creation for duration
@@ -89,3 +89,6 @@
 > check_auth_confirmation_for_issue_creation_duration
 * report_illness_duration{"auth_confirmation": "auth_declined"}
     - utter_goodby
+## Generated Story 5458272337054281363
+* who_knows_topic
+    - action_who_knows_topic

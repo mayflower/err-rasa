@@ -2,8 +2,6 @@
 from rasa_core.actions import Action
 from rasa_core.events import AllSlotsReset, SlotSet
 from jira import JIRA
-import errbot.backends.base
-from errbot.templating import tenv
 
 import logging
 import arrow
@@ -12,6 +10,7 @@ import json
 from lib.jira_oauth import JiraOauth
 
 import config
+from multiprocessing.managers import dispatch
 
 class JiraNeedsAuthorization(Exception):
     pass
@@ -51,17 +50,7 @@ class JiraAwareAction(Action):
             # Todo Replace self assignment
             user = person.aclattr
 
-        return user;
-    def _create_report_illness_message(self, user, first, last):
-        subject = "krankmeldung [{}]".format(user)
-        body = """
-            Wer ist krank: [{}]
-            
-            Erster Krankheitstag: {}
-            
-            Voraussichtlicher letzter Krankheitstag: {}
-            """.format(user, first, last)
-        return subject, body
+        return user
 
     def _handle_jira_auth(self, user):
         """Handles jira auth"""
@@ -141,6 +130,19 @@ class ActionIForgot(Action):
         return 'action_forgotten'
     def run(self, dispatcher, tracker, domain):
         dispatcher.utter_message('Action forgotten')
+        return []
+
+class ActionConfirmation(Action):
+    def name(self):
+        return 'action_confirmation'
+    def run(self, dispatcher, tracker, domain):
+        confirmed = tracker.get_slot('confirmed')
+        if confirmed is True:
+            dispatch.utter_message('Cool, dann gehts weiter')
+            return [SlotSet({'confirmation': 'confirmation_accepted'})]
+        else:
+            dispatch.utter_message('Schisser')
+            return [SlotSet({'confirmation': 'confirmation_declined'})]
         return []
 
 class ActionClaimToKnowTopic(JiraAwareAction):
@@ -230,17 +232,18 @@ class ActionPreReportIllness(JiraAwareAction):
             user = dispatcher.sender_id
         person = dispatcher.output_channel.get_person_by_id(user)
         subject = "Krankmeldung [{}]".format(person.fullname)
-        body = """"
-        Wer ist krank: [{}]
-            
+        body = """
+Wer ist krank: [{}]
+  
 Erster Krankheitstag: {}
 
 Voraussichtlicher letzter Krankheitstag: {}
         """.format(person.fullname, first, last)
         response_message = """
-        Ich würde dir dieses Ticket anlegen:
-Subject: {subject}
-{body}
+Ich würde dir dieses Ticket anlegen:
+Subject: {}
+{}
+Passt das so?
         """.format(subject,body)
         dispatcher.utter_message(response_message)
         try:
