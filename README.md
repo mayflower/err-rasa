@@ -18,11 +18,17 @@ errbot --init
 git clone git@github.com:mayflower/err-rasa.git plugins/rase-plugin
 cd plugins/rasa-plugin
 # install required python packages
-python install -r requirements.txt
+pip install -r requirements.txt
 cd -
 
 # use the predefined configuration
-cp plugins/rasa-plugin/config_slack.py ./config.py
+cp config_slack.py config.py
+
+#create data directory
+mkdir data
+
+# install and link german language pack for spacy (the analyzer)
+python -m spacy download de
 ```
 
 Edit config:
