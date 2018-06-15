@@ -5,3 +5,5 @@ actions.pyc
 .errbot-ve/
 .pytest_cache/
 .cache/
+__pycache__
+/plugin/__pycache__
