@@ -133,6 +133,16 @@
 
 %[ask_for_confirmation]
     @[confirmation]
+    @[confirmation_required]
+    @[auth_confirmation_required]
+
+@[confirmation_required]
+    True
+    False
+
+@[auth_confirmation_required]
+    True
+    False
 
 @[confirmation]
     confirmation_accepted
@@ -145,8 +155,8 @@
     Ja
     OK
 
-
 ~[confirmation_declined]
     Nee
-    NO
+    No
+    Nein
     noe

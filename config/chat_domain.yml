@@ -19,7 +19,8 @@ entities:
     - time
     - number
     - confirmation
-    - auth_required
+    - confirmation_required
+    - auth_confirmation_required
 
 slots:
     topic:
@@ -51,7 +52,9 @@ slots:
         values:
             - confirmation_accepted
             - confirmation_declined
-    auth_required:
+    confirmation_required:
+        type: bool
+    auth_confirmation_required:
         type: bool
     body:
         type: text
@@ -77,6 +80,12 @@ templates:
     utter_goodby:
         - 'See you later'
         - 'Bye'
+    utter_get_ask_for_confirmation_confirmation:
+        - Passt das so?
+        - OK?
+        - In Ordnung?
+    utter_get_ask_for_confirmation_auth_confirmation:
+        - Hast du den Authentication-Link gesehen und auch bestätigt?
 
 actions:
     - utter_goodby
@@ -89,6 +98,8 @@ actions:
     - actions.ActionClaimToKnowTopic
     - actions.ActionIForgot
     - actions.ActionConfirmation
+    - utter_get_ask_for_confirmation_confirmation
+    - utter_get_ask_for_confirmation_auth_confirmation
     - actions.ActionTopicsInCategory
     - utter_get_report_illness_last
     - utter_get_report_illness_duration

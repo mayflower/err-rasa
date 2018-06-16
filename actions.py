@@ -137,13 +137,13 @@ class ActionConfirmation(Action):
     def name(self):
         return 'action_confirmation'
     def run(self, dispatcher, tracker, domain):
-        confirmed = tracker.get_slot('confirmed')
+        confirmed = tracker.get_slot('confirmation')
         if confirmed is True:
             dispatcher.utter_message('Cool, dann gehts weiter')
-            return [SlotSet('confirmation', 'confirmation_accepted')]
+            return []
         else:
             dispatcher.utter_message('Schisser')
-            return [SlotSet('confirmation', 'confirmation_declined')]
+            return []
         return []
 
 class ActionClaimToKnowTopic(JiraAwareAction):
@@ -244,18 +244,18 @@ Voraussichtlicher letzter Krankheitstag: {}
 Ich würde dir dieses Ticket anlegen:
 Subject: {}
 {}
-Passt das so?
         """.format(subject,body)
         dispatcher.utter_message(response_message)
         try:
             self._handle_jira_auth(user)
         except JiraNeedsAuthorization as e:
             dispatcher.utter_message("Authorisation Needed {}".format(e))
-            tracker.trigger_follow_up_action(ActionConfirmation)
+            return [SlotSet('auth_confirmation_required', True)]
         return [
             SlotSet('subject', subject),
             SlotSet('body', body),
-            SlotSet('user', user)
+            SlotSet('user', user),
+            SlotSet('confirmation_required', True)
         ]
 
 class ActionReportIllness(JiraAwareAction):
@@ -282,9 +282,8 @@ class ActionReportIllness(JiraAwareAction):
                                 issuetype={'name': 'Story'})
         except JiraNeedsAuthorization as e:
             dispatcher.utter_message(str(e))
-            tracker.trigger_follow_up_action(ActionConfirmation)
 
-            return [SlotSet('auth_required', True)]
+            return [SlotSet('auth_confirmation_required', True)]
         dispatcher.utter_message('Ich habe dir Ticket {} angelegt. Gute Besserung'.format(issue))
 
-        return []
+        return [SlotSet('confirmation_required', False)]
