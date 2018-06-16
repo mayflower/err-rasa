@@ -140,10 +140,10 @@ class ActionConfirmation(Action):
         confirmed = tracker.get_slot('confirmed')
         if confirmed is True:
             dispatcher.utter_message('Cool, dann gehts weiter')
-            return [SlotSet({'confirmation': 'confirmation_accepted'})]
+            return [SlotSet('confirmation', 'confirmation_accepted')]
         else:
             dispatcher.utter_message('Schisser')
-            return [SlotSet({'confirmation': 'confirmation_declined'})]
+            return [SlotSet('confirmation', 'confirmation_declined')]
         return []
 
 class ActionClaimToKnowTopic(JiraAwareAction):
@@ -253,7 +253,6 @@ Passt das so?
             dispatcher.utter_message("Authorisation Needed {}".format(e))
             tracker.trigger_follow_up_action(ActionConfirmation)
         return [
-            SlotSet('confirmation_required', True),
             SlotSet('subject', subject),
             SlotSet('body', body),
             SlotSet('user', user)

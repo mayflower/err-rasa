@@ -8,9 +8,12 @@
   },
   "scripts": {
     "chatito": "chatito config/chatito --format=rasa && cp config/_rasa.json config/training_data.json",
+    "errbot": ".errbot-ve/bin/errbot",
+    "errbot:text": ".errbot-ve/bin/errbot -T",
     "build:dialog-model": ".errbot-ve/bin/python dialogue_model.py",
     "build:nlu-model": ".errbot-ve/bin/python nlu_model.py",
-    "train:dialog": ".errbot-ve/bin/python train_online.py"
+    "train:dialog": ".errbot-ve/bin/python train_online.py",
+    "visualize:dialog": ".errbot-ve/bin/python -m rasa_core.visualize -d config/chat_domain.yml -s config/stories.md -o graph.png"
   },
   "repository": {
     "type": "git",

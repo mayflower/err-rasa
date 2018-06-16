@@ -8,6 +8,7 @@ intents:
     - topics_in_category
     - report_illness_duration
     - report_illness_from_to
+    - ask_for_confirmation
 
 entities:
     - category
@@ -18,6 +19,7 @@ entities:
     - time
     - number
     - confirmation
+    - auth_required
 
 slots:
     topic:
@@ -49,14 +51,7 @@ slots:
         values:
             - confirmation_accepted
             - confirmation_declined
-    auth_confirmation:
-        type: categorical
-        values:
-            - auth_confirmed
-            - auth_declined
     auth_required:
-        type: bool
-    confirmation_required:
         type: bool
     body:
         type: text

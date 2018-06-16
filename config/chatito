@@ -54,6 +54,26 @@
     Frameworks
     Agile
 
+~[sprachen]
+    Sprachen
+    Sprachen & Frameworks
+    Frameworks
+
+~[tools]
+    Tools
+    Werkzeuge
+
+~[technologien]
+    Technologien
+    Main Streamtopics_in_category
+
+~[agile]
+    Agile
+
+~[plattfomrs]
+    Plattformen
+
+
 %[report_illness_duration]
     Hi, ich werde für @[duration] Tage ausfallen.
     I werde für @[duration] Tage krank sein.
@@ -111,31 +131,12 @@
     fuck of
     hf
 
-@[user]
-    @electricmaxxx
+%[ask_for_confirmation]
+    @[confirmation]
 
 @[confirmation]
     confirmation_accepted
     confirmation_declined
-
-~[sprachen]
-    Sprachen
-    Sprachen & Frameworks
-    Frameworks
-
-~[tools]
-    Tools
-    Werkzeuge
-
-~[technologien]
-    Technologien
-    Main Streamtopics_in_category
-
-~[agile]
-    Agile
-
-~[plattfomrs]
-    Plattformen
 
 ~[confirmation_accepted]
     Yes

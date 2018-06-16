@@ -16,8 +16,8 @@ logger = logging.getLogger(__name__)
 
 
 def run_bot_online(input_channel, interpreter,
-                          domain_file="config/chat_domain.yml",
-                          training_data_file='config/stories.md'):
+                          domain_file="./config/chat_domain.yml",
+                          training_data_file='./config/stories.md'):
     agent = Agent(domain_file,
                   policies=[MemoizationPolicy(max_history=2), KerasPolicy()],
                   interpreter=interpreter)

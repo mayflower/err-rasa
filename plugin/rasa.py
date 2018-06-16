@@ -36,9 +36,9 @@ class Rasa(BotPlugin):
         """Override to hook into the messaging and calling rase """
         super(Rasa, self).callback_message(message)
         text = message.body
-        if text in self.OWN_COMMANDS:
+        if text == '!learnonline':
             self.log.debug("Do not send something as it is an own commmand: "+text)
-            return ''
+            return
         
         token = config.BOT_IDENTITY['token']
         if token is None:
@@ -52,7 +52,7 @@ class Rasa(BotPlugin):
                                     output_channel=self.backend_adapter)
 
     @botcmd()
-    def learnonline(self):
+    def learnonline(self, msg, args):
         """Command to trigger learn_online on rasa agent"""
         token = config.BOT_IDENTITY['token']
         if token is None:

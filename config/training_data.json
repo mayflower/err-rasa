@@ -4,25 +4,13 @@
   "entity_synonyms": [],
   "common_examples": [
    {
-    "text": "Was gehört denn alles zu Frameworks",
+    "text": "Was versteckt sich hinter Frameworks",
     "intent": "topics_in_category",
     "entities": [
      {
-      "end": 35,
+      "end": 36,
       "entity": "category",
-      "start": 25,
-      "value": "Frameworks"
-     }
-    ]
-   },
-   {
-    "text": "Was ist alles in Frameworks",
-    "intent": "topics_in_category",
-    "entities": [
-     {
-      "end": 27,
-      "entity": "category",
-      "start": 17,
+      "start": 26,
       "value": "Frameworks"
      }
     ]
@@ -40,26 +28,14 @@
     ]
    },
    {
-    "text": "Was versteckt sich hinter Agile",
+    "text": "Was gehört denn alles zu Sprachen & Frameworks",
     "intent": "topics_in_category",
     "entities": [
      {
-      "end": 31,
+      "end": 46,
       "entity": "category",
-      "start": 26,
-      "value": "Agile"
-     }
-    ]
-   },
-   {
-    "text": "Was versteckt sich hinter Frameworks",
-    "intent": "topics_in_category",
-    "entities": [
-     {
-      "end": 36,
-      "entity": "category",
-      "start": 26,
-      "value": "Frameworks"
+      "start": 25,
+      "value": "Sprachen & Frameworks"
      }
     ]
    },
@@ -76,158 +52,38 @@
     ]
    },
    {
-    "text": "Welche Themen liegen in Sprachen",
-    "intent": "topics_in_category",
-    "entities": [
-     {
-      "end": 32,
-      "entity": "category",
-      "start": 24,
-      "value": "Sprachen"
-     }
-    ]
-   },
-   {
-    "text": "Was gehört denn alles zu Technologien",
-    "intent": "topics_in_category",
-    "entities": [
-     {
-      "end": 37,
-      "entity": "category",
-      "start": 25,
-      "value": "Technologien"
-     }
-    ]
-   },
-   {
-    "text": "Was versteckt sich hinter Sprachen & Frameworks",
-    "intent": "topics_in_category",
-    "entities": [
-     {
-      "end": 47,
-      "entity": "category",
-      "start": 26,
-      "value": "Sprachen & Frameworks"
-     }
-    ]
-   },
-   {
-    "text": "Was ist alles in Sprachen & Frameworks",
-    "intent": "topics_in_category",
-    "entities": [
-     {
-      "end": 38,
-      "entity": "category",
-      "start": 17,
-      "value": "Sprachen & Frameworks"
-     }
-    ]
-   },
-   {
-    "text": "Was gehört denn alles zu Sprachen",
-    "intent": "topics_in_category",
-    "entities": [
-     {
-      "end": 33,
-      "entity": "category",
-      "start": 25,
-      "value": "Sprachen"
-     }
-    ]
-   },
-   {
-    "text": "Welche Themen liegen in Agile",
-    "intent": "topics_in_category",
-    "entities": [
-     {
-      "end": 29,
-      "entity": "category",
-      "start": 24,
-      "value": "Agile"
-     }
-    ]
-   },
-   {
-    "text": "Was ist alles in Sprachen",
-    "intent": "topics_in_category",
-    "entities": [
-     {
-      "end": 25,
-      "entity": "category",
-      "start": 17,
-      "value": "Sprachen"
-     }
-    ]
-   },
-   {
-    "text": "Was versteckt sich hinter Technologien",
-    "intent": "topics_in_category",
-    "entities": [
-     {
-      "end": 38,
-      "entity": "category",
-      "start": 26,
-      "value": "Technologien"
-     }
-    ]
-   },
-   {
-    "text": "Was gehört denn alles zu Sprachen & Frameworks",
-    "intent": "topics_in_category",
-    "entities": [
-     {
-      "end": 46,
-      "entity": "category",
-      "start": 25,
-      "value": "Sprachen & Frameworks"
-     }
-    ]
-   },
-   {
-    "text": "Was ist alles in Tools",
-    "intent": "topics_in_category",
-    "entities": [
-     {
-      "end": 22,
-      "entity": "category",
-      "start": 17,
-      "value": "Tools"
-     }
-    ]
-   },
-   {
-    "text": "Welche Themen liegen in Sprachen & Frameworks",
-    "intent": "topics_in_category",
-    "entities": [
-     {
-      "end": 45,
-      "entity": "category",
-      "start": 24,
-      "value": "Sprachen & Frameworks"
-     }
-    ]
-   },
-   {
-    "text": "Was versteckt sich hinter Tools",
+    "text": "Was versteckt sich hinter Agile",
     "intent": "topics_in_category",
     "entities": [
      {
       "end": 31,
       "entity": "category",
       "start": 26,
-      "value": "Tools"
+      "value": "Agile"
      }
     ]
    },
    {
-    "text": "Was gehört denn alles zu Plattformen",
+    "text": "Was ist alles in Frameworks",
     "intent": "topics_in_category",
     "entities": [
      {
-      "end": 36,
+      "end": 27,
+      "entity": "category",
+      "start": 17,
+      "value": "Frameworks"
+     }
+    ]
+   },
+   {
+    "text": "Was gehört denn alles zu Agile",
+    "intent": "topics_in_category",
+    "entities": [
+     {
+      "end": 30,
       "entity": "category",
       "start": 25,
-      "value": "Plattformen"
+      "value": "Agile"
      }
     ]
    },
@@ -256,30 +112,6 @@
     ]
    },
    {
-    "text": "Was versteckt sich hinter Sprachen",
-    "intent": "topics_in_category",
-    "entities": [
-     {
-      "end": 34,
-      "entity": "category",
-      "start": 26,
-      "value": "Sprachen"
-     }
-    ]
-   },
-   {
-    "text": "Was gehört denn alles zu Agile",
-    "intent": "topics_in_category",
-    "entities": [
-     {
-      "end": 30,
-      "entity": "category",
-      "start": 25,
-      "value": "Agile"
-     }
-    ]
-   },
-   {
     "text": "Welche Themen liegen in Technologien",
     "intent": "topics_in_category",
     "entities": [
@@ -292,14 +124,110 @@
     ]
    },
    {
-    "text": "Was versteckt sich hinter Plattformen",
+    "text": "Was gehört denn alles zu Sprachen",
     "intent": "topics_in_category",
     "entities": [
      {
-      "end": 37,
+      "end": 33,
+      "entity": "category",
+      "start": 25,
+      "value": "Sprachen"
+     }
+    ]
+   },
+   {
+    "text": "Was ist alles in Tools",
+    "intent": "topics_in_category",
+    "entities": [
+     {
+      "end": 22,
+      "entity": "category",
+      "start": 17,
+      "value": "Tools"
+     }
+    ]
+   },
+   {
+    "text": "Welche Themen liegen in Sprachen & Frameworks",
+    "intent": "topics_in_category",
+    "entities": [
+     {
+      "end": 45,
+      "entity": "category",
+      "start": 24,
+      "value": "Sprachen & Frameworks"
+     }
+    ]
+   },
+   {
+    "text": "Was versteckt sich hinter Sprachen & Frameworks",
+    "intent": "topics_in_category",
+    "entities": [
+     {
+      "end": 47,
       "entity": "category",
       "start": 26,
-      "value": "Plattformen"
+      "value": "Sprachen & Frameworks"
+     }
+    ]
+   },
+   {
+    "text": "Welche Themen liegen in Sprachen",
+    "intent": "topics_in_category",
+    "entities": [
+     {
+      "end": 32,
+      "entity": "category",
+      "start": 24,
+      "value": "Sprachen"
+     }
+    ]
+   },
+   {
+    "text": "Was versteckt sich hinter Sprachen",
+    "intent": "topics_in_category",
+    "entities": [
+     {
+      "end": 34,
+      "entity": "category",
+      "start": 26,
+      "value": "Sprachen"
+     }
+    ]
+   },
+   {
+    "text": "Was ist alles in Sprachen",
+    "intent": "topics_in_category",
+    "entities": [
+     {
+      "end": 25,
+      "entity": "category",
+      "start": 17,
+      "value": "Sprachen"
+     }
+    ]
+   },
+   {
+    "text": "Was gehört denn alles zu Frameworks",
+    "intent": "topics_in_category",
+    "entities": [
+     {
+      "end": 35,
+      "entity": "category",
+      "start": 25,
+      "value": "Frameworks"
+     }
+    ]
+   },
+   {
+    "text": "Was versteckt sich hinter Tools",
+    "intent": "topics_in_category",
+    "entities": [
+     {
+      "end": 31,
+      "entity": "category",
+      "start": 26,
+      "value": "Tools"
      }
     ]
    },
@@ -316,6 +244,30 @@
     ]
    },
    {
+    "text": "Was versteckt sich hinter Technologien",
+    "intent": "topics_in_category",
+    "entities": [
+     {
+      "end": 38,
+      "entity": "category",
+      "start": 26,
+      "value": "Technologien"
+     }
+    ]
+   },
+   {
+    "text": "Was ist alles in Sprachen & Frameworks",
+    "intent": "topics_in_category",
+    "entities": [
+     {
+      "end": 38,
+      "entity": "category",
+      "start": 17,
+      "value": "Sprachen & Frameworks"
+     }
+    ]
+   },
+   {
     "text": "Was gehört denn alles zu Tools",
     "intent": "topics_in_category",
     "entities": [
@@ -324,6 +276,18 @@
       "entity": "category",
       "start": 25,
       "value": "Tools"
+     }
+    ]
+   },
+   {
+    "text": "Was gehört denn alles zu Plattformen",
+    "intent": "topics_in_category",
+    "entities": [
+     {
+      "end": 36,
+      "entity": "category",
+      "start": 25,
+      "value": "Plattformen"
      }
     ]
    },
@@ -340,206 +304,38 @@
     ]
    },
    {
-    "text": "Wer weiß etwas über Symfony gemacht?",
-    "intent": "who_knows_topic",
+    "text": "Welche Themen liegen in Agile",
+    "intent": "topics_in_category",
     "entities": [
      {
-      "end": 27,
-      "entity": "topic",
-      "start": 20,
-      "value": "Symfony"
-     }
-    ]
-   },
-   {
-    "text": "Wer kennt Symfony?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 17,
-      "entity": "topic",
-      "start": 10,
-      "value": "Symfony"
-     }
-    ]
-   },
-   {
-    "text": "Wer kennt sich mit Angular aus?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 26,
-      "entity": "topic",
-      "start": 19,
-      "value": "Angular"
-     }
-    ]
-   },
-   {
-    "text": "Was zur Hölle ist Angular?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 25,
-      "entity": "topic",
-      "start": 18,
-      "value": "Angular"
-     }
-    ]
-   },
-   {
-    "text": "Wer hat schon einmal etwas zu Spring gehört?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 36,
-      "entity": "topic",
-      "start": 30,
-      "value": "Spring"
-     }
-    ]
-   },
-   {
-    "text": "Warum sagst du nicht, dass du Django kannst?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 36,
-      "entity": "topic",
-      "start": 30,
-      "value": "Django"
-     }
-    ]
-   },
-   {
-    "text": "Wer weiß was zu Spring?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 22,
-      "entity": "topic",
-      "start": 16,
-      "value": "Spring"
-     }
-    ]
-   },
-   {
-    "text": "Wie geht Symfony?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 16,
-      "entity": "topic",
-      "start": 9,
-      "value": "Symfony"
-     }
-    ]
-   },
-   {
-    "text": "Welche Skills haben wir in Sprachen?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 35,
+      "end": 29,
       "entity": "category",
-      "start": 27,
-      "value": "Sprachen"
+      "start": 24,
+      "value": "Agile"
      }
     ]
    },
    {
-    "text": "Wer weiß etwas zum thema Spring?",
-    "intent": "who_knows_topic",
+    "text": "Was versteckt sich hinter Plattformen",
+    "intent": "topics_in_category",
     "entities": [
      {
-      "end": 31,
-      "entity": "topic",
-      "start": 25,
-      "value": "Spring"
-     }
-    ]
-   },
-   {
-    "text": "Hilfe Django?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 12,
-      "entity": "topic",
-      "start": 6,
-      "value": "Django"
-     }
-    ]
-   },
-   {
-    "text": "Kannst mir jemand bei Spring helfen?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 28,
-      "entity": "topic",
-      "start": 22,
-      "value": "Spring"
-     }
-    ]
-   },
-   {
-    "text": "Welche Skills haben wir in Plattformen?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 38,
+      "end": 37,
       "entity": "category",
-      "start": 27,
+      "start": 26,
       "value": "Plattformen"
      }
     ]
    },
    {
-    "text": "Welche Skills haben wir in Sprachen & Frameworks?",
-    "intent": "who_knows_topic",
+    "text": "Was gehört denn alles zu Technologien",
+    "intent": "topics_in_category",
     "entities": [
      {
-      "end": 48,
+      "end": 37,
       "entity": "category",
-      "start": 27,
-      "value": "Sprachen & Frameworks"
-     }
-    ]
-   },
-   {
-    "text": "Wer kennt Django?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 16,
-      "entity": "topic",
-      "start": 10,
-      "value": "Django"
-     }
-    ]
-   },
-   {
-    "text": "Wer weiß etwas über Angular gemacht?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 27,
-      "entity": "topic",
-      "start": 20,
-      "value": "Angular"
-     }
-    ]
-   },
-   {
-    "text": "Wer hat schon einmal etwas zu Django gehört?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 36,
-      "entity": "topic",
-      "start": 30,
-      "value": "Django"
+      "start": 25,
+      "value": "Technologien"
      }
     ]
    },
@@ -556,241 +352,13 @@
     ]
    },
    {
-    "text": "Wer weiß etwas zum thema Symfony?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 32,
-      "entity": "topic",
-      "start": 25,
-      "value": "Symfony"
-     }
-    ]
-   },
-   {
-    "text": "Wer weiß was zu Symfony?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 23,
-      "entity": "topic",
-      "start": 16,
-      "value": "Symfony"
-     }
-    ]
-   },
-   {
-    "text": "Warum sagst du nicht, dass du Spring kannst?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 36,
-      "entity": "topic",
-      "start": 30,
-      "value": "Spring"
-     }
-    ]
-   },
-   {
-    "text": "Hilfe Symfony?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 13,
-      "entity": "topic",
-      "start": 6,
-      "value": "Symfony"
-     }
-    ]
-   },
-   {
-    "text": "Was zur Hölle ist Spring?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 24,
-      "entity": "topic",
-      "start": 18,
-      "value": "Spring"
-     }
-    ]
-   },
-   {
-    "text": "Wer kennt sich mit Spring aus?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 25,
-      "entity": "topic",
-      "start": 19,
-      "value": "Spring"
-     }
-    ]
-   },
-   {
-    "text": "Wie geht Angular?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 16,
-      "entity": "topic",
-      "start": 9,
-      "value": "Angular"
-     }
-    ]
-   },
-   {
-    "text": "Welche Skills haben wir in Technologien?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 39,
-      "entity": "category",
-      "start": 27,
-      "value": "Technologien"
-     }
-    ]
-   },
-   {
-    "text": "Wer hat schon einmal etwas zu Symfony gehört?",
+    "text": "Warum sagst du nicht, dass du Symfony kannst?",
     "intent": "who_knows_topic",
     "entities": [
      {
       "end": 37,
       "entity": "topic",
       "start": 30,
-      "value": "Symfony"
-     }
-    ]
-   },
-   {
-    "text": "Wie geht Django?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 15,
-      "entity": "topic",
-      "start": 9,
-      "value": "Django"
-     }
-    ]
-   },
-   {
-    "text": "Warum sagst du nicht, dass du Angular kannst?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 37,
-      "entity": "topic",
-      "start": 30,
-      "value": "Angular"
-     }
-    ]
-   },
-   {
-    "text": "Wer kennt Spring?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 16,
-      "entity": "topic",
-      "start": 10,
-      "value": "Spring"
-     }
-    ]
-   },
-   {
-    "text": "Wer kennt sich mit Django aus?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 25,
-      "entity": "topic",
-      "start": 19,
-      "value": "Django"
-     }
-    ]
-   },
-   {
-    "text": "Wer weiß etwas über Django gemacht?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 26,
-      "entity": "topic",
-      "start": 20,
-      "value": "Django"
-     }
-    ]
-   },
-   {
-    "text": "Wer weiß was zu Django?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 22,
-      "entity": "topic",
-      "start": 16,
-      "value": "Django"
-     }
-    ]
-   },
-   {
-    "text": "Welche Skills haben wir in Tools?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 32,
-      "entity": "category",
-      "start": 27,
-      "value": "Tools"
-     }
-    ]
-   },
-   {
-    "text": "Hilfe Angular?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 13,
-      "entity": "topic",
-      "start": 6,
-      "value": "Angular"
-     }
-    ]
-   },
-   {
-    "text": "Wer weiß etwas zum thema Angular?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 32,
-      "entity": "topic",
-      "start": 25,
-      "value": "Angular"
-     }
-    ]
-   },
-   {
-    "text": "Kannst mir jemand bei Angular helfen?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 29,
-      "entity": "topic",
-      "start": 22,
-      "value": "Angular"
-     }
-    ]
-   },
-   {
-    "text": "Was zur Hölle ist Symfony?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 25,
-      "entity": "topic",
-      "start": 18,
       "value": "Symfony"
      }
     ]
@@ -808,38 +376,14 @@
     ]
    },
    {
-    "text": "Welche Skills haben wir in Frameworks?",
+    "text": "Wer hat schon einmal etwas zu Angular gehört?",
     "intent": "who_knows_topic",
     "entities": [
      {
       "end": 37,
-      "entity": "category",
-      "start": 27,
-      "value": "Frameworks"
-     }
-    ]
-   },
-   {
-    "text": "Wer kennt Angular?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 17,
       "entity": "topic",
-      "start": 10,
+      "start": 30,
       "value": "Angular"
-     }
-    ]
-   },
-   {
-    "text": "Wer weiß etwas zum thema Django?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 31,
-      "entity": "topic",
-      "start": 25,
-      "value": "Django"
      }
     ]
    },
@@ -851,6 +395,78 @@
       "end": 23,
       "entity": "topic",
       "start": 16,
+      "value": "Angular"
+     }
+    ]
+   },
+   {
+    "text": "Was zur Hölle ist Angular?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 25,
+      "entity": "topic",
+      "start": 18,
+      "value": "Angular"
+     }
+    ]
+   },
+   {
+    "text": "Wer kennt sich mit Django aus?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 25,
+      "entity": "topic",
+      "start": 19,
+      "value": "Django"
+     }
+    ]
+   },
+   {
+    "text": "Wer kennt Django?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 16,
+      "entity": "topic",
+      "start": 10,
+      "value": "Django"
+     }
+    ]
+   },
+   {
+    "text": "Wer weiß etwas zum thema Symfony?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 32,
+      "entity": "topic",
+      "start": 25,
+      "value": "Symfony"
+     }
+    ]
+   },
+   {
+    "text": "Wer weiß etwas über Spring gemacht?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 26,
+      "entity": "topic",
+      "start": 20,
+      "value": "Spring"
+     }
+    ]
+   },
+   {
+    "text": "Hilfe Angular?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 13,
+      "entity": "topic",
+      "start": 6,
       "value": "Angular"
      }
     ]
@@ -868,61 +484,85 @@
     ]
    },
    {
-    "text": "Kannst mir jemand bei Django helfen?",
+    "text": "Welche Skills haben wir in Technologien?",
     "intent": "who_knows_topic",
     "entities": [
      {
-      "end": 28,
+      "end": 39,
+      "entity": "category",
+      "start": 27,
+      "value": "Technologien"
+     }
+    ]
+   },
+   {
+    "text": "Welche Skills haben wir in Sprachen & Frameworks?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 48,
+      "entity": "category",
+      "start": 27,
+      "value": "Sprachen & Frameworks"
+     }
+    ]
+   },
+   {
+    "text": "Wer weiß etwas zum thema Django?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 31,
       "entity": "topic",
-      "start": 22,
+      "start": 25,
       "value": "Django"
      }
     ]
    },
    {
-    "text": "Warum sagst du nicht, dass du Symfony kannst?",
+    "text": "Warum sagst du nicht, dass du Django kannst?",
     "intent": "who_knows_topic",
     "entities": [
      {
-      "end": 37,
+      "end": 36,
       "entity": "topic",
       "start": 30,
+      "value": "Django"
+     }
+    ]
+   },
+   {
+    "text": "Wer weiß was zu Symfony?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 23,
+      "entity": "topic",
+      "start": 16,
       "value": "Symfony"
      }
     ]
    },
    {
-    "text": "Wer hat schon einmal etwas zu Angular gehört?",
+    "text": "Wie geht Symfony?",
     "intent": "who_knows_topic",
     "entities": [
      {
-      "end": 37,
+      "end": 16,
+      "entity": "topic",
+      "start": 9,
+      "value": "Symfony"
+     }
+    ]
+   },
+   {
+    "text": "Wer hat schon einmal etwas zu Spring gehört?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 36,
       "entity": "topic",
       "start": 30,
-      "value": "Angular"
-     }
-    ]
-   },
-   {
-    "text": "Wer weiß etwas über Spring gemacht?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 26,
-      "entity": "topic",
-      "start": 20,
-      "value": "Spring"
-     }
-    ]
-   },
-   {
-    "text": "Hilfe Spring?",
-    "intent": "who_knows_topic",
-    "entities": [
-     {
-      "end": 12,
-      "entity": "topic",
-      "start": 6,
       "value": "Spring"
      }
     ]
@@ -940,6 +580,42 @@
     ]
    },
    {
+    "text": "Wer kennt Symfony?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 17,
+      "entity": "topic",
+      "start": 10,
+      "value": "Symfony"
+     }
+    ]
+   },
+   {
+    "text": "Kannst mir jemand bei Django helfen?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 28,
+      "entity": "topic",
+      "start": 22,
+      "value": "Django"
+     }
+    ]
+   },
+   {
+    "text": "Wer weiß etwas über Angular gemacht?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 27,
+      "entity": "topic",
+      "start": 20,
+      "value": "Angular"
+     }
+    ]
+   },
+   {
     "text": "Wer kennt sich mit Symfony aus?",
     "intent": "who_knows_topic",
     "entities": [
@@ -952,32 +628,356 @@
     ]
    },
    {
-    "text": "Angular gehört zu Sprachen & Frameworks",
+    "text": "Hilfe Django?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 12,
+      "entity": "topic",
+      "start": 6,
+      "value": "Django"
+     }
+    ]
+   },
+   {
+    "text": "Welche Skills haben wir in Frameworks?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 37,
+      "entity": "category",
+      "start": 27,
+      "value": "Frameworks"
+     }
+    ]
+   },
+   {
+    "text": "Welche Skills haben wir in Sprachen?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 35,
+      "entity": "category",
+      "start": 27,
+      "value": "Sprachen"
+     }
+    ]
+   },
+   {
+    "text": "Kannst mir jemand bei Spring helfen?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 28,
+      "entity": "topic",
+      "start": 22,
+      "value": "Spring"
+     }
+    ]
+   },
+   {
+    "text": "Wer hat schon einmal etwas zu Django gehört?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 36,
+      "entity": "topic",
+      "start": 30,
+      "value": "Django"
+     }
+    ]
+   },
+   {
+    "text": "Wer kennt sich mit Spring aus?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 25,
+      "entity": "topic",
+      "start": 19,
+      "value": "Spring"
+     }
+    ]
+   },
+   {
+    "text": "Warum sagst du nicht, dass du Spring kannst?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 36,
+      "entity": "topic",
+      "start": 30,
+      "value": "Spring"
+     }
+    ]
+   },
+   {
+    "text": "Hilfe Spring?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 12,
+      "entity": "topic",
+      "start": 6,
+      "value": "Spring"
+     }
+    ]
+   },
+   {
+    "text": "Wie geht Angular?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 16,
+      "entity": "topic",
+      "start": 9,
+      "value": "Angular"
+     }
+    ]
+   },
+   {
+    "text": "Wer weiß etwas über Django gemacht?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 26,
+      "entity": "topic",
+      "start": 20,
+      "value": "Django"
+     }
+    ]
+   },
+   {
+    "text": "Wer weiß etwas zum thema Angular?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 32,
+      "entity": "topic",
+      "start": 25,
+      "value": "Angular"
+     }
+    ]
+   },
+   {
+    "text": "Wer weiß was zu Django?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 22,
+      "entity": "topic",
+      "start": 16,
+      "value": "Django"
+     }
+    ]
+   },
+   {
+    "text": "Wer kennt Spring?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 16,
+      "entity": "topic",
+      "start": 10,
+      "value": "Spring"
+     }
+    ]
+   },
+   {
+    "text": "Was zur Hölle ist Symfony?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 25,
+      "entity": "topic",
+      "start": 18,
+      "value": "Symfony"
+     }
+    ]
+   },
+   {
+    "text": "Welche Skills haben wir in Tools?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 32,
+      "entity": "category",
+      "start": 27,
+      "value": "Tools"
+     }
+    ]
+   },
+   {
+    "text": "Wie geht Django?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 15,
+      "entity": "topic",
+      "start": 9,
+      "value": "Django"
+     }
+    ]
+   },
+   {
+    "text": "Wer hat schon einmal etwas zu Symfony gehört?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 37,
+      "entity": "topic",
+      "start": 30,
+      "value": "Symfony"
+     }
+    ]
+   },
+   {
+    "text": "Warum sagst du nicht, dass du Angular kannst?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 37,
+      "entity": "topic",
+      "start": 30,
+      "value": "Angular"
+     }
+    ]
+   },
+   {
+    "text": "Was zur Hölle ist Spring?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 24,
+      "entity": "topic",
+      "start": 18,
+      "value": "Spring"
+     }
+    ]
+   },
+   {
+    "text": "Wer weiß was zu Spring?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 22,
+      "entity": "topic",
+      "start": 16,
+      "value": "Spring"
+     }
+    ]
+   },
+   {
+    "text": "Kannst mir jemand bei Angular helfen?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 29,
+      "entity": "topic",
+      "start": 22,
+      "value": "Angular"
+     }
+    ]
+   },
+   {
+    "text": "Wer weiß etwas über Symfony gemacht?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 27,
+      "entity": "topic",
+      "start": 20,
+      "value": "Symfony"
+     }
+    ]
+   },
+   {
+    "text": "Wer kennt sich mit Angular aus?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 26,
+      "entity": "topic",
+      "start": 19,
+      "value": "Angular"
+     }
+    ]
+   },
+   {
+    "text": "Hilfe Symfony?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 13,
+      "entity": "topic",
+      "start": 6,
+      "value": "Symfony"
+     }
+    ]
+   },
+   {
+    "text": "Wer kennt Angular?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 17,
+      "entity": "topic",
+      "start": 10,
+      "value": "Angular"
+     }
+    ]
+   },
+   {
+    "text": "Wer weiß etwas zum thema Spring?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 31,
+      "entity": "topic",
+      "start": 25,
+      "value": "Spring"
+     }
+    ]
+   },
+   {
+    "text": "Welche Skills haben wir in Plattformen?",
+    "intent": "who_knows_topic",
+    "entities": [
+     {
+      "end": 38,
+      "entity": "category",
+      "start": 27,
+      "value": "Plattformen"
+     }
+    ]
+   },
+   {
+    "text": "Symfony gehört zu Agile",
     "intent": "claim_to_know_topic_in_category",
     "entities": [
      {
       "end": 7,
       "entity": "topic",
       "start": 0,
-      "value": "Angular"
+      "value": "Symfony"
      },
      {
-      "end": 39,
+      "end": 23,
       "entity": "category",
       "start": 18,
-      "value": "Sprachen & Frameworks"
+      "value": "Agile"
      }
     ]
    },
    {
-    "text": "Ich kenn Symfony im Bereich Sprachen",
+    "text": "Ich kenn Angular im Bereich Sprachen",
     "intent": "claim_to_know_topic_in_category",
     "entities": [
      {
       "end": 16,
       "entity": "topic",
       "start": 9,
-      "value": "Symfony"
+      "value": "Angular"
      },
      {
       "end": 36,
@@ -988,43 +988,7 @@
     ]
    },
    {
-    "text": "Django gehört zu Tools",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 6,
-      "entity": "topic",
-      "start": 0,
-      "value": "Django"
-     },
-     {
-      "end": 22,
-      "entity": "category",
-      "start": 17,
-      "value": "Tools"
-     }
-    ]
-   },
-   {
-    "text": "Ich kenn Spring im Bereich Technologien",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 15,
-      "entity": "topic",
-      "start": 9,
-      "value": "Spring"
-     },
-     {
-      "end": 39,
-      "entity": "category",
-      "start": 27,
-      "value": "Technologien"
-     }
-    ]
-   },
-   {
-    "text": "Angular gehört zu Frameworks",
+    "text": "Angular gehört zu Technologien",
     "intent": "claim_to_know_topic_in_category",
     "entities": [
      {
@@ -1034,33 +998,15 @@
       "value": "Angular"
      },
      {
-      "end": 28,
+      "end": 30,
       "entity": "category",
       "start": 18,
-      "value": "Frameworks"
+      "value": "Technologien"
      }
     ]
    },
    {
-    "text": "Ich kenn Angular im Bereich Sprachen & Frameworks",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 16,
-      "entity": "topic",
-      "start": 9,
-      "value": "Angular"
-     },
-     {
-      "end": 49,
-      "entity": "category",
-      "start": 28,
-      "value": "Sprachen & Frameworks"
-     }
-    ]
-   },
-   {
-    "text": "Symfony gehört zu Sprachen & Frameworks",
+    "text": "Symfony gehört zu Frameworks",
     "intent": "claim_to_know_topic_in_category",
     "entities": [
      {
@@ -1070,45 +1016,9 @@
       "value": "Symfony"
      },
      {
-      "end": 39,
+      "end": 28,
       "entity": "category",
       "start": 18,
-      "value": "Sprachen & Frameworks"
-     }
-    ]
-   },
-   {
-    "text": "Spring gehört zu Sprachen & Frameworks",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 6,
-      "entity": "topic",
-      "start": 0,
-      "value": "Spring"
-     },
-     {
-      "end": 38,
-      "entity": "category",
-      "start": 17,
-      "value": "Sprachen & Frameworks"
-     }
-    ]
-   },
-   {
-    "text": "Ich kenn Django im Bereich Frameworks",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 15,
-      "entity": "topic",
-      "start": 9,
-      "value": "Django"
-     },
-     {
-      "end": 37,
-      "entity": "category",
-      "start": 27,
       "value": "Frameworks"
      }
     ]
@@ -1132,235 +1042,55 @@
     ]
    },
    {
-    "text": "Symfony gehört zu Sprachen",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 7,
-      "entity": "topic",
-      "start": 0,
-      "value": "Symfony"
-     },
-     {
-      "end": 26,
-      "entity": "category",
-      "start": 18,
-      "value": "Sprachen"
-     }
-    ]
-   },
-   {
-    "text": "Ich kenn Spring im Bereich Tools",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 15,
-      "entity": "topic",
-      "start": 9,
-      "value": "Spring"
-     },
-     {
-      "end": 32,
-      "entity": "category",
-      "start": 27,
-      "value": "Tools"
-     }
-    ]
-   },
-   {
-    "text": "Symfony gehört zu Agile",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 7,
-      "entity": "topic",
-      "start": 0,
-      "value": "Symfony"
-     },
-     {
-      "end": 23,
-      "entity": "category",
-      "start": 18,
-      "value": "Agile"
-     }
-    ]
-   },
-   {
-    "text": "Ich kenn Angular im Bereich Plattformen",
+    "text": "Ich kenn Symfony im Bereich Sprachen & Frameworks",
     "intent": "claim_to_know_topic_in_category",
     "entities": [
      {
       "end": 16,
       "entity": "topic",
       "start": 9,
-      "value": "Angular"
-     },
-     {
-      "end": 39,
-      "entity": "category",
-      "start": 28,
-      "value": "Plattformen"
-     }
-    ]
-   },
-   {
-    "text": "Django gehört zu Technologien",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 6,
-      "entity": "topic",
-      "start": 0,
-      "value": "Django"
-     },
-     {
-      "end": 29,
-      "entity": "category",
-      "start": 17,
-      "value": "Technologien"
-     }
-    ]
-   },
-   {
-    "text": "Django gehört zu Sprachen",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 6,
-      "entity": "topic",
-      "start": 0,
-      "value": "Django"
-     },
-     {
-      "end": 25,
-      "entity": "category",
-      "start": 17,
-      "value": "Sprachen"
-     }
-    ]
-   },
-   {
-    "text": "Angular gehört zu Agile",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 7,
-      "entity": "topic",
-      "start": 0,
-      "value": "Angular"
-     },
-     {
-      "end": 23,
-      "entity": "category",
-      "start": 18,
-      "value": "Agile"
-     }
-    ]
-   },
-   {
-    "text": "Spring gehört zu Plattformen",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 6,
-      "entity": "topic",
-      "start": 0,
-      "value": "Spring"
-     },
-     {
-      "end": 28,
-      "entity": "category",
-      "start": 17,
-      "value": "Plattformen"
-     }
-    ]
-   },
-   {
-    "text": "Ich kenn Django im Bereich Agile",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 15,
-      "entity": "topic",
-      "start": 9,
-      "value": "Django"
-     },
-     {
-      "end": 32,
-      "entity": "category",
-      "start": 27,
-      "value": "Agile"
-     }
-    ]
-   },
-   {
-    "text": "Symfony gehört zu Frameworks",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 7,
-      "entity": "topic",
-      "start": 0,
       "value": "Symfony"
      },
      {
-      "end": 28,
+      "end": 49,
       "entity": "category",
-      "start": 18,
-      "value": "Frameworks"
-     }
-    ]
-   },
-   {
-    "text": "Ich kenn Spring im Bereich Sprachen & Frameworks",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 15,
-      "entity": "topic",
-      "start": 9,
-      "value": "Spring"
-     },
-     {
-      "end": 48,
-      "entity": "category",
-      "start": 27,
+      "start": 28,
       "value": "Sprachen & Frameworks"
      }
     ]
    },
    {
-    "text": "Symfony gehört zu Technologien",
+    "text": "Ich kenn Spring im Bereich Frameworks",
     "intent": "claim_to_know_topic_in_category",
     "entities": [
      {
-      "end": 7,
+      "end": 15,
       "entity": "topic",
-      "start": 0,
-      "value": "Symfony"
+      "start": 9,
+      "value": "Spring"
      },
      {
-      "end": 30,
+      "end": 37,
       "entity": "category",
-      "start": 18,
-      "value": "Technologien"
+      "start": 27,
+      "value": "Frameworks"
      }
     ]
    },
    {
-    "text": "Ich kenn Angular im Bereich Frameworks",
+    "text": "Spring gehört zu Frameworks",
     "intent": "claim_to_know_topic_in_category",
     "entities": [
      {
-      "end": 16,
+      "end": 6,
       "entity": "topic",
-      "start": 9,
-      "value": "Angular"
+      "start": 0,
+      "value": "Spring"
      },
      {
-      "end": 38,
+      "end": 27,
       "entity": "category",
-      "start": 28,
+      "start": 17,
       "value": "Frameworks"
      }
     ]
@@ -1384,115 +1114,7 @@
     ]
    },
    {
-    "text": "Ich kenn Spring im Bereich Frameworks",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 15,
-      "entity": "topic",
-      "start": 9,
-      "value": "Spring"
-     },
-     {
-      "end": 37,
-      "entity": "category",
-      "start": 27,
-      "value": "Frameworks"
-     }
-    ]
-   },
-   {
-    "text": "Spring gehört zu Technologien",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 6,
-      "entity": "topic",
-      "start": 0,
-      "value": "Spring"
-     },
-     {
-      "end": 29,
-      "entity": "category",
-      "start": 17,
-      "value": "Technologien"
-     }
-    ]
-   },
-   {
-    "text": "Django gehört zu Frameworks",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 6,
-      "entity": "topic",
-      "start": 0,
-      "value": "Django"
-     },
-     {
-      "end": 27,
-      "entity": "category",
-      "start": 17,
-      "value": "Frameworks"
-     }
-    ]
-   },
-   {
-    "text": "Ich kenn Symfony im Bereich Sprachen & Frameworks",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 16,
-      "entity": "topic",
-      "start": 9,
-      "value": "Symfony"
-     },
-     {
-      "end": 49,
-      "entity": "category",
-      "start": 28,
-      "value": "Sprachen & Frameworks"
-     }
-    ]
-   },
-   {
-    "text": "Ich kenn Angular im Bereich Sprachen",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 16,
-      "entity": "topic",
-      "start": 9,
-      "value": "Angular"
-     },
-     {
-      "end": 36,
-      "entity": "category",
-      "start": 28,
-      "value": "Sprachen"
-     }
-    ]
-   },
-   {
-    "text": "Symfony gehört zu Tools",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 7,
-      "entity": "topic",
-      "start": 0,
-      "value": "Symfony"
-     },
-     {
-      "end": 23,
-      "entity": "category",
-      "start": 18,
-      "value": "Tools"
-     }
-    ]
-   },
-   {
-    "text": "Ich kenn Django im Bereich Tools",
+    "text": "Ich kenn Django im Bereich Agile",
     "intent": "claim_to_know_topic_in_category",
     "entities": [
      {
@@ -1505,12 +1127,12 @@
       "end": 32,
       "entity": "category",
       "start": 27,
-      "value": "Tools"
+      "value": "Agile"
      }
     ]
    },
    {
-    "text": "Django gehört zu Agile",
+    "text": "Django gehört zu Sprachen",
     "intent": "claim_to_know_topic_in_category",
     "entities": [
      {
@@ -1520,64 +1142,10 @@
       "value": "Django"
      },
      {
-      "end": 22,
+      "end": 25,
       "entity": "category",
       "start": 17,
-      "value": "Agile"
-     }
-    ]
-   },
-   {
-    "text": "Symfony gehört zu Plattformen",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 7,
-      "entity": "topic",
-      "start": 0,
-      "value": "Symfony"
-     },
-     {
-      "end": 29,
-      "entity": "category",
-      "start": 18,
-      "value": "Plattformen"
-     }
-    ]
-   },
-   {
-    "text": "Ich kenn Symfony im Bereich Technologien",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 16,
-      "entity": "topic",
-      "start": 9,
-      "value": "Symfony"
-     },
-     {
-      "end": 40,
-      "entity": "category",
-      "start": 28,
-      "value": "Technologien"
-     }
-    ]
-   },
-   {
-    "text": "Angular gehört zu Tools",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 7,
-      "entity": "topic",
-      "start": 0,
-      "value": "Angular"
-     },
-     {
-      "end": 23,
-      "entity": "category",
-      "start": 18,
-      "value": "Tools"
+      "value": "Sprachen"
      }
     ]
    },
@@ -1600,7 +1168,7 @@
     ]
    },
    {
-    "text": "Spring gehört zu Frameworks",
+    "text": "Spring gehört zu Technologien",
     "intent": "claim_to_know_topic_in_category",
     "entities": [
      {
@@ -1610,154 +1178,10 @@
       "value": "Spring"
      },
      {
-      "end": 27,
-      "entity": "category",
-      "start": 17,
-      "value": "Frameworks"
-     }
-    ]
-   },
-   {
-    "text": "Ich kenn Spring im Bereich Sprachen",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 15,
-      "entity": "topic",
-      "start": 9,
-      "value": "Spring"
-     },
-     {
-      "end": 35,
-      "entity": "category",
-      "start": 27,
-      "value": "Sprachen"
-     }
-    ]
-   },
-   {
-    "text": "Ich kenn Angular im Bereich Technologien",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 16,
-      "entity": "topic",
-      "start": 9,
-      "value": "Angular"
-     },
-     {
-      "end": 40,
-      "entity": "category",
-      "start": 28,
-      "value": "Technologien"
-     }
-    ]
-   },
-   {
-    "text": "Ich kenn Django im Bereich Plattformen",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 15,
-      "entity": "topic",
-      "start": 9,
-      "value": "Django"
-     },
-     {
-      "end": 38,
-      "entity": "category",
-      "start": 27,
-      "value": "Plattformen"
-     }
-    ]
-   },
-   {
-    "text": "Ich kenn Angular im Bereich Tools",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 16,
-      "entity": "topic",
-      "start": 9,
-      "value": "Angular"
-     },
-     {
-      "end": 33,
-      "entity": "category",
-      "start": 28,
-      "value": "Tools"
-     }
-    ]
-   },
-   {
-    "text": "Angular gehört zu Technologien",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 7,
-      "entity": "topic",
-      "start": 0,
-      "value": "Angular"
-     },
-     {
-      "end": 30,
-      "entity": "category",
-      "start": 18,
-      "value": "Technologien"
-     }
-    ]
-   },
-   {
-    "text": "Ich kenn Spring im Bereich Agile",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 15,
-      "entity": "topic",
-      "start": 9,
-      "value": "Spring"
-     },
-     {
-      "end": 32,
-      "entity": "category",
-      "start": 27,
-      "value": "Agile"
-     }
-    ]
-   },
-   {
-    "text": "Ich kenn Symfony im Bereich Frameworks",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 16,
-      "entity": "topic",
-      "start": 9,
-      "value": "Symfony"
-     },
-     {
-      "end": 38,
-      "entity": "category",
-      "start": 28,
-      "value": "Frameworks"
-     }
-    ]
-   },
-   {
-    "text": "Angular gehört zu Plattformen",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 7,
-      "entity": "topic",
-      "start": 0,
-      "value": "Angular"
-     },
-     {
       "end": 29,
       "entity": "category",
-      "start": 18,
-      "value": "Plattformen"
+      "start": 17,
+      "value": "Technologien"
      }
     ]
    },
@@ -1780,25 +1204,115 @@
     ]
    },
    {
-    "text": "Ich kenn Symfony im Bereich Agile",
+    "text": "Symfony gehört zu Sprachen",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 7,
+      "entity": "topic",
+      "start": 0,
+      "value": "Symfony"
+     },
+     {
+      "end": 26,
+      "entity": "category",
+      "start": 18,
+      "value": "Sprachen"
+     }
+    ]
+   },
+   {
+    "text": "Angular gehört zu Plattformen",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 7,
+      "entity": "topic",
+      "start": 0,
+      "value": "Angular"
+     },
+     {
+      "end": 29,
+      "entity": "category",
+      "start": 18,
+      "value": "Plattformen"
+     }
+    ]
+   },
+   {
+    "text": "Angular gehört zu Tools",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 7,
+      "entity": "topic",
+      "start": 0,
+      "value": "Angular"
+     },
+     {
+      "end": 23,
+      "entity": "category",
+      "start": 18,
+      "value": "Tools"
+     }
+    ]
+   },
+   {
+    "text": "Ich kenn Spring im Bereich Plattformen",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 15,
+      "entity": "topic",
+      "start": 9,
+      "value": "Spring"
+     },
+     {
+      "end": 38,
+      "entity": "category",
+      "start": 27,
+      "value": "Plattformen"
+     }
+    ]
+   },
+   {
+    "text": "Ich kenn Angular im Bereich Frameworks",
     "intent": "claim_to_know_topic_in_category",
     "entities": [
      {
       "end": 16,
       "entity": "topic",
       "start": 9,
-      "value": "Symfony"
+      "value": "Angular"
      },
      {
-      "end": 33,
+      "end": 38,
       "entity": "category",
       "start": 28,
-      "value": "Agile"
+      "value": "Frameworks"
      }
     ]
    },
    {
-    "text": "Ich kenn Django im Bereich Sprachen & Frameworks",
+    "text": "Spring gehört zu Sprachen & Frameworks",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 6,
+      "entity": "topic",
+      "start": 0,
+      "value": "Spring"
+     },
+     {
+      "end": 38,
+      "entity": "category",
+      "start": 17,
+      "value": "Sprachen & Frameworks"
+     }
+    ]
+   },
+   {
+    "text": "Ich kenn Django im Bereich Technologien",
     "intent": "claim_to_know_topic_in_category",
     "entities": [
      {
@@ -1808,10 +1322,10 @@
       "value": "Django"
      },
      {
-      "end": 48,
+      "end": 39,
       "entity": "category",
       "start": 27,
-      "value": "Sprachen & Frameworks"
+      "value": "Technologien"
      }
     ]
    },
@@ -1852,25 +1366,25 @@
     ]
    },
    {
-    "text": "Ich kenn Spring im Bereich Plattformen",
+    "text": "Angular gehört zu Frameworks",
     "intent": "claim_to_know_topic_in_category",
     "entities": [
      {
-      "end": 15,
+      "end": 7,
       "entity": "topic",
-      "start": 9,
-      "value": "Spring"
+      "start": 0,
+      "value": "Angular"
      },
      {
-      "end": 38,
+      "end": 28,
       "entity": "category",
-      "start": 27,
-      "value": "Plattformen"
+      "start": 18,
+      "value": "Frameworks"
      }
     ]
    },
    {
-    "text": "Django gehört zu Plattformen",
+    "text": "Django gehört zu Frameworks",
     "intent": "claim_to_know_topic_in_category",
     "entities": [
      {
@@ -1880,28 +1394,64 @@
       "value": "Django"
      },
      {
-      "end": 28,
+      "end": 27,
       "entity": "category",
       "start": 17,
-      "value": "Plattformen"
+      "value": "Frameworks"
      }
     ]
    },
    {
-    "text": "Ich kenn Symfony im Bereich Plattformen",
+    "text": "Ich kenn Spring im Bereich Sprachen & Frameworks",
     "intent": "claim_to_know_topic_in_category",
     "entities": [
      {
-      "end": 16,
+      "end": 15,
       "entity": "topic",
       "start": 9,
-      "value": "Symfony"
+      "value": "Spring"
+     },
+     {
+      "end": 48,
+      "entity": "category",
+      "start": 27,
+      "value": "Sprachen & Frameworks"
+     }
+    ]
+   },
+   {
+    "text": "Django gehört zu Tools",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 6,
+      "entity": "topic",
+      "start": 0,
+      "value": "Django"
+     },
+     {
+      "end": 22,
+      "entity": "category",
+      "start": 17,
+      "value": "Tools"
+     }
+    ]
+   },
+   {
+    "text": "Angular gehört zu Sprachen & Frameworks",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 7,
+      "entity": "topic",
+      "start": 0,
+      "value": "Angular"
      },
      {
       "end": 39,
       "entity": "category",
-      "start": 28,
-      "value": "Plattformen"
+      "start": 18,
+      "value": "Sprachen & Frameworks"
      }
     ]
    },
@@ -1924,24 +1474,6 @@
     ]
    },
    {
-    "text": "Ich kenn Django im Bereich Technologien",
-    "intent": "claim_to_know_topic_in_category",
-    "entities": [
-     {
-      "end": 15,
-      "entity": "topic",
-      "start": 9,
-      "value": "Django"
-     },
-     {
-      "end": 39,
-      "entity": "category",
-      "start": 27,
-      "value": "Technologien"
-     }
-    ]
-   },
-   {
     "text": "Spring gehört zu Agile",
     "intent": "claim_to_know_topic_in_category",
     "entities": [
@@ -1960,6 +1492,498 @@
     ]
    },
    {
+    "text": "Ich kenn Symfony im Bereich Frameworks",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 16,
+      "entity": "topic",
+      "start": 9,
+      "value": "Symfony"
+     },
+     {
+      "end": 38,
+      "entity": "category",
+      "start": 28,
+      "value": "Frameworks"
+     }
+    ]
+   },
+   {
+    "text": "Symfony gehört zu Sprachen & Frameworks",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 7,
+      "entity": "topic",
+      "start": 0,
+      "value": "Symfony"
+     },
+     {
+      "end": 39,
+      "entity": "category",
+      "start": 18,
+      "value": "Sprachen & Frameworks"
+     }
+    ]
+   },
+   {
+    "text": "Ich kenn Django im Bereich Plattformen",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 15,
+      "entity": "topic",
+      "start": 9,
+      "value": "Django"
+     },
+     {
+      "end": 38,
+      "entity": "category",
+      "start": 27,
+      "value": "Plattformen"
+     }
+    ]
+   },
+   {
+    "text": "Ich kenn Symfony im Bereich Technologien",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 16,
+      "entity": "topic",
+      "start": 9,
+      "value": "Symfony"
+     },
+     {
+      "end": 40,
+      "entity": "category",
+      "start": 28,
+      "value": "Technologien"
+     }
+    ]
+   },
+   {
+    "text": "Django gehört zu Plattformen",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 6,
+      "entity": "topic",
+      "start": 0,
+      "value": "Django"
+     },
+     {
+      "end": 28,
+      "entity": "category",
+      "start": 17,
+      "value": "Plattformen"
+     }
+    ]
+   },
+   {
+    "text": "Ich kenn Angular im Bereich Sprachen & Frameworks",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 16,
+      "entity": "topic",
+      "start": 9,
+      "value": "Angular"
+     },
+     {
+      "end": 49,
+      "entity": "category",
+      "start": 28,
+      "value": "Sprachen & Frameworks"
+     }
+    ]
+   },
+   {
+    "text": "Ich kenn Spring im Bereich Tools",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 15,
+      "entity": "topic",
+      "start": 9,
+      "value": "Spring"
+     },
+     {
+      "end": 32,
+      "entity": "category",
+      "start": 27,
+      "value": "Tools"
+     }
+    ]
+   },
+   {
+    "text": "Ich kenn Symfony im Bereich Plattformen",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 16,
+      "entity": "topic",
+      "start": 9,
+      "value": "Symfony"
+     },
+     {
+      "end": 39,
+      "entity": "category",
+      "start": 28,
+      "value": "Plattformen"
+     }
+    ]
+   },
+   {
+    "text": "Ich kenn Spring im Bereich Sprachen",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 15,
+      "entity": "topic",
+      "start": 9,
+      "value": "Spring"
+     },
+     {
+      "end": 35,
+      "entity": "category",
+      "start": 27,
+      "value": "Sprachen"
+     }
+    ]
+   },
+   {
+    "text": "Django gehört zu Technologien",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 6,
+      "entity": "topic",
+      "start": 0,
+      "value": "Django"
+     },
+     {
+      "end": 29,
+      "entity": "category",
+      "start": 17,
+      "value": "Technologien"
+     }
+    ]
+   },
+   {
+    "text": "Ich kenn Django im Bereich Frameworks",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 15,
+      "entity": "topic",
+      "start": 9,
+      "value": "Django"
+     },
+     {
+      "end": 37,
+      "entity": "category",
+      "start": 27,
+      "value": "Frameworks"
+     }
+    ]
+   },
+   {
+    "text": "Ich kenn Spring im Bereich Agile",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 15,
+      "entity": "topic",
+      "start": 9,
+      "value": "Spring"
+     },
+     {
+      "end": 32,
+      "entity": "category",
+      "start": 27,
+      "value": "Agile"
+     }
+    ]
+   },
+   {
+    "text": "Ich kenn Django im Bereich Tools",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 15,
+      "entity": "topic",
+      "start": 9,
+      "value": "Django"
+     },
+     {
+      "end": 32,
+      "entity": "category",
+      "start": 27,
+      "value": "Tools"
+     }
+    ]
+   },
+   {
+    "text": "Symfony gehört zu Plattformen",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 7,
+      "entity": "topic",
+      "start": 0,
+      "value": "Symfony"
+     },
+     {
+      "end": 29,
+      "entity": "category",
+      "start": 18,
+      "value": "Plattformen"
+     }
+    ]
+   },
+   {
+    "text": "Angular gehört zu Agile",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 7,
+      "entity": "topic",
+      "start": 0,
+      "value": "Angular"
+     },
+     {
+      "end": 23,
+      "entity": "category",
+      "start": 18,
+      "value": "Agile"
+     }
+    ]
+   },
+   {
+    "text": "Symfony gehört zu Tools",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 7,
+      "entity": "topic",
+      "start": 0,
+      "value": "Symfony"
+     },
+     {
+      "end": 23,
+      "entity": "category",
+      "start": 18,
+      "value": "Tools"
+     }
+    ]
+   },
+   {
+    "text": "Django gehört zu Agile",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 6,
+      "entity": "topic",
+      "start": 0,
+      "value": "Django"
+     },
+     {
+      "end": 22,
+      "entity": "category",
+      "start": 17,
+      "value": "Agile"
+     }
+    ]
+   },
+   {
+    "text": "Spring gehört zu Plattformen",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 6,
+      "entity": "topic",
+      "start": 0,
+      "value": "Spring"
+     },
+     {
+      "end": 28,
+      "entity": "category",
+      "start": 17,
+      "value": "Plattformen"
+     }
+    ]
+   },
+   {
+    "text": "Ich kenn Symfony im Bereich Agile",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 16,
+      "entity": "topic",
+      "start": 9,
+      "value": "Symfony"
+     },
+     {
+      "end": 33,
+      "entity": "category",
+      "start": 28,
+      "value": "Agile"
+     }
+    ]
+   },
+   {
+    "text": "Ich kenn Django im Bereich Sprachen & Frameworks",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 15,
+      "entity": "topic",
+      "start": 9,
+      "value": "Django"
+     },
+     {
+      "end": 48,
+      "entity": "category",
+      "start": 27,
+      "value": "Sprachen & Frameworks"
+     }
+    ]
+   },
+   {
+    "text": "Symfony gehört zu Technologien",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 7,
+      "entity": "topic",
+      "start": 0,
+      "value": "Symfony"
+     },
+     {
+      "end": 30,
+      "entity": "category",
+      "start": 18,
+      "value": "Technologien"
+     }
+    ]
+   },
+   {
+    "text": "Ich kenn Spring im Bereich Technologien",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 15,
+      "entity": "topic",
+      "start": 9,
+      "value": "Spring"
+     },
+     {
+      "end": 39,
+      "entity": "category",
+      "start": 27,
+      "value": "Technologien"
+     }
+    ]
+   },
+   {
+    "text": "Ich kenn Angular im Bereich Plattformen",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 16,
+      "entity": "topic",
+      "start": 9,
+      "value": "Angular"
+     },
+     {
+      "end": 39,
+      "entity": "category",
+      "start": 28,
+      "value": "Plattformen"
+     }
+    ]
+   },
+   {
+    "text": "Ich kenn Symfony im Bereich Sprachen",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 16,
+      "entity": "topic",
+      "start": 9,
+      "value": "Symfony"
+     },
+     {
+      "end": 36,
+      "entity": "category",
+      "start": 28,
+      "value": "Sprachen"
+     }
+    ]
+   },
+   {
+    "text": "Ich kenn Angular im Bereich Tools",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 16,
+      "entity": "topic",
+      "start": 9,
+      "value": "Angular"
+     },
+     {
+      "end": 33,
+      "entity": "category",
+      "start": 28,
+      "value": "Tools"
+     }
+    ]
+   },
+   {
+    "text": "Ich kenn Angular im Bereich Technologien",
+    "intent": "claim_to_know_topic_in_category",
+    "entities": [
+     {
+      "end": 16,
+      "entity": "topic",
+      "start": 9,
+      "value": "Angular"
+     },
+     {
+      "end": 40,
+      "entity": "category",
+      "start": 28,
+      "value": "Technologien"
+     }
+    ]
+   },
+   {
+    "text": "Wer macht auch gerade Django",
+    "intent": "claim_to_know_topic",
+    "entities": [
+     {
+      "end": 28,
+      "entity": "topic",
+      "start": 22,
+      "value": "Django"
+     }
+    ]
+   },
+   {
+    "text": "Ich weiß etwas in Spring",
+    "intent": "claim_to_know_topic",
+    "entities": [
+     {
+      "end": 24,
+      "entity": "topic",
+      "start": 18,
+      "value": "Spring"
+     }
+    ]
+   },
+   {
     "text": "Ich habe mich mit Symfony beschäftigt",
     "intent": "claim_to_know_topic",
     "entities": [
@@ -1972,31 +1996,91 @@
     ]
    },
    {
-    "text": "Mein Mayday-Projekt beschäftigt sich mit Django",
+    "text": "Mein Mayday-Projekt beschäftigt sich mit Spring",
     "intent": "claim_to_know_topic",
     "entities": [
      {
       "end": 47,
       "entity": "topic",
       "start": 41,
+      "value": "Spring"
+     }
+    ]
+   },
+   {
+    "text": "Ich lese aktuell über Django",
+    "intent": "claim_to_know_topic",
+    "entities": [
+     {
+      "end": 28,
+      "entity": "topic",
+      "start": 22,
       "value": "Django"
      }
     ]
    },
    {
-    "text": "Ich lese aktuell über Symfony",
+    "text": "Ich weiß etwas in Angular",
+    "intent": "claim_to_know_topic",
+    "entities": [
+     {
+      "end": 25,
+      "entity": "topic",
+      "start": 18,
+      "value": "Angular"
+     }
+    ]
+   },
+   {
+    "text": "Ich lese aktuell über Angular",
     "intent": "claim_to_know_topic",
     "entities": [
      {
       "end": 29,
       "entity": "topic",
       "start": 22,
+      "value": "Angular"
+     }
+    ]
+   },
+   {
+    "text": "Ich habe mich mit Angular beschäftigt",
+    "intent": "claim_to_know_topic",
+    "entities": [
+     {
+      "end": 25,
+      "entity": "topic",
+      "start": 18,
+      "value": "Angular"
+     }
+    ]
+   },
+   {
+    "text": "Wer macht auch gerade Spring",
+    "intent": "claim_to_know_topic",
+    "entities": [
+     {
+      "end": 28,
+      "entity": "topic",
+      "start": 22,
+      "value": "Spring"
+     }
+    ]
+   },
+   {
+    "text": "Mein Mayday-Projekt beschäftigt sich mit Symfony",
+    "intent": "claim_to_know_topic",
+    "entities": [
+     {
+      "end": 48,
+      "entity": "topic",
+      "start": 41,
       "value": "Symfony"
      }
     ]
    },
    {
-    "text": "Wer macht auch gerade Symfony",
+    "text": "Ich lese aktuell über Symfony",
     "intent": "claim_to_know_topic",
     "entities": [
      {
@@ -2020,98 +2104,26 @@
     ]
    },
    {
-    "text": "Mein Mayday-Projekt beschäftigt sich mit Symfony",
+    "text": "Ich habe mich mit Spring beschäftigt",
     "intent": "claim_to_know_topic",
     "entities": [
      {
-      "end": 48,
+      "end": 24,
+      "entity": "topic",
+      "start": 18,
+      "value": "Spring"
+     }
+    ]
+   },
+   {
+    "text": "Mein Mayday-Projekt beschäftigt sich mit Django",
+    "intent": "claim_to_know_topic",
+    "entities": [
+     {
+      "end": 47,
       "entity": "topic",
       "start": 41,
-      "value": "Symfony"
-     }
-    ]
-   },
-   {
-    "text": "Ich lese aktuell über Angular",
-    "intent": "claim_to_know_topic",
-    "entities": [
-     {
-      "end": 29,
-      "entity": "topic",
-      "start": 22,
-      "value": "Angular"
-     }
-    ]
-   },
-   {
-    "text": "Ich weiß etwas in Django",
-    "intent": "claim_to_know_topic",
-    "entities": [
-     {
-      "end": 24,
-      "entity": "topic",
-      "start": 18,
       "value": "Django"
-     }
-    ]
-   },
-   {
-    "text": "Ich habe mich mit Django beschäftigt",
-    "intent": "claim_to_know_topic",
-    "entities": [
-     {
-      "end": 24,
-      "entity": "topic",
-      "start": 18,
-      "value": "Django"
-     }
-    ]
-   },
-   {
-    "text": "Wer macht auch gerade Spring",
-    "intent": "claim_to_know_topic",
-    "entities": [
-     {
-      "end": 28,
-      "entity": "topic",
-      "start": 22,
-      "value": "Spring"
-     }
-    ]
-   },
-   {
-    "text": "Ich weiß etwas in Spring",
-    "intent": "claim_to_know_topic",
-    "entities": [
-     {
-      "end": 24,
-      "entity": "topic",
-      "start": 18,
-      "value": "Spring"
-     }
-    ]
-   },
-   {
-    "text": "Ich lese aktuell über Django",
-    "intent": "claim_to_know_topic",
-    "entities": [
-     {
-      "end": 28,
-      "entity": "topic",
-      "start": 22,
-      "value": "Django"
-     }
-    ]
-   },
-   {
-    "text": "Ich habe mich mit Angular beschäftigt",
-    "intent": "claim_to_know_topic",
-    "entities": [
-     {
-      "end": 25,
-      "entity": "topic",
-      "start": 18,
-      "value": "Angular"
      }
     ]
    },
@@ -2140,49 +2152,13 @@
     ]
    },
    {
-    "text": "Ich weiß etwas in Angular",
-    "intent": "claim_to_know_topic",
-    "entities": [
-     {
-      "end": 25,
-      "entity": "topic",
-      "start": 18,
-      "value": "Angular"
-     }
-    ]
-   },
-   {
-    "text": "Mein Mayday-Projekt beschäftigt sich mit Spring",
-    "intent": "claim_to_know_topic",
-    "entities": [
-     {
-      "end": 47,
-      "entity": "topic",
-      "start": 41,
-      "value": "Spring"
-     }
-    ]
-   },
-   {
-    "text": "Ich habe mich mit Spring beschäftigt",
+    "text": "Ich weiß etwas in Django",
     "intent": "claim_to_know_topic",
     "entities": [
      {
       "end": 24,
       "entity": "topic",
       "start": 18,
-      "value": "Spring"
-     }
-    ]
-   },
-   {
-    "text": "Wer macht auch gerade Django",
-    "intent": "claim_to_know_topic",
-    "entities": [
-     {
-      "end": 28,
-      "entity": "topic",
-      "start": 22,
       "value": "Django"
      }
     ]
@@ -2200,14 +2176,74 @@
     ]
    },
    {
-    "text": "Warum muss ich bei Symfony ... tun?",
+    "text": "Ich habe mich mit Django beschäftigt",
+    "intent": "claim_to_know_topic",
+    "entities": [
+     {
+      "end": 24,
+      "entity": "topic",
+      "start": 18,
+      "value": "Django"
+     }
+    ]
+   },
+   {
+    "text": "Wer macht auch gerade Symfony",
+    "intent": "claim_to_know_topic",
+    "entities": [
+     {
+      "end": 29,
+      "entity": "topic",
+      "start": 22,
+      "value": "Symfony"
+     }
+    ]
+   },
+   {
+    "text": "Wie geht nochmal Spring",
+    "intent": "forgott_topic",
+    "entities": [
+     {
+      "end": 23,
+      "entity": "topic",
+      "start": 17,
+      "value": "Spring"
+     }
+    ]
+   },
+   {
+    "text": "Wie bediene ich Symfony",
+    "intent": "forgott_topic",
+    "entities": [
+     {
+      "end": 23,
+      "entity": "topic",
+      "start": 16,
+      "value": "Symfony"
+     }
+    ]
+   },
+   {
+    "text": "Mir ist entfallen, worum es bei Symfony gemacht",
+    "intent": "forgott_topic",
+    "entities": [
+     {
+      "end": 39,
+      "entity": "topic",
+      "start": 32,
+      "value": "Symfony"
+     }
+    ]
+   },
+   {
+    "text": "Warum muss ich bei Angular ... tun?",
     "intent": "forgott_topic",
     "entities": [
      {
       "end": 26,
       "entity": "topic",
       "start": 19,
-      "value": "Symfony"
+      "value": "Angular"
      }
     ]
    },
@@ -2224,18 +2260,6 @@
     ]
    },
    {
-    "text": "Mir ist entfallen, worum es bei Spring gemacht",
-    "intent": "forgott_topic",
-    "entities": [
-     {
-      "end": 38,
-      "entity": "topic",
-      "start": 32,
-      "value": "Spring"
-     }
-    ]
-   },
-   {
     "text": "Wie bediene ich Angular",
     "intent": "forgott_topic",
     "entities": [
@@ -2248,14 +2272,62 @@
     ]
    },
    {
-    "text": "Mir ist entfallen, worum es bei Symfony gemacht",
+    "text": "Mir ist entfallen, worum es bei Django gemacht",
+    "intent": "forgott_topic",
+    "entities": [
+     {
+      "end": 38,
+      "entity": "topic",
+      "start": 32,
+      "value": "Django"
+     }
+    ]
+   },
+   {
+    "text": "Warum muss ich bei Django ... tun?",
+    "intent": "forgott_topic",
+    "entities": [
+     {
+      "end": 25,
+      "entity": "topic",
+      "start": 19,
+      "value": "Django"
+     }
+    ]
+   },
+   {
+    "text": "Warum muss ich bei Symfony ... tun?",
+    "intent": "forgott_topic",
+    "entities": [
+     {
+      "end": 26,
+      "entity": "topic",
+      "start": 19,
+      "value": "Symfony"
+     }
+    ]
+   },
+   {
+    "text": "Wie bediene ich Django",
+    "intent": "forgott_topic",
+    "entities": [
+     {
+      "end": 22,
+      "entity": "topic",
+      "start": 16,
+      "value": "Django"
+     }
+    ]
+   },
+   {
+    "text": "Mir ist entfallen, worum es bei Angular gemacht",
     "intent": "forgott_topic",
     "entities": [
      {
       "end": 39,
       "entity": "topic",
       "start": 32,
-      "value": "Symfony"
+      "value": "Angular"
      }
     ]
    },
@@ -2284,6 +2356,18 @@
     ]
    },
    {
+    "text": "Mir ist entfallen, worum es bei Spring gemacht",
+    "intent": "forgott_topic",
+    "entities": [
+     {
+      "end": 38,
+      "entity": "topic",
+      "start": 32,
+      "value": "Spring"
+     }
+    ]
+   },
+   {
     "text": "Warum muss ich bei Spring ... tun?",
     "intent": "forgott_topic",
     "entities": [
@@ -2292,90 +2376,6 @@
       "entity": "topic",
       "start": 19,
       "value": "Spring"
-     }
-    ]
-   },
-   {
-    "text": "Warum muss ich bei Django ... tun?",
-    "intent": "forgott_topic",
-    "entities": [
-     {
-      "end": 25,
-      "entity": "topic",
-      "start": 19,
-      "value": "Django"
-     }
-    ]
-   },
-   {
-    "text": "Wie geht nochmal Spring",
-    "intent": "forgott_topic",
-    "entities": [
-     {
-      "end": 23,
-      "entity": "topic",
-      "start": 17,
-      "value": "Spring"
-     }
-    ]
-   },
-   {
-    "text": "Mir ist entfallen, worum es bei Angular gemacht",
-    "intent": "forgott_topic",
-    "entities": [
-     {
-      "end": 39,
-      "entity": "topic",
-      "start": 32,
-      "value": "Angular"
-     }
-    ]
-   },
-   {
-    "text": "Wie bediene ich Django",
-    "intent": "forgott_topic",
-    "entities": [
-     {
-      "end": 22,
-      "entity": "topic",
-      "start": 16,
-      "value": "Django"
-     }
-    ]
-   },
-   {
-    "text": "Warum muss ich bei Angular ... tun?",
-    "intent": "forgott_topic",
-    "entities": [
-     {
-      "end": 26,
-      "entity": "topic",
-      "start": 19,
-      "value": "Angular"
-     }
-    ]
-   },
-   {
-    "text": "Wie bediene ich Symfony",
-    "intent": "forgott_topic",
-    "entities": [
-     {
-      "end": 23,
-      "entity": "topic",
-      "start": 16,
-      "value": "Symfony"
-     }
-    ]
-   },
-   {
-    "text": "Mir ist entfallen, worum es bei Django gemacht",
-    "intent": "forgott_topic",
-    "entities": [
-     {
-      "end": 38,
-      "entity": "topic",
-      "start": 32,
-      "value": "Django"
      }
     ]
    },
@@ -2392,98 +2392,14 @@
     ]
    },
    {
-    "text": "I muss für 1 Tag Tage das Bett hüten",
+    "text": "I muss für 2 Wochen Tage das Bett hüten",
     "intent": "report_illness_duration",
     "entities": [
      {
-      "end": 16,
+      "end": 19,
       "entity": "duration",
       "start": 11,
-      "value": "1 Tag"
-     }
-    ]
-   },
-   {
-    "text": "Hi, ich werde für 4 Tage Tage ausfallen.",
-    "intent": "report_illness_duration",
-    "entities": [
-     {
-      "end": 24,
-      "entity": "duration",
-      "start": 18,
-      "value": "4 Tage"
-     }
-    ]
-   },
-   {
-    "text": "I werde für 5 Tage Tage krank sein.",
-    "intent": "report_illness_duration",
-    "entities": [
-     {
-      "end": 18,
-      "entity": "duration",
-      "start": 12,
-      "value": "5 Tage"
-     }
-    ]
-   },
-   {
-    "text": "Hi, ich werde für 2 Wochen Tage ausfallen.",
-    "intent": "report_illness_duration",
-    "entities": [
-     {
-      "end": 26,
-      "entity": "duration",
-      "start": 18,
       "value": "2 Wochen"
-     }
-    ]
-   },
-   {
-    "text": "I muss für 1 Woche Tage das Bett hüten",
-    "intent": "report_illness_duration",
-    "entities": [
-     {
-      "end": 18,
-      "entity": "duration",
-      "start": 11,
-      "value": "1 Woche"
-     }
-    ]
-   },
-   {
-    "text": "I werde für 3 Tage Tage krank sein.",
-    "intent": "report_illness_duration",
-    "entities": [
-     {
-      "end": 18,
-      "entity": "duration",
-      "start": 12,
-      "value": "3 Tage"
-     }
-    ]
-   },
-   {
-    "text": "Hi, ich werde für 2 Tage Tage ausfallen.",
-    "intent": "report_illness_duration",
-    "entities": [
-     {
-      "end": 24,
-      "entity": "duration",
-      "start": 18,
-      "value": "2 Tage"
-     }
-    ]
-   },
-   {
-    "text": "I muss für 2 Tage Tage das Bett hüten",
-    "intent": "report_illness_duration",
-    "entities": [
-     {
-      "end": 17,
-      "entity": "duration",
-      "start": 11,
-      "value": "2 Tage"
      }
     ]
    },
@@ -2500,38 +2416,26 @@
     ]
    },
    {
-    "text": "Hi, ich werde für 5 Tage Tage ausfallen.",
+    "text": "Hi, ich werde für 2 Tage Tage ausfallen.",
     "intent": "report_illness_duration",
     "entities": [
      {
       "end": 24,
       "entity": "duration",
       "start": 18,
-      "value": "5 Tage"
+      "value": "2 Tage"
      }
     ]
    },
    {
-    "text": "I werde für 1 Tag Tage krank sein.",
+    "text": "Hi, ich werde für 1 Tag Tage ausfallen.",
     "intent": "report_illness_duration",
     "entities": [
      {
-      "end": 17,
+      "end": 23,
       "entity": "duration",
-      "start": 12,
+      "start": 18,
       "value": "1 Tag"
-     }
-    ]
-   },
-   {
-    "text": "I muss für 2 Wochen Tage das Bett hüten",
-    "intent": "report_illness_duration",
-    "entities": [
-     {
-      "end": 19,
-      "entity": "duration",
-      "start": 11,
-      "value": "2 Wochen"
      }
     ]
    },
@@ -2544,6 +2448,18 @@
       "entity": "duration",
       "start": 11,
       "value": "4 Tage"
+     }
+    ]
+   },
+   {
+    "text": "I werde für 2 Wochen Tage krank sein.",
+    "intent": "report_illness_duration",
+    "entities": [
+     {
+      "end": 20,
+      "entity": "duration",
+      "start": 12,
+      "value": "2 Wochen"
      }
     ]
    },
@@ -2572,6 +2488,18 @@
     ]
    },
    {
+    "text": "I muss für 5 Tage Tage das Bett hüten",
+    "intent": "report_illness_duration",
+    "entities": [
+     {
+      "end": 17,
+      "entity": "duration",
+      "start": 11,
+      "value": "5 Tage"
+     }
+    ]
+   },
+   {
     "text": "I werde für 2 Tage Tage krank sein.",
     "intent": "report_illness_duration",
     "entities": [
@@ -2584,14 +2512,86 @@
     ]
    },
    {
-    "text": "I muss für 3 Tage Tage das Bett hüten",
+    "text": "Hi, ich werde für 5 Tage Tage ausfallen.",
+    "intent": "report_illness_duration",
+    "entities": [
+     {
+      "end": 24,
+      "entity": "duration",
+      "start": 18,
+      "value": "5 Tage"
+     }
+    ]
+   },
+   {
+    "text": "I muss für 1 Tag Tage das Bett hüten",
+    "intent": "report_illness_duration",
+    "entities": [
+     {
+      "end": 16,
+      "entity": "duration",
+      "start": 11,
+      "value": "1 Tag"
+     }
+    ]
+   },
+   {
+    "text": "I werde für 5 Tage Tage krank sein.",
+    "intent": "report_illness_duration",
+    "entities": [
+     {
+      "end": 18,
+      "entity": "duration",
+      "start": 12,
+      "value": "5 Tage"
+     }
+    ]
+   },
+   {
+    "text": "Hi, ich werde für 2 Wochen Tage ausfallen.",
+    "intent": "report_illness_duration",
+    "entities": [
+     {
+      "end": 26,
+      "entity": "duration",
+      "start": 18,
+      "value": "2 Wochen"
+     }
+    ]
+   },
+   {
+    "text": "I muss für 2 Tage Tage das Bett hüten",
     "intent": "report_illness_duration",
     "entities": [
      {
       "end": 17,
       "entity": "duration",
       "start": 11,
+      "value": "2 Tage"
+     }
+    ]
+   },
+   {
+    "text": "I werde für 3 Tage Tage krank sein.",
+    "intent": "report_illness_duration",
+    "entities": [
+     {
+      "end": 18,
+      "entity": "duration",
+      "start": 12,
       "value": "3 Tage"
+     }
+    ]
+   },
+   {
+    "text": "I muss für 1 Woche Tage das Bett hüten",
+    "intent": "report_illness_duration",
+    "entities": [
+     {
+      "end": 18,
+      "entity": "duration",
+      "start": 11,
+      "value": "1 Woche"
      }
     ]
    },
@@ -2608,79 +2608,109 @@
     ]
    },
    {
-    "text": "Hi, ich werde für 1 Tag Tage ausfallen.",
+    "text": "Hi, ich werde für 4 Tage Tage ausfallen.",
     "intent": "report_illness_duration",
     "entities": [
      {
-      "end": 23,
+      "end": 24,
       "entity": "duration",
       "start": 18,
+      "value": "4 Tage"
+     }
+    ]
+   },
+   {
+    "text": "I werde für 1 Tag Tage krank sein.",
+    "intent": "report_illness_duration",
+    "entities": [
+     {
+      "end": 17,
+      "entity": "duration",
+      "start": 12,
       "value": "1 Tag"
      }
     ]
    },
    {
-    "text": "I werde für 2 Wochen Tage krank sein.",
-    "intent": "report_illness_duration",
-    "entities": [
-     {
-      "end": 20,
-      "entity": "duration",
-      "start": 12,
-      "value": "2 Wochen"
-     }
-    ]
-   },
-   {
-    "text": "I muss für 5 Tage Tage das Bett hüten",
+    "text": "I muss für 3 Tage Tage das Bett hüten",
     "intent": "report_illness_duration",
     "entities": [
      {
       "end": 17,
       "entity": "duration",
       "start": 11,
-      "value": "5 Tage"
+      "value": "3 Tage"
      }
     ]
    },
    {
-    "text": "Ich bleibe daheim bis Mittwoch",
+    "text": "Ich bin krank bis zum  Mittwoch",
     "intent": "report_illness_from_to",
     "entities": [
      {
-      "end": 30,
+      "end": 31,
       "entity": "last",
-      "start": 22,
+      "start": 23,
       "value": "Mittwoch"
      }
     ]
    },
    {
-    "text": "Ich bin krank bis zum  Donnerstag",
+    "text": "Ich bin krank von Heute bis zum  Nächste Woche",
     "intent": "report_illness_from_to",
     "entities": [
      {
-      "end": 33,
+      "end": 23,
+      "entity": "first",
+      "start": 18,
+      "value": "Heute"
+     },
+     {
+      "end": 46,
       "entity": "last",
-      "start": 23,
+      "start": 33,
+      "value": "Nächste Woche"
+     }
+    ]
+   },
+   {
+    "text": "Mein Arzt rät mir bis Samstag daheim zu bleiben",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 29,
+      "entity": "last",
+      "start": 22,
+      "value": "Samstag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bleibe daheim bis Donnerstag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 32,
+      "entity": "last",
+      "start": 22,
       "value": "Donnerstag"
      }
     ]
    },
    {
-    "text": "Ich bin am Mittwoch wieder zurück",
+    "text": "Ich bin am Dienstag wieder zurück",
     "intent": "report_illness_from_to",
     "entities": [
      {
       "end": 19,
       "entity": "last",
       "start": 11,
-      "value": "Mittwoch"
+      "value": "Dienstag"
      }
     ]
    },
    {
-    "text": "Ich bin krank von Sonntag bis zum  Freitag",
+    "text": "Ich bin krank von Sonntag bis zum  Mittwoch",
     "intent": "report_illness_from_to",
     "entities": [
      {
@@ -2690,22 +2720,28 @@
       "value": "Sonntag"
      },
      {
-      "end": 42,
+      "end": 43,
       "entity": "last",
       "start": 35,
-      "value": "Freitag"
+      "value": "Mittwoch"
      }
     ]
    },
    {
-    "text": "Mein Arzt rät mir bis Nächste Woche daheim zu bleiben",
+    "text": "Ich bin krank von Montag bis zum  Montag",
     "intent": "report_illness_from_to",
     "entities": [
      {
-      "end": 35,
+      "end": 24,
+      "entity": "first",
+      "start": 18,
+      "value": "Montag"
+     },
+     {
+      "end": 40,
       "entity": "last",
-      "start": 22,
-      "value": "Nächste Woche"
+      "start": 34,
+      "value": "Montag"
      }
     ]
    },
@@ -2728,7 +2764,199 @@
     ]
    },
    {
-    "text": "Ich bin krank von Heute bis zum  Montag",
+    "text": "Ich bin krank von Freitag bis zum  Sonntag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 25,
+      "entity": "first",
+      "start": 18,
+      "value": "Freitag"
+     },
+     {
+      "end": 42,
+      "entity": "last",
+      "start": 35,
+      "value": "Sonntag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Samstag bis zum  Dienstag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 25,
+      "entity": "first",
+      "start": 18,
+      "value": "Samstag"
+     },
+     {
+      "end": 43,
+      "entity": "last",
+      "start": 35,
+      "value": "Dienstag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Donnerstag bis zum  Freitag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 28,
+      "entity": "first",
+      "start": 18,
+      "value": "Donnerstag"
+     },
+     {
+      "end": 45,
+      "entity": "last",
+      "start": 38,
+      "value": "Freitag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Dienstag bis zum  Donnerstag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 26,
+      "entity": "first",
+      "start": 18,
+      "value": "Dienstag"
+     },
+     {
+      "end": 46,
+      "entity": "last",
+      "start": 36,
+      "value": "Donnerstag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bleibe daheim bis Ender der Woche",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 37,
+      "entity": "last",
+      "start": 22,
+      "value": "Ender der Woche"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin am Sonntag wieder zurück",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 18,
+      "entity": "last",
+      "start": 11,
+      "value": "Sonntag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Montag bis zum  Ender der Woche",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 24,
+      "entity": "first",
+      "start": 18,
+      "value": "Montag"
+     },
+     {
+      "end": 49,
+      "entity": "last",
+      "start": 34,
+      "value": "Ender der Woche"
+     }
+    ]
+   },
+   {
+    "text": "Mein Arzt rät mir bis Donnerstag daheim zu bleiben",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 32,
+      "entity": "last",
+      "start": 22,
+      "value": "Donnerstag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank bis zum  Nächste Woche",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 36,
+      "entity": "last",
+      "start": 23,
+      "value": "Nächste Woche"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Samstag bis zum  Ender der Woche",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 25,
+      "entity": "first",
+      "start": 18,
+      "value": "Samstag"
+     },
+     {
+      "end": 50,
+      "entity": "last",
+      "start": 35,
+      "value": "Ender der Woche"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Dienstag bis zum  Sonntag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 26,
+      "entity": "first",
+      "start": 18,
+      "value": "Dienstag"
+     },
+     {
+      "end": 43,
+      "entity": "last",
+      "start": 36,
+      "value": "Sonntag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Mittwoch bis zum  Mittwoch",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 26,
+      "entity": "first",
+      "start": 18,
+      "value": "Mittwoch"
+     },
+     {
+      "end": 44,
+      "entity": "last",
+      "start": 36,
+      "value": "Mittwoch"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Heute bis zum  Donnerstag",
     "intent": "report_illness_from_to",
     "entities": [
      {
@@ -2738,10 +2966,424 @@
       "value": "Heute"
      },
      {
-      "end": 39,
+      "end": 43,
       "entity": "last",
       "start": 33,
+      "value": "Donnerstag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Freitag bis zum  Samstag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 25,
+      "entity": "first",
+      "start": 18,
+      "value": "Freitag"
+     },
+     {
+      "end": 42,
+      "entity": "last",
+      "start": 35,
+      "value": "Samstag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Sonntag bis zum  Nächste Woche",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 25,
+      "entity": "first",
+      "start": 18,
+      "value": "Sonntag"
+     },
+     {
+      "end": 48,
+      "entity": "last",
+      "start": 35,
+      "value": "Nächste Woche"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Donnerstag bis zum  Montag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 28,
+      "entity": "first",
+      "start": 18,
+      "value": "Donnerstag"
+     },
+     {
+      "end": 44,
+      "entity": "last",
+      "start": 38,
       "value": "Montag"
+     }
+    ]
+   },
+   {
+    "text": "Mein Arzt rät mir bis Nächste Woche daheim zu bleiben",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 35,
+      "entity": "last",
+      "start": 22,
+      "value": "Nächste Woche"
+     }
+    ]
+   },
+   {
+    "text": "Ich bleibe daheim bis Montag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 28,
+      "entity": "last",
+      "start": 22,
+      "value": "Montag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Freitag bis zum  Dienstag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 25,
+      "entity": "first",
+      "start": 18,
+      "value": "Freitag"
+     },
+     {
+      "end": 43,
+      "entity": "last",
+      "start": 35,
+      "value": "Dienstag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin am Nächste Woche wieder zurück",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 24,
+      "entity": "last",
+      "start": 11,
+      "value": "Nächste Woche"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank bis zum  Donnerstag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 33,
+      "entity": "last",
+      "start": 23,
+      "value": "Donnerstag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Montag bis zum  Freitag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 24,
+      "entity": "first",
+      "start": 18,
+      "value": "Montag"
+     },
+     {
+      "end": 41,
+      "entity": "last",
+      "start": 34,
+      "value": "Freitag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Sonntag bis zum  Samstag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 25,
+      "entity": "first",
+      "start": 18,
+      "value": "Sonntag"
+     },
+     {
+      "end": 42,
+      "entity": "last",
+      "start": 35,
+      "value": "Samstag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Dienstag bis zum  Freitag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 26,
+      "entity": "first",
+      "start": 18,
+      "value": "Dienstag"
+     },
+     {
+      "end": 43,
+      "entity": "last",
+      "start": 36,
+      "value": "Freitag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Donnerstag bis zum  Dienstag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 28,
+      "entity": "first",
+      "start": 18,
+      "value": "Donnerstag"
+     },
+     {
+      "end": 46,
+      "entity": "last",
+      "start": 38,
+      "value": "Dienstag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Mittwoch bis zum  Ender der Woche",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 26,
+      "entity": "first",
+      "start": 18,
+      "value": "Mittwoch"
+     },
+     {
+      "end": 51,
+      "entity": "last",
+      "start": 36,
+      "value": "Ender der Woche"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Samstag bis zum  Montag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 25,
+      "entity": "first",
+      "start": 18,
+      "value": "Samstag"
+     },
+     {
+      "end": 41,
+      "entity": "last",
+      "start": 35,
+      "value": "Montag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bleibe daheim bis Nächste Woche",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 35,
+      "entity": "last",
+      "start": 22,
+      "value": "Nächste Woche"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Heute bis zum  Mittwoch",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 23,
+      "entity": "first",
+      "start": 18,
+      "value": "Heute"
+     },
+     {
+      "end": 41,
+      "entity": "last",
+      "start": 33,
+      "value": "Mittwoch"
+     }
+    ]
+   },
+   {
+    "text": "Mein Arzt rät mir bis Dienstag daheim zu bleiben",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 30,
+      "entity": "last",
+      "start": 22,
+      "value": "Dienstag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin am Samstag wieder zurück",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 18,
+      "entity": "last",
+      "start": 11,
+      "value": "Samstag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank bis zum  Dienstag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 31,
+      "entity": "last",
+      "start": 23,
+      "value": "Dienstag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Donnerstag bis zum  Sonntag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 28,
+      "entity": "first",
+      "start": 18,
+      "value": "Donnerstag"
+     },
+     {
+      "end": 45,
+      "entity": "last",
+      "start": 38,
+      "value": "Sonntag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Freitag bis zum  Mittwoch",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 25,
+      "entity": "first",
+      "start": 18,
+      "value": "Freitag"
+     },
+     {
+      "end": 43,
+      "entity": "last",
+      "start": 35,
+      "value": "Mittwoch"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Mittwoch bis zum  Sonntag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 26,
+      "entity": "first",
+      "start": 18,
+      "value": "Mittwoch"
+     },
+     {
+      "end": 43,
+      "entity": "last",
+      "start": 36,
+      "value": "Sonntag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Dienstag bis zum  Montag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 26,
+      "entity": "first",
+      "start": 18,
+      "value": "Dienstag"
+     },
+     {
+      "end": 42,
+      "entity": "last",
+      "start": 36,
+      "value": "Montag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank bis zum  Freitag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 30,
+      "entity": "last",
+      "start": 23,
+      "value": "Freitag"
+     }
+    ]
+   },
+   {
+    "text": "Mein Arzt rät mir bis Freitag daheim zu bleiben",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 29,
+      "entity": "last",
+      "start": 22,
+      "value": "Freitag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin am Freitag wieder zurück",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 18,
+      "entity": "last",
+      "start": 11,
+      "value": "Freitag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bleibe daheim bis Mittwoch",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 30,
+      "entity": "last",
+      "start": 22,
+      "value": "Mittwoch"
      }
     ]
    },
@@ -2782,25 +3424,7 @@
     ]
    },
    {
-    "text": "Ich bin krank von Freitag bis zum  Ender der Woche",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 25,
-      "entity": "first",
-      "start": 18,
-      "value": "Freitag"
-     },
-     {
-      "end": 50,
-      "entity": "last",
-      "start": 35,
-      "value": "Ender der Woche"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Samstag bis zum  Dienstag",
+    "text": "Ich bin krank von Samstag bis zum  Samstag",
     "intent": "report_illness_from_to",
     "entities": [
      {
@@ -2810,94 +3434,10 @@
       "value": "Samstag"
      },
      {
-      "end": 43,
+      "end": 42,
       "entity": "last",
       "start": 35,
-      "value": "Dienstag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Donnerstag bis zum  Mittwoch",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 28,
-      "entity": "first",
-      "start": 18,
-      "value": "Donnerstag"
-     },
-     {
-      "end": 46,
-      "entity": "last",
-      "start": 38,
-      "value": "Mittwoch"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Mittwoch bis zum  Sonntag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 26,
-      "entity": "first",
-      "start": 18,
-      "value": "Mittwoch"
-     },
-     {
-      "end": 43,
-      "entity": "last",
-      "start": 36,
-      "value": "Sonntag"
-     }
-    ]
-   },
-   {
-    "text": "Mein Arzt rät mir bis Donnerstag daheim zu bleiben",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 32,
-      "entity": "last",
-      "start": 22,
-      "value": "Donnerstag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin am Ender der Woche wieder zurück",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 26,
-      "entity": "last",
-      "start": 11,
-      "value": "Ender der Woche"
-     }
-    ]
-   },
-   {
-    "text": "Ich bleibe daheim bis Freitag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 29,
-      "entity": "last",
-      "start": 22,
-      "value": "Freitag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank bis zum  Dienstag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 31,
-      "entity": "last",
-      "start": 23,
-      "value": "Dienstag"
+      "value": "Samstag"
      }
     ]
    },
@@ -2920,61 +3460,7 @@
     ]
    },
    {
-    "text": "Ich bin krank von Dienstag bis zum  Dienstag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 26,
-      "entity": "first",
-      "start": 18,
-      "value": "Dienstag"
-     },
-     {
-      "end": 44,
-      "entity": "last",
-      "start": 36,
-      "value": "Dienstag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Donnerstag bis zum  Freitag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 28,
-      "entity": "first",
-      "start": 18,
-      "value": "Donnerstag"
-     },
-     {
-      "end": 45,
-      "entity": "last",
-      "start": 38,
-      "value": "Freitag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Montag bis zum  Ender der Woche",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 24,
-      "entity": "first",
-      "start": 18,
-      "value": "Montag"
-     },
-     {
-      "end": 49,
-      "entity": "last",
-      "start": 34,
-      "value": "Ender der Woche"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Freitag bis zum  Donnerstag",
+    "text": "Ich bin krank von Freitag bis zum  Nächste Woche",
     "intent": "report_illness_from_to",
     "entities": [
      {
@@ -2982,42 +3468,6 @@
       "entity": "first",
       "start": 18,
       "value": "Freitag"
-     },
-     {
-      "end": 45,
-      "entity": "last",
-      "start": 35,
-      "value": "Donnerstag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Samstag bis zum  Mittwoch",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 25,
-      "entity": "first",
-      "start": 18,
-      "value": "Samstag"
-     },
-     {
-      "end": 43,
-      "entity": "last",
-      "start": 35,
-      "value": "Mittwoch"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Sonntag bis zum  Nächste Woche",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 25,
-      "entity": "first",
-      "start": 18,
-      "value": "Sonntag"
      },
      {
       "end": 48,
@@ -3028,73 +3478,7 @@
     ]
    },
    {
-    "text": "Ich bin krank von Montag bis zum  Montag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 24,
-      "entity": "first",
-      "start": 18,
-      "value": "Montag"
-     },
-     {
-      "end": 40,
-      "entity": "last",
-      "start": 34,
-      "value": "Montag"
-     }
-    ]
-   },
-   {
-    "text": "Mein Arzt rät mir bis Mittwoch daheim zu bleiben",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 30,
-      "entity": "last",
-      "start": 22,
-      "value": "Mittwoch"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin am Sonntag wieder zurück",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 18,
-      "entity": "last",
-      "start": 11,
-      "value": "Sonntag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bleibe daheim bis Nächste Woche",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 35,
-      "entity": "last",
-      "start": 22,
-      "value": "Nächste Woche"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank bis zum  Nächste Woche",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 36,
-      "entity": "last",
-      "start": 23,
-      "value": "Nächste Woche"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Sonntag bis zum  Samstag",
+    "text": "Ich bin krank von Sonntag bis zum  Donnerstag",
     "intent": "report_illness_from_to",
     "entities": [
      {
@@ -3104,46 +3488,58 @@
       "value": "Sonntag"
      },
      {
-      "end": 42,
+      "end": 45,
       "entity": "last",
       "start": 35,
+      "value": "Donnerstag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank bis zum  Montag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 29,
+      "entity": "last",
+      "start": 23,
+      "value": "Montag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bleibe daheim bis Samstag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 29,
+      "entity": "last",
+      "start": 22,
       "value": "Samstag"
      }
     ]
    },
    {
-    "text": "Ich bin krank von Dienstag bis zum  Ender der Woche",
+    "text": "Ich bin am Mittwoch wieder zurück",
     "intent": "report_illness_from_to",
     "entities": [
      {
-      "end": 26,
-      "entity": "first",
-      "start": 18,
-      "value": "Dienstag"
-     },
-     {
-      "end": 51,
+      "end": 19,
       "entity": "last",
-      "start": 36,
-      "value": "Ender der Woche"
+      "start": 11,
+      "value": "Mittwoch"
      }
     ]
    },
    {
-    "text": "Ich bin krank von Donnerstag bis zum  Nächste Woche",
+    "text": "Mein Arzt rät mir bis Montag daheim zu bleiben",
     "intent": "report_illness_from_to",
     "entities": [
      {
       "end": 28,
-      "entity": "first",
-      "start": 18,
-      "value": "Donnerstag"
-     },
-     {
-      "end": 51,
       "entity": "last",
-      "start": 38,
-      "value": "Nächste Woche"
+      "start": 22,
+      "value": "Montag"
      }
     ]
    },
@@ -3166,49 +3562,7 @@
     ]
    },
    {
-    "text": "Ich bin krank von Heute bis zum  Donnerstag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 23,
-      "entity": "first",
-      "start": 18,
-      "value": "Heute"
-     },
-     {
-      "end": 43,
-      "entity": "last",
-      "start": 33,
-      "value": "Donnerstag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bleibe daheim bis Samstag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 29,
-      "entity": "last",
-      "start": 22,
-      "value": "Samstag"
-     }
-    ]
-   },
-   {
-    "text": "Mein Arzt rät mir bis Samstag daheim zu bleiben",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 29,
-      "entity": "last",
-      "start": 22,
-      "value": "Samstag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Sonntag bis zum  Montag",
+    "text": "Ich bin krank von Sonntag bis zum  Ender der Woche",
     "intent": "report_illness_from_to",
     "entities": [
      {
@@ -3218,70 +3572,10 @@
       "value": "Sonntag"
      },
      {
-      "end": 41,
+      "end": 50,
       "entity": "last",
       "start": 35,
-      "value": "Montag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin am Montag wieder zurück",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 17,
-      "entity": "last",
-      "start": 11,
-      "value": "Montag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank bis zum  Freitag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 30,
-      "entity": "last",
-      "start": 23,
-      "value": "Freitag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Montag bis zum  Samstag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 24,
-      "entity": "first",
-      "start": 18,
-      "value": "Montag"
-     },
-     {
-      "end": 41,
-      "entity": "last",
-      "start": 34,
-      "value": "Samstag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Mittwoch bis zum  Dienstag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 26,
-      "entity": "first",
-      "start": 18,
-      "value": "Mittwoch"
-     },
-     {
-      "end": 44,
-      "entity": "last",
-      "start": 36,
-      "value": "Dienstag"
+      "value": "Ender der Woche"
      }
     ]
    },
@@ -3304,6 +3598,24 @@
     ]
    },
    {
+    "text": "Ich bin krank von Dienstag bis zum  Mittwoch",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 26,
+      "entity": "first",
+      "start": 18,
+      "value": "Dienstag"
+     },
+     {
+      "end": 44,
+      "entity": "last",
+      "start": 36,
+      "value": "Mittwoch"
+     }
+    ]
+   },
+   {
     "text": "Ich bin krank von Heute bis zum  Dienstag",
     "intent": "report_illness_from_to",
     "entities": [
@@ -3322,25 +3634,7 @@
     ]
    },
    {
-    "text": "Ich bin krank von Freitag bis zum  Montag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 25,
-      "entity": "first",
-      "start": 18,
-      "value": "Freitag"
-     },
-     {
-      "end": 41,
-      "entity": "last",
-      "start": 35,
-      "value": "Montag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Samstag bis zum  Freitag",
+    "text": "Ich bin krank von Samstag bis zum  Sonntag",
     "intent": "report_illness_from_to",
     "entities": [
      {
@@ -3353,24 +3647,24 @@
       "end": 42,
       "entity": "last",
       "start": 35,
-      "value": "Freitag"
+      "value": "Sonntag"
      }
     ]
    },
    {
-    "text": "Ich bin am Donnerstag wieder zurück",
+    "text": "Ich bin am Montag wieder zurück",
     "intent": "report_illness_from_to",
     "entities": [
      {
-      "end": 21,
+      "end": 17,
       "entity": "last",
       "start": 11,
-      "value": "Donnerstag"
+      "value": "Montag"
      }
     ]
    },
    {
-    "text": "Mein Arzt rät mir bis Dienstag daheim zu bleiben",
+    "text": "Ich bleibe daheim bis Dienstag",
     "intent": "report_illness_from_to",
     "entities": [
      {
@@ -3378,114 +3672,6 @@
       "entity": "last",
       "start": 22,
       "value": "Dienstag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bleibe daheim bis Donnerstag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 32,
-      "entity": "last",
-      "start": 22,
-      "value": "Donnerstag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Mittwoch bis zum  Mittwoch",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 26,
-      "entity": "first",
-      "start": 18,
-      "value": "Mittwoch"
-     },
-     {
-      "end": 44,
-      "entity": "last",
-      "start": 36,
-      "value": "Mittwoch"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank bis zum  Montag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 29,
-      "entity": "last",
-      "start": 23,
-      "value": "Montag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Samstag bis zum  Ender der Woche",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 25,
-      "entity": "first",
-      "start": 18,
-      "value": "Samstag"
-     },
-     {
-      "end": 50,
-      "entity": "last",
-      "start": 35,
-      "value": "Ender der Woche"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Dienstag bis zum  Freitag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 26,
-      "entity": "first",
-      "start": 18,
-      "value": "Dienstag"
-     },
-     {
-      "end": 43,
-      "entity": "last",
-      "start": 36,
-      "value": "Freitag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Donnerstag bis zum  Sonntag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 28,
-      "entity": "first",
-      "start": 18,
-      "value": "Donnerstag"
-     },
-     {
-      "end": 45,
-      "entity": "last",
-      "start": 38,
-      "value": "Sonntag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin am Nächste Woche wieder zurück",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 24,
-      "entity": "last",
-      "start": 11,
-      "value": "Nächste Woche"
      }
     ]
    },
@@ -3514,37 +3700,43 @@
     ]
    },
    {
-    "text": "Ich bleibe daheim bis Montag",
+    "text": "Ich bin krank von Dienstag bis zum  Dienstag",
     "intent": "report_illness_from_to",
     "entities": [
      {
-      "end": 28,
-      "entity": "last",
-      "start": 22,
-      "value": "Montag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Donnerstag bis zum  Ender der Woche",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 28,
+      "end": 26,
       "entity": "first",
       "start": 18,
-      "value": "Donnerstag"
+      "value": "Dienstag"
      },
      {
-      "end": 53,
+      "end": 44,
       "entity": "last",
-      "start": 38,
-      "value": "Ender der Woche"
+      "start": 36,
+      "value": "Dienstag"
      }
     ]
    },
    {
-    "text": "Ich bin krank von Samstag bis zum  Nächste Woche",
+    "text": "Ich bin krank von Montag bis zum  Nächste Woche",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 24,
+      "entity": "first",
+      "start": 18,
+      "value": "Montag"
+     },
+     {
+      "end": 47,
+      "entity": "last",
+      "start": 34,
+      "value": "Nächste Woche"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Samstag bis zum  Donnerstag",
     "intent": "report_illness_from_to",
     "entities": [
      {
@@ -3554,46 +3746,52 @@
       "value": "Samstag"
      },
      {
+      "end": 45,
+      "entity": "last",
+      "start": 35,
+      "value": "Donnerstag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Heute bis zum  Ender der Woche",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 23,
+      "entity": "first",
+      "start": 18,
+      "value": "Heute"
+     },
+     {
       "end": 48,
       "entity": "last",
-      "start": 35,
-      "value": "Nächste Woche"
+      "start": 33,
+      "value": "Ender der Woche"
      }
     ]
    },
    {
-    "text": "Ich bin krank von Sonntag bis zum  Mittwoch",
+    "text": "Ich bleibe daheim bis Freitag",
     "intent": "report_illness_from_to",
     "entities": [
      {
-      "end": 25,
-      "entity": "first",
-      "start": 18,
-      "value": "Sonntag"
-     },
-     {
-      "end": 43,
+      "end": 29,
       "entity": "last",
-      "start": 35,
-      "value": "Mittwoch"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Freitag bis zum  Dienstag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 25,
-      "entity": "first",
-      "start": 18,
+      "start": 22,
       "value": "Freitag"
-     },
+     }
+    ]
+   },
+   {
+    "text": "Ich bin am Donnerstag wieder zurück",
+    "intent": "report_illness_from_to",
+    "entities": [
      {
-      "end": 43,
+      "end": 21,
       "entity": "last",
-      "start": 35,
-      "value": "Dienstag"
+      "start": 11,
+      "value": "Donnerstag"
      }
     ]
    },
@@ -3622,31 +3820,61 @@
     ]
    },
    {
-    "text": "Ich bleibe daheim bis Ender der Woche",
+    "text": "Ich bin krank von Sonntag bis zum  Montag",
     "intent": "report_illness_from_to",
     "entities": [
      {
-      "end": 37,
+      "end": 25,
+      "entity": "first",
+      "start": 18,
+      "value": "Sonntag"
+     },
+     {
+      "end": 41,
       "entity": "last",
-      "start": 22,
-      "value": "Ender der Woche"
+      "start": 35,
+      "value": "Montag"
      }
     ]
    },
    {
-    "text": "Ich bin am Freitag wieder zurück",
+    "text": "Ich bin krank von Montag bis zum  Samstag",
     "intent": "report_illness_from_to",
     "entities": [
      {
-      "end": 18,
+      "end": 24,
+      "entity": "first",
+      "start": 18,
+      "value": "Montag"
+     },
+     {
+      "end": 41,
       "entity": "last",
-      "start": 11,
+      "start": 34,
+      "value": "Samstag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Heute bis zum  Freitag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 23,
+      "entity": "first",
+      "start": 18,
+      "value": "Heute"
+     },
+     {
+      "end": 40,
+      "entity": "last",
+      "start": 33,
       "value": "Freitag"
      }
     ]
    },
    {
-    "text": "Ich bin krank von Samstag bis zum  Montag",
+    "text": "Ich bin krank von Samstag bis zum  Mittwoch",
     "intent": "report_illness_from_to",
     "entities": [
      {
@@ -3656,10 +3884,112 @@
       "value": "Samstag"
      },
      {
-      "end": 41,
+      "end": 43,
       "entity": "last",
       "start": 35,
+      "value": "Mittwoch"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Donnerstag bis zum  Nächste Woche",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 28,
+      "entity": "first",
+      "start": 18,
+      "value": "Donnerstag"
+     },
+     {
+      "end": 51,
+      "entity": "last",
+      "start": 38,
+      "value": "Nächste Woche"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank bis zum  Samstag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 30,
+      "entity": "last",
+      "start": 23,
+      "value": "Samstag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin am Ender der Woche wieder zurück",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 26,
+      "entity": "last",
+      "start": 11,
+      "value": "Ender der Woche"
+     }
+    ]
+   },
+   {
+    "text": "Ich bleibe daheim bis Sonntag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 29,
+      "entity": "last",
+      "start": 22,
+      "value": "Sonntag"
+     }
+    ]
+   },
+   {
+    "text": "Mein Arzt rät mir bis Mittwoch daheim zu bleiben",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 30,
+      "entity": "last",
+      "start": 22,
+      "value": "Mittwoch"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Heute bis zum  Montag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 23,
+      "entity": "first",
+      "start": 18,
+      "value": "Heute"
+     },
+     {
+      "end": 39,
+      "entity": "last",
+      "start": 33,
       "value": "Montag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Freitag bis zum  Ender der Woche",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 25,
+      "entity": "first",
+      "start": 18,
+      "value": "Freitag"
+     },
+     {
+      "end": 50,
+      "entity": "last",
+      "start": 35,
+      "value": "Ender der Woche"
      }
     ]
    },
@@ -3682,7 +4012,43 @@
     ]
    },
    {
-    "text": "Ich bin krank von Heute bis zum  Ender der Woche",
+    "text": "Ich bin krank von Montag bis zum  Sonntag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 24,
+      "entity": "first",
+      "start": 18,
+      "value": "Montag"
+     },
+     {
+      "end": 41,
+      "entity": "last",
+      "start": 34,
+      "value": "Sonntag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Samstag bis zum  Freitag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 25,
+      "entity": "first",
+      "start": 18,
+      "value": "Samstag"
+     },
+     {
+      "end": 42,
+      "entity": "last",
+      "start": 35,
+      "value": "Freitag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Heute bis zum  Samstag",
     "intent": "report_illness_from_to",
     "entities": [
      {
@@ -3692,51 +4058,15 @@
       "value": "Heute"
      },
      {
-      "end": 48,
+      "end": 40,
       "entity": "last",
       "start": 33,
-      "value": "Ender der Woche"
+      "value": "Samstag"
      }
     ]
    },
    {
-    "text": "Ich bleibe daheim bis Sonntag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 29,
-      "entity": "last",
-      "start": 22,
-      "value": "Sonntag"
-     }
-    ]
-   },
-   {
-    "text": "Mein Arzt rät mir bis Montag daheim zu bleiben",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 28,
-      "entity": "last",
-      "start": 22,
-      "value": "Montag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin am Dienstag wieder zurück",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 19,
-      "entity": "last",
-      "start": 11,
-      "value": "Dienstag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Freitag bis zum  Mittwoch",
+    "text": "Ich bin krank von Freitag bis zum  Donnerstag",
     "intent": "report_illness_from_to",
     "entities": [
      {
@@ -3746,39 +4076,9 @@
       "value": "Freitag"
      },
      {
-      "end": 43,
+      "end": 45,
       "entity": "last",
       "start": 35,
-      "value": "Mittwoch"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank bis zum  Samstag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 30,
-      "entity": "last",
-      "start": 23,
-      "value": "Samstag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Dienstag bis zum  Donnerstag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 26,
-      "entity": "first",
-      "start": 18,
-      "value": "Dienstag"
-     },
-     {
-      "end": 46,
-      "entity": "last",
-      "start": 36,
       "value": "Donnerstag"
      }
     ]
@@ -3802,145 +4102,7 @@
     ]
    },
    {
-    "text": "Ich bin krank von Heute bis zum  Freitag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 23,
-      "entity": "first",
-      "start": 18,
-      "value": "Heute"
-     },
-     {
-      "end": 40,
-      "entity": "last",
-      "start": 33,
-      "value": "Freitag"
-     }
-    ]
-   },
-   {
-    "text": "Mein Arzt rät mir bis Freitag daheim zu bleiben",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 29,
-      "entity": "last",
-      "start": 22,
-      "value": "Freitag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank bis zum  Mittwoch",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 31,
-      "entity": "last",
-      "start": 23,
-      "value": "Mittwoch"
-     }
-    ]
-   },
-   {
-    "text": "Ich bleibe daheim bis Dienstag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 30,
-      "entity": "last",
-      "start": 22,
-      "value": "Dienstag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin am Samstag wieder zurück",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 18,
-      "entity": "last",
-      "start": 11,
-      "value": "Samstag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Freitag bis zum  Nächste Woche",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 25,
-      "entity": "first",
-      "start": 18,
-      "value": "Freitag"
-     },
-     {
-      "end": 48,
-      "entity": "last",
-      "start": 35,
-      "value": "Nächste Woche"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Sonntag bis zum  Ender der Woche",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 25,
-      "entity": "first",
-      "start": 18,
-      "value": "Sonntag"
-     },
-     {
-      "end": 50,
-      "entity": "last",
-      "start": 35,
-      "value": "Ender der Woche"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Heute bis zum  Mittwoch",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 23,
-      "entity": "first",
-      "start": 18,
-      "value": "Heute"
-     },
-     {
-      "end": 41,
-      "entity": "last",
-      "start": 33,
-      "value": "Mittwoch"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Montag bis zum  Sonntag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 24,
-      "entity": "first",
-      "start": 18,
-      "value": "Montag"
-     },
-     {
-      "end": 41,
-      "entity": "last",
-      "start": 34,
-      "value": "Sonntag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Mittwoch bis zum  Ender der Woche",
+    "text": "Ich bin krank von Mittwoch bis zum  Montag",
     "intent": "report_illness_from_to",
     "entities": [
      {
@@ -3948,6 +4110,42 @@
       "entity": "first",
       "start": 18,
       "value": "Mittwoch"
+     },
+     {
+      "end": 42,
+      "entity": "last",
+      "start": 36,
+      "value": "Montag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Sonntag bis zum  Freitag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 25,
+      "entity": "first",
+      "start": 18,
+      "value": "Sonntag"
+     },
+     {
+      "end": 42,
+      "entity": "last",
+      "start": 35,
+      "value": "Freitag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Dienstag bis zum  Ender der Woche",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 26,
+      "entity": "first",
+      "start": 18,
+      "value": "Dienstag"
      },
      {
       "end": 51,
@@ -3958,19 +4156,109 @@
     ]
    },
    {
-    "text": "Ich bin krank von Dienstag bis zum  Montag",
+    "text": "Ich bin krank von Donnerstag bis zum  Donnerstag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 28,
+      "entity": "first",
+      "start": 18,
+      "value": "Donnerstag"
+     },
+     {
+      "end": 48,
+      "entity": "last",
+      "start": 38,
+      "value": "Donnerstag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Samstag bis zum  Nächste Woche",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 25,
+      "entity": "first",
+      "start": 18,
+      "value": "Samstag"
+     },
+     {
+      "end": 48,
+      "entity": "last",
+      "start": 35,
+      "value": "Nächste Woche"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Mittwoch bis zum  Donnerstag",
     "intent": "report_illness_from_to",
     "entities": [
      {
       "end": 26,
       "entity": "first",
       "start": 18,
-      "value": "Dienstag"
+      "value": "Mittwoch"
+     },
+     {
+      "end": 46,
+      "entity": "last",
+      "start": 36,
+      "value": "Donnerstag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Sonntag bis zum  Sonntag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 25,
+      "entity": "first",
+      "start": 18,
+      "value": "Sonntag"
      },
      {
       "end": 42,
       "entity": "last",
-      "start": 36,
+      "start": 35,
+      "value": "Sonntag"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Donnerstag bis zum  Ender der Woche",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 28,
+      "entity": "first",
+      "start": 18,
+      "value": "Donnerstag"
+     },
+     {
+      "end": 53,
+      "entity": "last",
+      "start": 38,
+      "value": "Ender der Woche"
+     }
+    ]
+   },
+   {
+    "text": "Ich bin krank von Freitag bis zum  Montag",
+    "intent": "report_illness_from_to",
+    "entities": [
+     {
+      "end": 25,
+      "entity": "first",
+      "start": 18,
+      "value": "Freitag"
+     },
+     {
+      "end": 41,
+      "entity": "last",
+      "start": 35,
       "value": "Montag"
      }
     ]
@@ -4012,168 +4300,6 @@
     ]
    },
    {
-    "text": "Ich bin krank von Donnerstag bis zum  Dienstag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 28,
-      "entity": "first",
-      "start": 18,
-      "value": "Donnerstag"
-     },
-     {
-      "end": 46,
-      "entity": "last",
-      "start": 38,
-      "value": "Dienstag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Heute bis zum  Nächste Woche",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 23,
-      "entity": "first",
-      "start": 18,
-      "value": "Heute"
-     },
-     {
-      "end": 46,
-      "entity": "last",
-      "start": 33,
-      "value": "Nächste Woche"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Dienstag bis zum  Sonntag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 26,
-      "entity": "first",
-      "start": 18,
-      "value": "Dienstag"
-     },
-     {
-      "end": 43,
-      "entity": "last",
-      "start": 36,
-      "value": "Sonntag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Donnerstag bis zum  Donnerstag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 28,
-      "entity": "first",
-      "start": 18,
-      "value": "Donnerstag"
-     },
-     {
-      "end": 48,
-      "entity": "last",
-      "start": 38,
-      "value": "Donnerstag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Sonntag bis zum  Donnerstag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 25,
-      "entity": "first",
-      "start": 18,
-      "value": "Sonntag"
-     },
-     {
-      "end": 45,
-      "entity": "last",
-      "start": 35,
-      "value": "Donnerstag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Freitag bis zum  Samstag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 25,
-      "entity": "first",
-      "start": 18,
-      "value": "Freitag"
-     },
-     {
-      "end": 42,
-      "entity": "last",
-      "start": 35,
-      "value": "Samstag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Samstag bis zum  Sonntag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 25,
-      "entity": "first",
-      "start": 18,
-      "value": "Samstag"
-     },
-     {
-      "end": 42,
-      "entity": "last",
-      "start": 35,
-      "value": "Sonntag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Heute bis zum  Samstag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 23,
-      "entity": "first",
-      "start": 18,
-      "value": "Heute"
-     },
-     {
-      "end": 40,
-      "entity": "last",
-      "start": 33,
-      "value": "Samstag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Mittwoch bis zum  Donnerstag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 26,
-      "entity": "first",
-      "start": 18,
-      "value": "Mittwoch"
-     },
-     {
-      "end": 46,
-      "entity": "last",
-      "start": 36,
-      "value": "Donnerstag"
-     }
-    ]
-   },
-   {
     "text": "Ich bin krank von Sonntag bis zum  Dienstag",
     "intent": "report_illness_from_to",
     "entities": [
@@ -4188,60 +4314,6 @@
       "entity": "last",
       "start": 35,
       "value": "Dienstag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Dienstag bis zum  Mittwoch",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 26,
-      "entity": "first",
-      "start": 18,
-      "value": "Dienstag"
-     },
-     {
-      "end": 44,
-      "entity": "last",
-      "start": 36,
-      "value": "Mittwoch"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Freitag bis zum  Sonntag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 25,
-      "entity": "first",
-      "start": 18,
-      "value": "Freitag"
-     },
-     {
-      "end": 42,
-      "entity": "last",
-      "start": 35,
-      "value": "Sonntag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Samstag bis zum  Samstag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 25,
-      "entity": "first",
-      "start": 18,
-      "value": "Samstag"
-     },
-     {
-      "end": 42,
-      "entity": "last",
-      "start": 35,
-      "value": "Samstag"
      }
     ]
    },
@@ -4264,79 +4336,7 @@
     ]
    },
    {
-    "text": "Ich bin krank von Samstag bis zum  Donnerstag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 25,
-      "entity": "first",
-      "start": 18,
-      "value": "Samstag"
-     },
-     {
-      "end": 45,
-      "entity": "last",
-      "start": 35,
-      "value": "Donnerstag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Montag bis zum  Nächste Woche",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 24,
-      "entity": "first",
-      "start": 18,
-      "value": "Montag"
-     },
-     {
-      "end": 47,
-      "entity": "last",
-      "start": 34,
-      "value": "Nächste Woche"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Mittwoch bis zum  Montag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 26,
-      "entity": "first",
-      "start": 18,
-      "value": "Mittwoch"
-     },
-     {
-      "end": 42,
-      "entity": "last",
-      "start": 36,
-      "value": "Montag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Montag bis zum  Freitag",
-    "intent": "report_illness_from_to",
-    "entities": [
-     {
-      "end": 24,
-      "entity": "first",
-      "start": 18,
-      "value": "Montag"
-     },
-     {
-      "end": 41,
-      "entity": "last",
-      "start": 34,
-      "value": "Freitag"
-     }
-    ]
-   },
-   {
-    "text": "Ich bin krank von Donnerstag bis zum  Montag",
+    "text": "Ich bin krank von Donnerstag bis zum  Mittwoch",
     "intent": "report_illness_from_to",
     "entities": [
      {
@@ -4346,28 +4346,52 @@
       "value": "Donnerstag"
      },
      {
-      "end": 44,
+      "end": 46,
       "entity": "last",
       "start": 38,
-      "value": "Montag"
+      "value": "Mittwoch"
      }
     ]
    },
    {
-    "text": "Ich bin krank von Sonntag bis zum  Sonntag",
+    "text": "Ich bin krank von Mittwoch bis zum  Dienstag",
     "intent": "report_illness_from_to",
     "entities": [
      {
-      "end": 25,
+      "end": 26,
       "entity": "first",
       "start": 18,
-      "value": "Sonntag"
+      "value": "Mittwoch"
      },
      {
-      "end": 42,
+      "end": 44,
       "entity": "last",
-      "start": 35,
-      "value": "Sonntag"
+      "start": 36,
+      "value": "Dienstag"
+     }
+    ]
+   },
+   {
+    "text": "confirmation_accepted",
+    "intent": "ask_for_confirmation",
+    "entities": [
+     {
+      "end": 21,
+      "entity": "confirmation",
+      "start": 0,
+      "value": "confirmation_accepted"
+     }
+    ]
+   },
+   {
+    "text": "confirmation_declined",
+    "intent": "ask_for_confirmation",
+    "entities": [
+     {
+      "end": 21,
+      "entity": "confirmation",
+      "start": 0,
+      "value": "confirmation_declined"
      }
     ]
    }
