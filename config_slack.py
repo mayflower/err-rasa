@@ -5,7 +5,7 @@ import logging
 # the options in the more complete config-template.py from here:
 # https://raw.githubusercontent.com/errbotio/errbot/master/errbot/config-template.py
 
-BACKEND = 'Slack'  # Errbot will start in text mode (console only mode) and will answer commands from there.
+BACKEND = 'Slack'  # Errbot will start in slack mode (connected to slack backend) and will answer commands from your slack client.
 
 BOT_DATA_DIR = './data'
 BOT_EXTRA_PLUGIN_DIR = './plugin'

@@ -62,7 +62,8 @@ npm run build:dialog-model
 npm run train:dialog
 ```
 
-Now grab your Slack-API-Key and pass it to th configuration as the last task and you can start your bot
+Now grab your Slack-API-Key from [Slack apps overview](https://api.slack.com/apps) (There you have to create an app for you for Errbot if not done yet). If you click then into one app, the api token key is listed between the app properties.  
+Then pass the key to the configuration as the last task and you can start your bot (``BOT_IDENTITY`` in ``config.py``).
 
 
 ```bash
