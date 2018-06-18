@@ -5,6 +5,7 @@ actions.pyc
 .errbot-ve/
 .pytest_cache/
 .cache/
+.idea
 __pycache__
 /plugin/__pycache__
 /node_modules/*
