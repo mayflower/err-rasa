@@ -1,10 +1,10 @@
 intents:
     - greet
-    - goodby
+    - goodbye
     - who_knows_topic
     - claim_to_know_topic
     - claim_to_know_topic_in_category
-    - forgott_topic
+    - forgot_topic
     - topics_in_category
     - report_illness_duration
     - report_illness_from_to
@@ -77,7 +77,7 @@ templates:
     utter_greet:
         - 'Hello, how can I help you?'
         - 'Hi, I am here to help.'
-    utter_goodby:
+    utter_goodbye:
         - 'See you later'
         - 'Bye'
     utter_get_ask_for_confirmation_confirmation:
@@ -88,7 +88,7 @@ templates:
         - Hast du den Authentication-Link gesehen und auch bestätigt?
 
 actions:
-    - utter_goodby
+    - utter_goodbye
     - utter_greet
     - utter_get_who_knows_category
     - utter_get_who_knows_topic

@@ -30,7 +30,7 @@
     Ich lese aktuell über @[topic]
     Wer macht auch gerade @[topic]
 
-%[forgott_topic]
+%[forgot_topic]
     Mir ist entfallen, worum es bei @[topic] gemacht
     Warum muss ich bei @[topic] ... tun?
     Wie bediene ich @[topic]
@@ -125,10 +125,10 @@
     What's up
     Hallo
 
-@[goodby]
+@[goodbye]
     bye
     thx
-    fuck of
+    fuck off
     hf
 
 %[ask_for_confirmation]

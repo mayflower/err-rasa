@@ -2201,7 +2201,7 @@
    },
    {
     "text": "Wie geht nochmal Django",
-    "intent": "forgott_topic",
+    "intent": "forgot_topic",
     "entities": [
      {
       "end": 23,
@@ -2213,7 +2213,7 @@
    },
    {
     "text": "Wie bediene ich Angular",
-    "intent": "forgott_topic",
+    "intent": "forgot_topic",
     "entities": [
      {
       "end": 23,
@@ -2225,7 +2225,7 @@
    },
    {
     "text": "Mir ist entfallen, worum es bei Spring gemacht",
-    "intent": "forgott_topic",
+    "intent": "forgot_topic",
     "entities": [
      {
       "end": 38,
@@ -2237,7 +2237,7 @@
    },
    {
     "text": "Warum muss ich bei Spring ... tun?",
-    "intent": "forgott_topic",
+    "intent": "forgot_topic",
     "entities": [
      {
       "end": 25,
@@ -2249,7 +2249,7 @@
    },
    {
     "text": "Wie geht nochmal Symfony",
-    "intent": "forgott_topic",
+    "intent": "forgot_topic",
     "entities": [
      {
       "end": 24,
@@ -2261,7 +2261,7 @@
    },
    {
     "text": "Wie bediene ich Symfony",
-    "intent": "forgott_topic",
+    "intent": "forgot_topic",
     "entities": [
      {
       "end": 23,
@@ -2273,7 +2273,7 @@
    },
    {
     "text": "Mir ist entfallen, worum es bei Symfony gemacht",
-    "intent": "forgott_topic",
+    "intent": "forgot_topic",
     "entities": [
      {
       "end": 39,
@@ -2285,7 +2285,7 @@
    },
    {
     "text": "Warum muss ich bei Django ... tun?",
-    "intent": "forgott_topic",
+    "intent": "forgot_topic",
     "entities": [
      {
       "end": 25,
@@ -2297,7 +2297,7 @@
    },
    {
     "text": "Warum muss ich bei Symfony ... tun?",
-    "intent": "forgott_topic",
+    "intent": "forgot_topic",
     "entities": [
      {
       "end": 26,
@@ -2309,7 +2309,7 @@
    },
    {
     "text": "Mir ist entfallen, worum es bei Django gemacht",
-    "intent": "forgott_topic",
+    "intent": "forgot_topic",
     "entities": [
      {
       "end": 38,
@@ -2321,7 +2321,7 @@
    },
    {
     "text": "Wie geht nochmal Angular",
-    "intent": "forgott_topic",
+    "intent": "forgot_topic",
     "entities": [
      {
       "end": 24,
@@ -2333,7 +2333,7 @@
    },
    {
     "text": "Wie bediene ich Django",
-    "intent": "forgott_topic",
+    "intent": "forgot_topic",
     "entities": [
      {
       "end": 22,
@@ -2345,7 +2345,7 @@
    },
    {
     "text": "Wie bediene ich Spring",
-    "intent": "forgott_topic",
+    "intent": "forgot_topic",
     "entities": [
      {
       "end": 22,
@@ -2357,7 +2357,7 @@
    },
    {
     "text": "Warum muss ich bei Angular ... tun?",
-    "intent": "forgott_topic",
+    "intent": "forgot_topic",
     "entities": [
      {
       "end": 26,
@@ -2369,7 +2369,7 @@
    },
    {
     "text": "Mir ist entfallen, worum es bei Angular gemacht",
-    "intent": "forgott_topic",
+    "intent": "forgot_topic",
     "entities": [
      {
       "end": 39,
@@ -2381,7 +2381,7 @@
    },
    {
     "text": "Wie geht nochmal Spring",
-    "intent": "forgott_topic",
+    "intent": "forgot_topic",
     "entities": [
      {
       "end": 23,

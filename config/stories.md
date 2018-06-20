@@ -3,10 +3,10 @@
    - utter_greet
 > say_hello
 
-## Story for goodby
-* goodby
-    - utter_goodby
-> say_goodby
+## Story for goodbye
+* goodbye
+    - utter_goodbye
+> say_goodbye
 
 ## Story User asks for something
 * who_knows_topic
@@ -25,7 +25,7 @@
     - action_topics_in_category
 
 ## Story user forgot skills
-* forgott_topic
+* forgot_topic
     - action_forgotten
 ## Generated Story 8197138338604276451
 * report_illness_duration
@@ -74,14 +74,14 @@
 * ask_for_confirmation
     - action_confirmation
     - action_report_illness
-    - utter_goodby
+    - utter_goodbye
     - export
 
 ## Generated Story -7657766036887903462
 * report_illness_from_to
     - utter_get_ask_for_confirmation_confirmation
-* goodby
-    - utter_goodby
+* goodbye
+    - utter_goodbye
     - export
 
 ## Generated Story 8554032829672279995
