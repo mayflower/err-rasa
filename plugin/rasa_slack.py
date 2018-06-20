@@ -1,6 +1,5 @@
 import logging
 import json
-from pylint.test.functional import no_self_use
 from asn1crypto.core import InstanceOf
 from errbot.backends.base import Card
 
