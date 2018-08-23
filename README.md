@@ -12,7 +12,7 @@
 You will have to install [virtualenv](https://virtualenv.pypa.io) on to have a nice python environment to work in. Having that you can clone the repository where ever you whant to:
 
 ```bash
-git clone git@github.com:mayflower/err-rasa.git plugins/rase-plugin
+git clone git@github.com:mayflower/err-rasa.git plugins/rasa-plugin
 cd plugins/rasa-plugin
 ```
 
