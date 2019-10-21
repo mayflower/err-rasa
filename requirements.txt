@@ -147,7 +147,7 @@ waitress==1.1.0
 WebOb==1.8.2
 websocket-client==0.48.0
 WebTest==2.0.29
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 wrapt==1.10.11
 Yapsy==1.11.223
 zope.interface==4.5.0
