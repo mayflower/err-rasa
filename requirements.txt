@@ -143,7 +143,7 @@ typing==3.6.4
 tzlocal==1.5.1
 ujson==1.35
 urllib3==1.22
-waitress==1.1.0
+waitress==1.4.1
 WebOb==1.8.2
 websocket-client==0.48.0
 WebTest==2.0.29
